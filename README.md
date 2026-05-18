@@ -5,7 +5,7 @@ Rawasi case-study implementation for an interpretable SMB invoice discounting cr
 ## Current Status
 
 - Step 1 data audit: `docs/data_audit.md`
-- EDA notebook: `notebooks/01_data_understanding_eda.ipynb`
+- Layer 1 pipeline notebook: `notebooks/01_data_understanding_eda.ipynb`
 - Layer 1 / Stage A hard filters: `config/hard_filters.json`, `src/rawasi_credit/filters.py`
 - Layer 1 / Stage B benchmarks: `config/benchmark_features.json`, `src/rawasi_credit/benchmarks.py`
 - Layer 1 / Stage C model: `config/xgboost_model.json`, `scripts/run_stage_c_model.py`
