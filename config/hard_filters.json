@@ -1,0 +1,69 @@
+{
+  "version": "2026-05-18",
+  "decision_labels": {
+    "pass": "PASS_STAGE_A",
+    "reject": "REJECT_STAGE_A"
+  },
+  "rules": [
+    {
+      "name": "missing_mandatory_docs",
+      "enabled": true,
+      "description": "Reject when required onboarding and transaction documentation is incomplete.",
+      "column": "docs_complete",
+      "operator": "equals",
+      "value": false,
+      "missing_values_fail": true,
+      "reject_reason": "Missing mandatory documentation"
+    },
+    {
+      "name": "minimum_iscore",
+      "enabled": true,
+      "description": "Reject exporters below the minimum acceptable Egyptian credit bureau score.",
+      "column": "exp_iscore",
+      "operator": "less_than",
+      "value": 550,
+      "missing_values_fail": true,
+      "reject_reason": "Exporter i-score below 550"
+    },
+    {
+      "name": "acceptable_auditor_tier",
+      "enabled": true,
+      "description": "Reject exporters whose auditor tier is below the accepted quality bar.",
+      "column": "exp_auditor_tier",
+      "operator": "not_in",
+      "value": ["Big4", "International", "CBE-approved"],
+      "missing_values_fail": true,
+      "reject_reason": "Auditor tier is not accepted"
+    },
+    {
+      "name": "buyer_country_risk_ceiling",
+      "enabled": true,
+      "description": "Reject deals where buyer country risk is above the committee ceiling.",
+      "column": "buy_buyer_country_risk_score",
+      "operator": "greater_than",
+      "value": 8,
+      "missing_values_fail": true,
+      "reject_reason": "Buyer country risk score above 8"
+    },
+    {
+      "name": "creditsafe_floor",
+      "enabled": true,
+      "description": "Reject buyers with ratings considered default-imminent.",
+      "column": "buy_creditsafe_rating",
+      "operator": "in",
+      "value": ["E"],
+      "missing_values_fail": true,
+      "reject_reason": "Buyer CreditSafe rating is E"
+    },
+    {
+      "name": "historical_dispute_ceiling",
+      "enabled": true,
+      "description": "Reject exporters with extreme prior dispute rates.",
+      "column": "exp_historical_dispute_rate",
+      "operator": "greater_equal",
+      "value": 0.08,
+      "missing_values_fail": true,
+      "reject_reason": "Exporter historical dispute rate at or above 8%"
+    }
+  ]
+}
