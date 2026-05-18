@@ -1,0 +1,36 @@
+{
+  "version": "2026-05-18",
+  "egp_per_usd_assumption": 50,
+  "features": [
+    {
+      "name": "ticket_to_revenue_est",
+      "description": "Invoice size relative to exporter annual revenue.",
+      "why_cross_sector": "A large invoice is only risky relative to the exporter's scale.",
+      "higher_is_riskier": true,
+      "weight": 1.0
+    },
+    {
+      "name": "outstanding_to_revenue_est",
+      "description": "Existing Rawasi exposure relative to exporter annual revenue.",
+      "why_cross_sector": "Measures concentration and overextension independent of industry labels.",
+      "higher_is_riskier": true,
+      "weight": 1.0
+    },
+    {
+      "name": "advance_tenor_exposure",
+      "description": "Advance percentage multiplied by payment tenor in days.",
+      "why_cross_sector": "Combines how much Rawasi advances with how long capital is at risk.",
+      "higher_is_riskier": true,
+      "weight": 1.0
+    }
+  ],
+  "benchmark_score": {
+    "low_risk_max": 40,
+    "medium_risk_max": 70
+  },
+  "peer_outliers": {
+    "group_column": "goods_category",
+    "minimum_peer_group_size": 50,
+    "robust_z_threshold": 2.5
+  }
+}

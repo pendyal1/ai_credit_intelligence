@@ -1,0 +1,798 @@
+transaction_id,stage_b_split,status,invoice_date,goods_category,defaulted,stage_b_benchmark_score,stage_b_benchmark_band,stage_b_peer_outlier_count,stage_b_peer_outlier_reasons,ticket_to_revenue_est,outstanding_to_revenue_est,advance_tenor_exposure
+TX-002457,train,paid,2025-05-30,Consumer Goods,0.0,99.30049964311206,High,3,ticket_to_revenue_est high vs goods_category=Consumer Goods; outstanding_to_revenue_est high vs goods_category=Consumer Goods; advance_tenor_exposure high vs goods_category=Consumer Goods,7.84458064516129,108.24343548387097,156.6
+TX-003182,train,paid,2024-11-15,Food,0.0,96.58815132048535,High,3,ticket_to_revenue_est high vs goods_category=Food; outstanding_to_revenue_est high vs goods_category=Food; advance_tenor_exposure high vs goods_category=Food,3.391556451612903,78.2598064516129,133.2
+TX-002578,train,paid,2024-12-07,Textiles,0.0,96.3311920057102,High,3,ticket_to_revenue_est high vs goods_category=Textiles; outstanding_to_revenue_est high vs goods_category=Textiles; advance_tenor_exposure high vs goods_category=Textiles,5.641229508196721,38.46605737704918,136.8
+TX-001387,train,paid,2024-06-19,Agricultural,0.0,96.30264097073518,High,3,ticket_to_revenue_est high vs goods_category=Agricultural; outstanding_to_revenue_est high vs goods_category=Agricultural; advance_tenor_exposure high vs goods_category=Agricultural,3.4820967741935482,39.820024193548385,156.6
+TX-000367,train,paid,2025-01-07,Textiles,0.0,95.74589578872234,High,3,ticket_to_revenue_est high vs goods_category=Textiles; outstanding_to_revenue_est high vs goods_category=Textiles; advance_tenor_exposure high vs goods_category=Textiles,2.893267441860465,49.855808139534886,136.8
+TX-000955,train,defaulted,2025-04-18,Consumer Goods,1.0,95.34618129907209,High,3,ticket_to_revenue_est high vs goods_category=Consumer Goods; outstanding_to_revenue_est high vs goods_category=Consumer Goods; advance_tenor_exposure high vs goods_category=Consumer Goods,2.2452558139534884,90.16482945736433,133.2
+TX-004304,train,paid,2024-11-28,Machinery,0.0,95.27480371163455,High,3,ticket_to_revenue_est high vs goods_category=Machinery; outstanding_to_revenue_est high vs goods_category=Machinery; advance_tenor_exposure high vs goods_category=Machinery,2.355740310077519,60.68046124031008,136.8
+TX-001248,open_holdout,open,2025-11-03,Metals,,94.9036402569593,High,3,ticket_to_revenue_est high vs goods_category=Metals; outstanding_to_revenue_est high vs goods_category=Metals; advance_tenor_exposure high vs goods_category=Metals,2.6724891891891893,29.237202702702703,162.0
+TX-003142,train,paid,2024-05-08,Chemicals,0.0,94.43254817987152,High,3,ticket_to_revenue_est high vs goods_category=Chemicals; outstanding_to_revenue_est high vs goods_category=Chemicals; advance_tenor_exposure high vs goods_category=Chemicals,5.616231481481481,23.96838888888889,135.0
+TX-004446,train,paid,2024-05-07,Machinery,0.0,92.91934332619557,High,3,ticket_to_revenue_est high vs goods_category=Machinery; outstanding_to_revenue_est high vs goods_category=Machinery; advance_tenor_exposure high vs goods_category=Machinery,2.8607209302325582,23.106507751937986,133.2
+TX-004466,train,paid,2025-02-14,Textiles,0.0,91.87723054960742,High,3,ticket_to_revenue_est high vs goods_category=Textiles; outstanding_to_revenue_est high vs goods_category=Textiles; advance_tenor_exposure high vs goods_category=Textiles,2.6164945945945948,18.185564864864865,145.8
+TX-003036,train,paid,2025-05-31,Textiles,0.0,97.58743754461098,High,2,ticket_to_revenue_est high vs goods_category=Textiles; outstanding_to_revenue_est high vs goods_category=Textiles,5.6412051282051285,111.40087179487179,106.8
+TX-004886,train,paid,2025-01-28,Textiles,0.0,97.17344753747322,High,2,ticket_to_revenue_est high vs goods_category=Textiles; outstanding_to_revenue_est high vs goods_category=Textiles,5.240032258064516,86.92620161290323,106.8
+TX-000704,train,paid,2024-09-20,Metals,0.0,96.04568165596001,High,2,ticket_to_revenue_est high vs goods_category=Metals; outstanding_to_revenue_est high vs goods_category=Metals,5.335403846153846,58.239858974358974,104.4
+TX-003077,validation,paid,2025-12-10,Textiles,0.0,95.64596716630977,High,2,ticket_to_revenue_est high vs goods_category=Textiles; outstanding_to_revenue_est high vs goods_category=Textiles,8.002824074074073,115.73825,97.2
+TX-001691,train,paid,2024-11-19,Metals,0.0,95.2177016416845,High,2,ticket_to_revenue_est high vs goods_category=Metals; outstanding_to_revenue_est high vs goods_category=Metals,6.566916666666667,36.31446296296296,104.4
+TX-003504,train,paid,2024-09-18,Consumer Goods,0.0,94.8750892219843,High,2,ticket_to_revenue_est high vs goods_category=Consumer Goods; outstanding_to_revenue_est high vs goods_category=Consumer Goods,7.326758064516129,51.652903225806455,99.6
+TX-001832,open_holdout,open,2025-11-18,Pharmaceuticals,,94.71805852962169,High,2,outstanding_to_revenue_est high vs goods_category=Pharmaceuticals; advance_tenor_exposure high vs goods_category=Pharmaceuticals,1.6345077519379845,145.81922480620156,140.4
+TX-004067,open_holdout,open,2025-11-09,Chemicals,,94.67523197715917,High,2,ticket_to_revenue_est high vs goods_category=Chemicals; outstanding_to_revenue_est high vs goods_category=Chemicals,2.570422480620155,143.2488023255814,100.8
+TX-002900,train,paid,2025-08-06,Chemicals,0.0,94.2469664525339,High,2,ticket_to_revenue_est high vs goods_category=Chemicals; outstanding_to_revenue_est high vs goods_category=Chemicals,2.1741589147286824,119.4384496124031,103.2
+TX-002761,train,defaulted,2025-07-17,Pharmaceuticals,1.0,93.90435403283368,High,2,ticket_to_revenue_est high vs goods_category=Pharmaceuticals; outstanding_to_revenue_est high vs goods_category=Pharmaceuticals,2.4816279069767444,113.58696511627907,99.6
+TX-002202,open_holdout,open,2026-01-21,Metals,,93.73304782298358,High,2,ticket_to_revenue_est high vs goods_category=Metals; outstanding_to_revenue_est high vs goods_category=Metals,10.073120689655173,32.98556896551724,98.39999999999999
+TX-001576,open_holdout,open,2025-10-11,Textiles,,93.43326195574588,High,2,ticket_to_revenue_est high vs goods_category=Textiles; outstanding_to_revenue_est high vs goods_category=Textiles,3.280050387596899,133.10970542635658,92.4
+TX-000673,open_holdout,open,2025-11-04,Machinery,,93.34760885082085,High,2,outstanding_to_revenue_est high vs goods_category=Machinery; advance_tenor_exposure high vs goods_category=Machinery,1.422851724137931,70.48198965517241,153.0
+TX-004264,train,paid,2024-09-10,Metals,0.0,93.13347608850822,High,2,ticket_to_revenue_est high vs goods_category=Metals; outstanding_to_revenue_est high vs goods_category=Metals,3.460147435897436,54.77971153846154,96.0
+TX-003174,train,paid,2024-06-25,Machinery,0.0,92.91934332619557,High,2,ticket_to_revenue_est high vs goods_category=Machinery; outstanding_to_revenue_est high vs goods_category=Machinery,7.420475409836065,19.888090163934425,104.4
+TX-004340,train,paid,2025-04-18,Machinery,0.0,92.74803711634547,High,2,ticket_to_revenue_est high vs goods_category=Machinery; outstanding_to_revenue_est high vs goods_category=Machinery,1.6270320512820513,102.74774358974359,103.2
+TX-002148,train,paid,2023-11-23,Pharmaceuticals,0.0,92.71948608137045,High,2,ticket_to_revenue_est high vs goods_category=Pharmaceuticals; advance_tenor_exposure high vs goods_category=Pharmaceuticals,5.3977258064516125,16.609991935483873,142.20000000000002
+TX-004292,train,paid,2025-08-09,Metals,0.0,92.37687366167023,High,2,ticket_to_revenue_est high vs goods_category=Metals; outstanding_to_revenue_est high vs goods_category=Metals,3.6602592592592593,97.2430462962963,87.6
+TX-003205,train,paid,2025-03-12,Consumer Goods,0.0,92.20556745182013,High,2,ticket_to_revenue_est high vs goods_category=Consumer Goods; outstanding_to_revenue_est high vs goods_category=Consumer Goods,3.9195583333333333,24.501008333333335,100.8
+TX-004359,train,paid,2025-08-05,Metals,0.0,92.1770164168451,High,2,ticket_to_revenue_est high vs goods_category=Metals; outstanding_to_revenue_est high vs goods_category=Metals,4.237962962962963,93.00508333333333,85.19999999999999
+TX-001563,train,paid,2024-04-01,Machinery,0.0,92.06281227694502,High,2,ticket_to_revenue_est high vs goods_category=Machinery; outstanding_to_revenue_est high vs goods_category=Machinery,3.7693023255813953,19.33720542635659,105.6
+TX-004534,open_holdout,open,2026-02-15,Machinery,,91.6773733047823,High,2,ticket_to_revenue_est high vs goods_category=Machinery; outstanding_to_revenue_est high vs goods_category=Machinery,2.7937006172839505,30.36239814814815,99.6
+TX-001156,validation,paid,2025-11-22,Machinery,0.0,91.57744468236973,High,2,ticket_to_revenue_est high vs goods_category=Machinery; outstanding_to_revenue_est high vs goods_category=Machinery,2.9998592592592592,32.46695185185185,96.0
+TX-003054,open_holdout,open,2025-10-08,Metals,,91.53461812990719,High,2,ticket_to_revenue_est high vs goods_category=Metals; outstanding_to_revenue_est high vs goods_category=Metals,4.604269230769231,143.9448717948718,79.2
+TX-002063,train,paid,2025-03-22,Textiles,0.0,91.47751605995717,High,2,ticket_to_revenue_est high vs goods_category=Textiles; outstanding_to_revenue_est high vs goods_category=Textiles,2.4096891891891894,20.80205945945946,108.0
+TX-000701,train,defaulted,2025-08-22,Food,1.0,91.40613847251963,High,2,ticket_to_revenue_est high vs goods_category=Food; outstanding_to_revenue_est high vs goods_category=Food,1.7298854166666666,50.780514583333336,100.8
+TX-004545,train,paid,2025-09-07,Pharmaceuticals,0.0,91.16345467523196,High,2,ticket_to_revenue_est high vs goods_category=Pharmaceuticals; outstanding_to_revenue_est high vs goods_category=Pharmaceuticals,5.222508064516129,135.78310483870968,78.3
+TX-001386,train,paid,2025-02-21,Pharmaceuticals,0.0,90.99214846538186,High,2,ticket_to_revenue_est high vs goods_category=Pharmaceuticals; outstanding_to_revenue_est high vs goods_category=Pharmaceuticals,3.4433100775193797,75.43147674418604,81.0
+TX-001798,train,paid,2024-12-18,Pharmaceuticals,0.0,90.96359743040685,High,2,ticket_to_revenue_est high vs goods_category=Pharmaceuticals; outstanding_to_revenue_est high vs goods_category=Pharmaceuticals,4.0189367088607595,28.338189873417722,92.4
+TX-003303,train,paid,2025-08-14,Pharmaceuticals,0.0,90.74946466809422,High,2,ticket_to_revenue_est high vs goods_category=Pharmaceuticals; outstanding_to_revenue_est high vs goods_category=Pharmaceuticals,5.192734042553192,25.172297872340426,92.4
+TX-003010,validation,paid,2025-12-14,Food,0.0,90.70663811563169,High,2,ticket_to_revenue_est high vs goods_category=Food; outstanding_to_revenue_est high vs goods_category=Food,1.8080442477876106,46.062774336283184,98.39999999999999
+TX-002571,train,paid,2025-08-10,Textiles,0.0,90.66381156316916,High,2,ticket_to_revenue_est high vs goods_category=Textiles; outstanding_to_revenue_est high vs goods_category=Textiles,8.036435483870967,127.74666935483872,76.5
+TX-002804,open_holdout,open,2025-12-14,Agricultural,,90.63526052819414,High,2,outstanding_to_revenue_est high vs goods_category=Agricultural; advance_tenor_exposure high vs goods_category=Agricultural,1.257056338028169,37.91068838028169,147.6
+TX-000521,train,paid,2025-03-23,Metals,0.0,90.06423982869379,High,2,ticket_to_revenue_est high vs goods_category=Metals; outstanding_to_revenue_est high vs goods_category=Metals,2.9837017543859647,30.50148245614035,90.0
+TX-001004,train,paid,2025-05-27,Agricultural,0.0,89.80728051391863,High,2,ticket_to_revenue_est high vs goods_category=Agricultural; outstanding_to_revenue_est high vs goods_category=Agricultural,3.5382833333333332,38.84198333333333,84.0
+TX-003210,train,paid,2024-01-20,Food,0.0,89.63597430406853,High,2,outstanding_to_revenue_est high vs goods_category=Food; advance_tenor_exposure high vs goods_category=Food,1.3393145161290323,22.007717741935483,158.4
+TX-004599,validation,paid,2025-10-20,Food,0.0,89.63597430406851,High,2,ticket_to_revenue_est high vs goods_category=Food; outstanding_to_revenue_est high vs goods_category=Food,2.0938722466960353,22.849574889867842,100.8
+TX-004499,train,paid,2025-07-29,Food,0.0,89.46466809421841,High,2,ticket_to_revenue_est high vs goods_category=Food; outstanding_to_revenue_est high vs goods_category=Food,3.241987341772152,41.077974683544305,80.1
+TX-002234,train,paid,2024-12-19,Chemicals,0.0,89.37901498929335,High,2,ticket_to_revenue_est high vs goods_category=Chemicals; outstanding_to_revenue_est high vs goods_category=Chemicals,2.0517441860465118,46.599866279069765,88.8
+TX-001441,validation,paid,2025-12-30,Agricultural,0.0,89.15060670949322,High,2,ticket_to_revenue_est high vs goods_category=Agricultural; outstanding_to_revenue_est high vs goods_category=Agricultural,15.375076923076923,100.25073076923077,73.8
+TX-003695,open_holdout,open,2025-11-04,Chemicals,,88.93647394718056,High,2,ticket_to_revenue_est high vs goods_category=Chemicals; outstanding_to_revenue_est high vs goods_category=Chemicals,3.4194147286821703,138.33667441860464,75.6
+TX-001098,train,paid,2025-09-05,Agricultural,0.0,88.79371877230548,High,2,ticket_to_revenue_est high vs goods_category=Agricultural; outstanding_to_revenue_est high vs goods_category=Agricultural,5.1250949367088605,44.31996202531646,77.4
+TX-003324,open_holdout,open,2025-12-16,Metals,,88.60813704496786,High,2,ticket_to_revenue_est high vs goods_category=Metals; outstanding_to_revenue_est high vs goods_category=Metals,4.400572580645162,165.94442741935484,73.8
+TX-003260,open_holdout,open,2025-08-28,Metals,,88.43683083511776,High,2,ticket_to_revenue_est high vs goods_category=Metals; outstanding_to_revenue_est high vs goods_category=Metals,3.416871794871795,133.93309615384615,74.7
+TX-003009,train,paid,2025-01-12,Agricultural,0.0,88.37972876516773,High,2,ticket_to_revenue_est high vs goods_category=Agricultural; outstanding_to_revenue_est high vs goods_category=Agricultural,3.5003888888888888,59.24882407407407,76.5
+TX-000859,train,paid,2025-07-02,Consumer Goods,0.0,88.26552462526766,High,2,ticket_to_revenue_est high vs goods_category=Consumer Goods; outstanding_to_revenue_est high vs goods_category=Consumer Goods,3.1004689655172415,39.89429310344828,78.3
+TX-001043,train,paid,2024-11-23,Consumer Goods,0.0,87.95146324054247,High,2,ticket_to_revenue_est high vs goods_category=Consumer Goods; outstanding_to_revenue_est high vs goods_category=Consumer Goods,3.0490620689655175,25.172296551724138,81.0
+TX-000530,train,paid,2025-01-02,Consumer Goods,0.0,87.26623840114203,High,2,ticket_to_revenue_est high vs goods_category=Consumer Goods; outstanding_to_revenue_est high vs goods_category=Consumer Goods,5.865794871794872,77.4664358974359,72.0
+TX-000361,train,paid,2024-05-10,Food,0.0,87.19486081370448,High,2,ticket_to_revenue_est high vs goods_category=Food; outstanding_to_revenue_est high vs goods_category=Food,7.589467741935484,23.347032258064516,77.4
+TX-002079,open_holdout,open,2026-02-05,Food,,86.83797287651676,High,2,ticket_to_revenue_est high vs goods_category=Food; outstanding_to_revenue_est high vs goods_category=Food,2.139093023255814,156.31367829457363,74.7
+TX-004038,train,defaulted,2025-06-14,Machinery,1.0,86.78087080656672,High,2,ticket_to_revenue_est high vs goods_category=Machinery; outstanding_to_revenue_est high vs goods_category=Machinery,3.557903100775194,102.20614341085272,72.0
+TX-001292,open_holdout,open,2025-10-30,Machinery,,86.20985010706637,High,2,outstanding_to_revenue_est high vs goods_category=Machinery; advance_tenor_exposure high vs goods_category=Machinery,0.8314299610894942,33.972108949416345,145.8
+TX-002087,open_holdout,open,2026-03-02,Pharmaceuticals,,86.16702355460384,High,2,ticket_to_revenue_est high vs goods_category=Pharmaceuticals; advance_tenor_exposure high vs goods_category=Pharmaceuticals,2.044409090909091,10.556198347107438,136.8
+TX-001587,train,paid,2025-01-13,Machinery,0.0,85.99571734475374,High,2,ticket_to_revenue_est high vs goods_category=Machinery; outstanding_to_revenue_est high vs goods_category=Machinery,1.851216814159292,20.135194690265486,88.8
+TX-000487,open_holdout,open,2026-03-01,Chemicals,,85.88151320485368,High,2,outstanding_to_revenue_est high vs goods_category=Chemicals; advance_tenor_exposure high vs goods_category=Chemicals,0.8066284046692607,41.506260700389106,135.0
+TX-001053,train,paid,2024-04-19,Textiles,0.0,85.82441113490364,High,2,ticket_to_revenue_est high vs goods_category=Textiles; outstanding_to_revenue_est high vs goods_category=Textiles,5.659746835443038,19.206930379746836,77.4
+TX-003678,train,paid,2025-01-30,Food,0.0,85.65310492505353,High,2,ticket_to_revenue_est high vs goods_category=Food; outstanding_to_revenue_est high vs goods_category=Food,4.99625,83.33223076923078,69.3
+TX-001185,train,paid,2025-05-07,Pharmaceuticals,0.0,85.59600285510348,High,2,ticket_to_revenue_est high vs goods_category=Pharmaceuticals; outstanding_to_revenue_est high vs goods_category=Pharmaceuticals,4.713647540983606,50.24631967213115,71.10000000000001
+TX-004269,train,paid,2024-11-15,Metals,0.0,85.4389721627409,High,2,ticket_to_revenue_est high vs goods_category=Metals; outstanding_to_revenue_est high vs goods_category=Metals,2.2969241379310343,22.314572413793105,79.2
+TX-004702,train,defaulted,2025-09-22,Consumer Goods,1.0,85.32476802284081,High,2,ticket_to_revenue_est high vs goods_category=Consumer Goods; outstanding_to_revenue_est high vs goods_category=Consumer Goods,7.764782258064516,148.26104838709676,66.6
+TX-003807,open_holdout,open,2025-11-18,Metals,,85.23911491791577,High,2,ticket_to_revenue_est high vs goods_category=Metals; outstanding_to_revenue_est high vs goods_category=Metals,2.5791007751937984,147.45373255813954,70.2
+TX-004793,train,paid,2025-05-13,Agricultural,0.0,85.18201284796572,High,2,outstanding_to_revenue_est high vs goods_category=Agricultural; advance_tenor_exposure high vs goods_category=Agricultural,0.7955264227642277,24.924315040650406,162.0
+TX-003011,train,paid,2024-08-11,Chemicals,0.0,85.08208422555317,High,2,ticket_to_revenue_est high vs goods_category=Chemicals; outstanding_to_revenue_est high vs goods_category=Chemicals,3.2811317829457365,43.197271317829454,72.0
+TX-003937,train,paid,2025-07-01,Chemicals,0.0,85.01070663811562,High,2,ticket_to_revenue_est high vs goods_category=Chemicals; outstanding_to_revenue_est high vs goods_category=Chemicals,2.5016172413793103,37.39267586206896,73.8
+TX-000429,train,paid,2024-07-14,Chemicals,0.0,84.82512491077802,High,2,ticket_to_revenue_est high vs goods_category=Chemicals; advance_tenor_exposure high vs goods_category=Chemicals,1.55656338028169,10.157158450704225,151.2
+TX-002474,train,paid,2025-06-15,Agricultural,0.0,84.53961456102785,High,2,ticket_to_revenue_est high vs goods_category=Agricultural; outstanding_to_revenue_est high vs goods_category=Agricultural,2.925875968992248,105.76404651162791,68.4
+TX-001284,train,paid,2025-01-28,Agricultural,0.0,84.26837972876517,High,2,ticket_to_revenue_est high vs goods_category=Agricultural; outstanding_to_revenue_est high vs goods_category=Agricultural,9.419192307692308,57.67888461538462,66.6
+TX-003414,train,paid,2025-01-11,Pharmaceuticals,0.0,83.98286937901499,High,2,ticket_to_revenue_est high vs goods_category=Pharmaceuticals; outstanding_to_revenue_est high vs goods_category=Pharmaceuticals,2.4538103448275863,31.967631034482757,72.9
+TX-003490,train,paid,2025-05-22,Machinery,0.0,83.91149179157745,High,2,ticket_to_revenue_est high vs goods_category=Machinery; outstanding_to_revenue_est high vs goods_category=Machinery,2.5611744186046512,93.34787984496124,68.4
+TX-004515,validation,paid,2025-11-25,Chemicals,0.0,83.91149179157745,High,2,ticket_to_revenue_est high vs goods_category=Chemicals; outstanding_to_revenue_est high vs goods_category=Chemicals,2.473388888888889,27.3379475308642,73.8
+TX-001405,train,paid,2024-05-05,Textiles,0.0,83.41184867951463,High,2,outstanding_to_revenue_est high vs goods_category=Textiles; advance_tenor_exposure high vs goods_category=Textiles,0.8409302325581396,18.870133720930234,136.8
+TX-000557,train,paid,2025-05-20,Metals,0.0,83.11206281227693,High,2,ticket_to_revenue_est high vs goods_category=Metals; outstanding_to_revenue_est high vs goods_category=Metals,2.4635872093023257,60.60947093023256,68.4
+TX-002901,open_holdout,open,2026-01-15,Chemicals,,82.94075660242683,High,2,ticket_to_revenue_est high vs goods_category=Chemicals; outstanding_to_revenue_est high vs goods_category=Chemicals,3.54309649122807,56.076052631578946,66.6
+TX-000377,train,paid,2024-05-29,Consumer Goods,0.0,82.84082798001427,High,2,ticket_to_revenue_est high vs goods_category=Consumer Goods; outstanding_to_revenue_est high vs goods_category=Consumer Goods,2.625279069767442,22.92088953488372,72.9
+TX-002838,train,paid,2024-09-01,Pharmaceuticals,0.0,82.79800142755175,High,2,ticket_to_revenue_est high vs goods_category=Pharmaceuticals; outstanding_to_revenue_est high vs goods_category=Pharmaceuticals,2.2313910256410256,52.54832051282051,69.3
+TX-003387,train,paid,2024-12-22,Chemicals,0.0,82.7266238401142,High,2,ticket_to_revenue_est high vs goods_category=Chemicals; outstanding_to_revenue_est high vs goods_category=Chemicals,2.191201550387597,72.14276744186047,68.4
+TX-003917,train,paid,2025-07-30,Agricultural,0.0,82.36973590292648,High,2,ticket_to_revenue_est high vs goods_category=Agricultural; outstanding_to_revenue_est high vs goods_category=Agricultural,2.2971147540983607,73.30309836065574,67.5
+TX-002644,train,paid,2024-12-16,Pharmaceuticals,0.0,82.31263383297643,High,2,ticket_to_revenue_est high vs goods_category=Pharmaceuticals; outstanding_to_revenue_est high vs goods_category=Pharmaceuticals,2.416451612903226,81.6513629032258,66.6
+TX-004114,train,paid,2024-11-20,Textiles,0.0,82.29835831548894,High,2,ticket_to_revenue_est high vs goods_category=Textiles; outstanding_to_revenue_est high vs goods_category=Textiles,6.515362068965517,26.470206896551723,67.5
+TX-001510,train,paid,2025-03-26,Machinery,0.0,82.19842969307636,High,2,ticket_to_revenue_est high vs goods_category=Machinery; outstanding_to_revenue_est high vs goods_category=Machinery,3.179968992248062,80.20688759689922,64.8
+TX-001998,open_holdout,open,2025-11-29,Consumer Goods,,82.18415417558886,High,2,ticket_to_revenue_est high vs goods_category=Consumer Goods; outstanding_to_revenue_est high vs goods_category=Consumer Goods,7.23975,158.70467741935485,52.8
+TX-004780,train,paid,2025-05-24,Agricultural,0.0,82.15560314061385,High,2,ticket_to_revenue_est high vs goods_category=Agricultural; outstanding_to_revenue_est high vs goods_category=Agricultural,2.684219298245614,43.397543859649126,67.5
+TX-002787,train,paid,2024-08-02,Food,0.0,81.62740899357601,High,2,ticket_to_revenue_est high vs goods_category=Food; outstanding_to_revenue_est high vs goods_category=Food,5.6785,44.193145161290325,63.9
+TX-003071,train,paid,2025-05-06,Chemicals,0.0,81.39900071377588,High,2,ticket_to_revenue_est high vs goods_category=Chemicals; outstanding_to_revenue_est high vs goods_category=Chemicals,2.33139417989418,19.686777777777777,72.9
+TX-000621,train,paid,2025-06-14,Food,0.0,81.38472519628836,High,2,ticket_to_revenue_est high vs goods_category=Food; outstanding_to_revenue_est high vs goods_category=Food,2.3642945736434107,99.8418488372093,64.8
+TX-002147,open_holdout,open,2025-12-25,Chemicals,,81.37044967880085,High,2,outstanding_to_revenue_est high vs goods_category=Chemicals; advance_tenor_exposure high vs goods_category=Chemicals,0.6683375,19.5430525,145.8
+TX-001851,train,paid,2025-09-08,Pharmaceuticals,0.0,81.28479657387581,High,2,ticket_to_revenue_est high vs goods_category=Pharmaceuticals; outstanding_to_revenue_est high vs goods_category=Pharmaceuticals,7.255435483870968,141.0056129032258,51.6
+TX-002385,train,paid,2024-04-15,Machinery,0.0,81.25624553890079,High,2,ticket_to_revenue_est high vs goods_category=Machinery; outstanding_to_revenue_est high vs goods_category=Machinery,3.665948717948718,22.429903846153845,68.4
+TX-004876,open_holdout,open,2025-12-31,Agricultural,,81.25624553890079,High,2,ticket_to_revenue_est high vs goods_category=Agricultural; outstanding_to_revenue_est high vs goods_category=Agricultural,2.8877310344827585,51.11524482758621,64.8
+TX-004368,open_holdout,open,2025-12-24,Food,,81.21341898643824,High,2,ticket_to_revenue_est high vs goods_category=Food; outstanding_to_revenue_est high vs goods_category=Food,2.6696918604651163,81.76605813953488,63.9
+TX-003222,train,paid,2025-05-24,Machinery,0.0,81.09921484653817,High,2,ticket_to_revenue_est high vs goods_category=Machinery; outstanding_to_revenue_est high vs goods_category=Machinery,3.854807692307692,106.49289102564103,52.8
+TX-004597,train,paid,2024-06-16,Chemicals,0.0,80.99928622412563,High,2,ticket_to_revenue_est high vs goods_category=Chemicals; outstanding_to_revenue_est high vs goods_category=Chemicals,2.9235806451612905,30.9365,66.6
+TX-003499,validation,paid,2025-12-03,Consumer Goods,0.0,80.94218415417558,High,2,ticket_to_revenue_est high vs goods_category=Consumer Goods; outstanding_to_revenue_est high vs goods_category=Consumer Goods,1.930527027027027,31.909691891891892,69.3
+TX-002455,train,paid,2024-11-19,Metals,0.0,80.77087794432548,High,2,ticket_to_revenue_est high vs goods_category=Metals; outstanding_to_revenue_est high vs goods_category=Metals,4.1884551282051286,73.27798076923077,52.8
+TX-001944,train,paid,2025-08-19,Pharmaceuticals,0.0,80.72805139186295,High,2,ticket_to_revenue_est high vs goods_category=Pharmaceuticals; outstanding_to_revenue_est high vs goods_category=Pharmaceuticals,6.039358974358974,127.89373717948718,51.0
+TX-002671,train,paid,2025-03-28,Agricultural,0.0,80.58529621698787,High,2,outstanding_to_revenue_est high vs goods_category=Agricultural; advance_tenor_exposure high vs goods_category=Agricultural,0.5797898832684825,22.053618677042802,160.2
+TX-001411,open_holdout,open,2025-09-11,Machinery,,80.52819414703782,High,2,outstanding_to_revenue_est high vs goods_category=Machinery; advance_tenor_exposure high vs goods_category=Machinery,0.6133008720930233,18.936471656976746,158.4
+TX-004758,train,paid,2024-07-25,Consumer Goods,0.0,79.62883654532476,High,2,ticket_to_revenue_est high vs goods_category=Consumer Goods; outstanding_to_revenue_est high vs goods_category=Consumer Goods,2.897825581395349,28.74118023255814,64.8
+TX-000982,train,paid,2025-06-26,Machinery,0.0,79.61456102783725,High,2,ticket_to_revenue_est high vs goods_category=Machinery; outstanding_to_revenue_est high vs goods_category=Machinery,9.896571428571429,21.57876530612245,63.9
+TX-003583,train,paid,2024-07-27,Agricultural,0.0,79.28622412562456,High,2,ticket_to_revenue_est high vs goods_category=Agricultural; outstanding_to_revenue_est high vs goods_category=Agricultural,2.4946356589147287,30.637833333333333,64.8
+TX-004538,open_holdout,open,2025-10-29,Textiles,,79.27194860813704,High,2,outstanding_to_revenue_est high vs goods_category=Textiles; advance_tenor_exposure high vs goods_category=Textiles,0.5725988372093024,20.658015988372092,140.4
+TX-003848,train,paid,2024-11-06,Textiles,0.0,79.24339757316203,High,2,ticket_to_revenue_est high vs goods_category=Textiles; outstanding_to_revenue_est high vs goods_category=Textiles,6.729842592592592,29.58462037037037,52.8
+TX-001849,train,paid,2025-04-06,Food,0.0,79.17201998572448,High,2,ticket_to_revenue_est high vs goods_category=Food; outstanding_to_revenue_est high vs goods_category=Food,2.0385697674418606,85.62528294573643,54.0
+TX-000614,train,paid,2024-10-11,Machinery,0.0,79.11491791577444,High,2,ticket_to_revenue_est high vs goods_category=Machinery; outstanding_to_revenue_est high vs goods_category=Machinery,7.04025,58.97966129032258,50.4
+TX-000650,train,paid,2025-05-20,Machinery,0.0,78.82940756602426,High,2,ticket_to_revenue_est high vs goods_category=Machinery; outstanding_to_revenue_est high vs goods_category=Machinery,3.826017543859649,39.57152631578948,52.2
+TX-001380,train,defaulted,2025-01-12,Agricultural,1.0,78.77230549607422,High,2,ticket_to_revenue_est high vs goods_category=Agricultural; outstanding_to_revenue_est high vs goods_category=Agricultural,1.9160583333333334,28.0566125,66.6
+TX-002649,train,paid,2024-04-14,Metals,0.0,78.75802997858672,High,2,ticket_to_revenue_est high vs goods_category=Metals; outstanding_to_revenue_est high vs goods_category=Metals,4.479101851851852,19.489287037037037,64.8
+TX-001513,train,paid,2025-09-26,Pharmaceuticals,0.0,78.65810135617417,High,2,ticket_to_revenue_est high vs goods_category=Pharmaceuticals; outstanding_to_revenue_est high vs goods_category=Pharmaceuticals,2.3431,50.7396,53.4
+TX-003653,train,paid,2024-12-19,Food,0.0,77.98715203426124,High,2,ticket_to_revenue_est high vs goods_category=Food; outstanding_to_revenue_est high vs goods_category=Food,1.900031007751938,70.24273643410852,52.8
+TX-004365,train,paid,2024-12-30,Textiles,0.0,77.95860099928622,High,2,ticket_to_revenue_est high vs goods_category=Textiles; outstanding_to_revenue_est high vs goods_category=Textiles,1.81941592920354,18.315778761061946,69.3
+TX-000960,train,defaulted,2025-08-07,Machinery,1.0,77.74446823697359,High,2,ticket_to_revenue_est high vs goods_category=Machinery; outstanding_to_revenue_est high vs goods_category=Machinery,2.3770891472868216,121.61260852713178,50.4
+TX-001713,train,paid,2025-07-21,Chemicals,0.0,77.54461099214846,High,2,ticket_to_revenue_est high vs goods_category=Chemicals; outstanding_to_revenue_est high vs goods_category=Chemicals,1.6410687830687831,25.133214285714285,66.6
+TX-004668,train,paid,2024-10-04,Chemicals,0.0,77.53033547466096,High,2,ticket_to_revenue_est high vs goods_category=Chemicals; outstanding_to_revenue_est high vs goods_category=Chemicals,2.5227248062015506,51.02306976744186,51.0
+TX-002576,train,paid,2024-10-27,Chemicals,0.0,77.33047822983583,High,2,ticket_to_revenue_est high vs goods_category=Chemicals; outstanding_to_revenue_est high vs goods_category=Chemicals,11.195423076923078,36.531615384615385,49.199999999999996
+TX-004249,train,paid,2025-07-08,Consumer Goods,0.0,77.17344753747322,High,2,ticket_to_revenue_est high vs goods_category=Consumer Goods; outstanding_to_revenue_est high vs goods_category=Consumer Goods,6.508338709677419,121.23833064516128,46.2
+TX-002456,train,paid,2024-11-07,Textiles,0.0,77.15917201998573,High,2,ticket_to_revenue_est high vs goods_category=Textiles; outstanding_to_revenue_est high vs goods_category=Textiles,5.683814516129032,72.57599193548387,47.400000000000006
+TX-002549,train,paid,2025-06-13,Metals,0.0,76.93076374018557,High,2,ticket_to_revenue_est high vs goods_category=Metals; outstanding_to_revenue_est high vs goods_category=Metals,2.8621944444444445,90.14288888888889,48.6
+TX-004409,train,paid,2024-12-07,Agricultural,0.0,76.91648822269806,High,2,ticket_to_revenue_est high vs goods_category=Agricultural; outstanding_to_revenue_est high vs goods_category=Agricultural,8.558268518518519,42.88137962962963,48.0
+TX-003345,train,paid,2025-03-27,Textiles,0.0,76.78800856531048,High,2,ticket_to_revenue_est high vs goods_category=Textiles; outstanding_to_revenue_est high vs goods_category=Textiles,3.6266052631578947,33.48518421052631,50.4
+TX-002531,train,paid,2025-03-28,Textiles,0.0,76.57387580299785,High,2,ticket_to_revenue_est high vs goods_category=Textiles; outstanding_to_revenue_est high vs goods_category=Textiles,2.459736842105263,37.11178947368421,51.0
+TX-004355,train,paid,2025-08-17,Agricultural,0.0,76.51677373304781,High,2,ticket_to_revenue_est high vs goods_category=Agricultural; outstanding_to_revenue_est high vs goods_category=Agricultural,2.8670968992248063,123.98969767441861,47.400000000000006
+TX-004460,train,paid,2024-08-20,Pharmaceuticals,0.0,76.20271234832262,High,2,ticket_to_revenue_est high vs goods_category=Pharmaceuticals; outstanding_to_revenue_est high vs goods_category=Pharmaceuticals,1.7812580645161291,49.871645161290324,51.6
+TX-001143,open_holdout,open,2026-03-25,Food,,76.13133476088507,High,2,ticket_to_revenue_est high vs goods_category=Food; outstanding_to_revenue_est high vs goods_category=Food,1.8151511627906978,161.37504263565893,49.8
+TX-002389,train,paid,2025-08-29,Pharmaceuticals,0.0,76.11705924339756,High,2,ticket_to_revenue_est high vs goods_category=Pharmaceuticals; outstanding_to_revenue_est high vs goods_category=Pharmaceuticals,1.71953125,52.5104,51.6
+TX-003680,validation,paid,2025-11-16,Consumer Goods,0.0,76.04568165596001,High,2,ticket_to_revenue_est high vs goods_category=Consumer Goods; outstanding_to_revenue_est high vs goods_category=Consumer Goods,5.818740740740741,109.91950925925926,45.0
+TX-001886,train,paid,2024-07-29,Chemicals,0.0,75.8315488936474,High,2,ticket_to_revenue_est high vs goods_category=Chemicals; outstanding_to_revenue_est high vs goods_category=Chemicals,1.5202622950819673,27.30856557377049,63.9
+TX-001492,train,paid,2025-08-15,Pharmaceuticals,0.0,75.80299785867237,High,2,ticket_to_revenue_est high vs goods_category=Pharmaceuticals; outstanding_to_revenue_est high vs goods_category=Pharmaceuticals,1.8232209302325582,68.88171511627907,50.4
+TX-004077,train,paid,2025-04-16,Machinery,0.0,75.61741613133475,High,2,ticket_to_revenue_est high vs goods_category=Machinery; outstanding_to_revenue_est high vs goods_category=Machinery,2.5009767441860467,87.6638527131783,47.400000000000006
+TX-001524,open_holdout,open,2026-01-14,Chemicals,,75.51748750892219,High,2,ticket_to_revenue_est high vs goods_category=Chemicals; outstanding_to_revenue_est high vs goods_category=Chemicals,3.6253629032258066,170.345,45.0
+TX-004066,validation,paid,2025-11-28,Pharmaceuticals,0.0,75.5032119914347,High,2,ticket_to_revenue_est high vs goods_category=Pharmaceuticals; outstanding_to_revenue_est high vs goods_category=Pharmaceuticals,1.7876548672566372,44.27511946902655,51.0
+TX-003347,train,paid,2024-05-26,Agricultural,0.0,75.48893647394718,High,2,ticket_to_revenue_est high vs goods_category=Agricultural; outstanding_to_revenue_est high vs goods_category=Agricultural,3.471512658227848,24.866677215189874,50.4
+TX-001574,validation,paid,2026-01-22,Consumer Goods,0.0,75.41755888650964,High,2,ticket_to_revenue_est high vs goods_category=Consumer Goods; outstanding_to_revenue_est high vs goods_category=Consumer Goods,5.199307692307692,115.62580769230769,44.4
+TX-000801,train,paid,2025-05-25,Food,0.0,75.3604568165596,High,2,ticket_to_revenue_est high vs goods_category=Food; outstanding_to_revenue_est high vs goods_category=Food,4.441006329113924,36.63696835443038,47.400000000000006
+TX-001112,train,paid,2025-05-11,Textiles,0.0,75.18915060670949,High,2,ticket_to_revenue_est high vs goods_category=Textiles; outstanding_to_revenue_est high vs goods_category=Textiles,2.8868,35.95518333333333,48.6
+TX-001705,validation,paid,2026-01-06,Agricultural,0.0,75.13204853675946,High,2,ticket_to_revenue_est high vs goods_category=Agricultural; outstanding_to_revenue_est high vs goods_category=Agricultural,3.744219298245614,52.331833333333336,46.2
+TX-000215,train,paid,2024-11-12,Food,0.0,75.0321199143469,High,2,ticket_to_revenue_est high vs goods_category=Food; outstanding_to_revenue_est high vs goods_category=Food,2.1967051282051284,71.08127564102564,48.0
+TX-002865,train,paid,2025-07-07,Machinery,0.0,74.93219129193433,High,2,ticket_to_revenue_est high vs goods_category=Machinery; outstanding_to_revenue_est high vs goods_category=Machinery,3.8604912280701753,46.081763157894734,46.2
+TX-000522,train,paid,2025-03-10,Pharmaceuticals,0.0,74.70378301213418,High,2,outstanding_to_revenue_est high vs goods_category=Pharmaceuticals; advance_tenor_exposure high vs goods_category=Pharmaceuticals,0.39247154471544715,19.358209349593498,162.0
+TX-002316,train,paid,2024-09-16,Food,0.0,74.68950749464668,High,2,ticket_to_revenue_est high vs goods_category=Food; outstanding_to_revenue_est high vs goods_category=Food,7.201409836065574,31.264647540983606,46.2
+TX-001072,train,paid,2024-10-09,Metals,0.0,74.64668094218415,High,2,ticket_to_revenue_est high vs goods_category=Metals; advance_tenor_exposure high vs goods_category=Metals,2.043929268292683,2.346390243902439,147.6
+TX-000633,train,paid,2025-08-18,Pharmaceuticals,0.0,74.17558886509636,High,2,ticket_to_revenue_est high vs goods_category=Pharmaceuticals; outstanding_to_revenue_est high vs goods_category=Pharmaceuticals,2.688806896551724,43.341779310344826,46.800000000000004
+TX-000954,train,paid,2025-02-10,Machinery,0.0,74.16131334760885,High,2,ticket_to_revenue_est high vs goods_category=Machinery; outstanding_to_revenue_est high vs goods_category=Machinery,3.6777704918032788,44.1072868852459,45.6
+TX-003811,open_holdout,open,2026-03-02,Machinery,,74.0756602426838,High,2,outstanding_to_revenue_est high vs goods_category=Machinery; advance_tenor_exposure high vs goods_category=Machinery,0.29691463414634145,41.202315040650404,156.6
+TX-002741,train,paid,2024-08-24,Chemicals,0.0,74.01855817273376,High,2,ticket_to_revenue_est high vs goods_category=Chemicals; outstanding_to_revenue_est high vs goods_category=Chemicals,6.339269230769231,41.401826923076925,44.4
+TX-001009,train,paid,2025-09-27,Agricultural,0.0,73.70449678800857,High,2,ticket_to_revenue_est high vs goods_category=Agricultural; outstanding_to_revenue_est high vs goods_category=Agricultural,2.041287610619469,35.99374778761062,48.6
+TX-003133,train,paid,2024-10-08,Consumer Goods,0.0,73.70449678800856,High,2,ticket_to_revenue_est high vs goods_category=Consumer Goods; outstanding_to_revenue_est high vs goods_category=Consumer Goods,5.781211538461538,63.57526282051282,42.599999999999994
+TX-002299,train,paid,2025-06-23,Textiles,0.0,73.64739471805854,High,2,ticket_to_revenue_est high vs goods_category=Textiles; outstanding_to_revenue_est high vs goods_category=Textiles,1.8495666666666666,42.380266666666664,48.6
+TX-000978,train,paid,2024-06-11,Consumer Goods,0.0,73.60456816559599,High,2,ticket_to_revenue_est high vs goods_category=Consumer Goods; outstanding_to_revenue_est high vs goods_category=Consumer Goods,3.9982179487179486,26.095852564102564,46.800000000000004
+TX-000200,train,paid,2025-02-23,Machinery,0.0,73.57601713062098,High,2,ticket_to_revenue_est high vs goods_category=Machinery; outstanding_to_revenue_est high vs goods_category=Machinery,5.034879032258065,99.06595967741936,42.0
+TX-000845,train,paid,2025-09-18,Textiles,0.0,73.49036402569592,High,2,ticket_to_revenue_est high vs goods_category=Textiles; outstanding_to_revenue_est high vs goods_category=Textiles,7.557122448979592,31.475336734693876,44.4
+TX-001892,train,paid,2025-04-16,Chemicals,0.0,72.99072091363311,High,2,ticket_to_revenue_est high vs goods_category=Chemicals; outstanding_to_revenue_est high vs goods_category=Chemicals,1.606348275862069,52.479010344827586,48.0
+TX-004591,validation,paid,2025-11-13,Textiles,0.0,72.9764453961456,High,2,ticket_to_revenue_est high vs goods_category=Textiles; outstanding_to_revenue_est high vs goods_category=Textiles,1.6780646258503402,21.407962585034014,51.6
+TX-002690,train,paid,2024-09-01,Consumer Goods,0.0,72.77658815132048,High,2,ticket_to_revenue_est high vs goods_category=Consumer Goods; outstanding_to_revenue_est high vs goods_category=Consumer Goods,4.807224358974359,47.74109615384615,42.599999999999994
+TX-001616,open_holdout,open,2025-11-24,Textiles,,72.69093504639542,High,2,ticket_to_revenue_est high vs goods_category=Textiles; outstanding_to_revenue_est high vs goods_category=Textiles,3.03365503875969,150.61817054263565,40.05
+TX-003394,open_holdout,open,2025-11-22,Agricultural,,72.56245538900785,High,2,outstanding_to_revenue_est high vs goods_category=Agricultural; advance_tenor_exposure high vs goods_category=Agricultural,0.33221824480369516,21.77789491916859,144.0
+TX-003988,train,paid,2024-06-20,Chemicals,0.0,72.41970021413276,High,2,ticket_to_revenue_est high vs goods_category=Chemicals; outstanding_to_revenue_est high vs goods_category=Chemicals,2.860352564102564,30.09407051282051,45.6
+TX-003693,train,defaulted,2025-08-15,Consumer Goods,1.0,72.3340471092077,High,2,ticket_to_revenue_est high vs goods_category=Consumer Goods; outstanding_to_revenue_est high vs goods_category=Consumer Goods,3.4265512820512822,124.4671858974359,39.15
+TX-003459,open_holdout,open,2026-02-17,Food,,72.27694503925767,High,2,ticket_to_revenue_est high vs goods_category=Food; outstanding_to_revenue_est high vs goods_category=Food,1.9228425925925925,128.51316666666668,43.8
+TX-002329,validation,paid,2026-02-16,Pharmaceuticals,0.0,72.20556745182013,High,2,ticket_to_revenue_est high vs goods_category=Pharmaceuticals; outstanding_to_revenue_est high vs goods_category=Pharmaceuticals,7.1241896551724135,43.058689655172415,40.05
+TX-002335,train,paid,2024-10-07,Machinery,0.0,72.19129193433261,High,2,ticket_to_revenue_est high vs goods_category=Machinery; outstanding_to_revenue_est high vs goods_category=Machinery,3.037453488372093,53.54579457364341,42.599999999999994
+TX-003911,train,paid,2025-02-21,Pharmaceuticals,0.0,72.005710206995,High,2,ticket_to_revenue_est high vs goods_category=Pharmaceuticals; outstanding_to_revenue_est high vs goods_category=Pharmaceuticals,4.120333333333333,26.381149122807017,44.4
+TX-002460,train,defaulted,2024-11-29,Metals,1.0,71.89150606709494,High,2,ticket_to_revenue_est high vs goods_category=Metals; outstanding_to_revenue_est high vs goods_category=Metals,3.525515503875969,63.036201550387595,39.6
+TX-002619,train,defaulted,2025-05-28,Machinery,1.0,71.73447537473233,High,2,ticket_to_revenue_est high vs goods_category=Machinery; outstanding_to_revenue_est high vs goods_category=Machinery,2.6643837209302323,95.90905426356589,39.6
+TX-000239,train,paid,2025-07-01,Agricultural,0.0,71.70592433975732,High,2,ticket_to_revenue_est high vs goods_category=Agricultural; outstanding_to_revenue_est high vs goods_category=Agricultural,2.7255064102564104,117.04207692307692,39.15
+TX-004240,train,paid,2025-04-30,Food,0.0,71.6773733047823,High,2,ticket_to_revenue_est high vs goods_category=Food; outstanding_to_revenue_est high vs goods_category=Food,3.7204,31.300983333333335,43.199999999999996
+TX-000642,train,paid,2024-09-11,Pharmaceuticals,0.0,71.2062812276945,High,2,ticket_to_revenue_est high vs goods_category=Pharmaceuticals; outstanding_to_revenue_est high vs goods_category=Pharmaceuticals,2.8237558139534884,34.92490697674419,43.199999999999996
+TX-000533,train,paid,2025-05-04,Metals,0.0,70.83511777301928,High,2,ticket_to_revenue_est high vs goods_category=Metals; outstanding_to_revenue_est high vs goods_category=Metals,3.705127659574468,21.467170212765957,44.4
+TX-003865,open_holdout,open,2026-03-24,Chemicals,,70.82084225553176,High,2,ticket_to_revenue_est high vs goods_category=Chemicals; outstanding_to_revenue_est high vs goods_category=Chemicals,1.7331642857142857,21.039540476190478,48.6
+TX-004803,train,defaulted,2025-04-01,Textiles,1.0,70.67808708065667,High,2,ticket_to_revenue_est high vs goods_category=Textiles; outstanding_to_revenue_est high vs goods_category=Textiles,2.238426356589147,83.38685658914729,39.6
+TX-000357,train,paid,2025-09-18,Consumer Goods,0.0,70.66381156316916,High,2,ticket_to_revenue_est high vs goods_category=Consumer Goods; outstanding_to_revenue_est high vs goods_category=Consumer Goods,3.2598517241379312,46.03058620689655,39.15
+TX-000065,train,paid,2024-12-26,Consumer Goods,0.0,70.47822983583154,High,2,ticket_to_revenue_est high vs goods_category=Consumer Goods; outstanding_to_revenue_est high vs goods_category=Consumer Goods,2.8583870967741936,84.06781451612903,36.9
+TX-001505,validation,paid,2025-11-25,Agricultural,0.0,70.26409707351891,High,2,ticket_to_revenue_est high vs goods_category=Agricultural; outstanding_to_revenue_est high vs goods_category=Agricultural,2.757436046511628,74.38054651162791,36.9
+TX-004424,train,defaulted,2025-07-13,Metals,1.0,70.07851534618129,High,2,ticket_to_revenue_est high vs goods_category=Metals; outstanding_to_revenue_est high vs goods_category=Metals,3.6005581395348836,108.68992248062015,34.2
+TX-002581,train,paid,2025-03-03,Consumer Goods,0.0,70.00713775874375,High,2,ticket_to_revenue_est high vs goods_category=Consumer Goods; outstanding_to_revenue_est high vs goods_category=Consumer Goods,14.499692307692309,85.75103846153846,31.95
+TX-003715,train,paid,2025-04-11,Metals,0.0,69.99286224125623,Medium,2,ticket_to_revenue_est high vs goods_category=Metals; outstanding_to_revenue_est high vs goods_category=Metals,6.4346296296296295,80.51222222222222,32.85
+TX-004476,train,paid,2024-12-07,Pharmaceuticals,0.0,69.97858672376873,Medium,2,ticket_to_revenue_est high vs goods_category=Pharmaceuticals; outstanding_to_revenue_est high vs goods_category=Pharmaceuticals,3.6810193798449613,66.56171705426357,35.1
+TX-003590,train,paid,2024-09-03,Food,0.0,69.90720913633119,Medium,2,ticket_to_revenue_est high vs goods_category=Food; outstanding_to_revenue_est high vs goods_category=Food,1.9012286821705426,46.478403100775196,42.599999999999994
+TX-004223,validation,paid,2025-10-03,Machinery,0.0,69.86438258386866,Medium,2,ticket_to_revenue_est high vs goods_category=Machinery; outstanding_to_revenue_est high vs goods_category=Machinery,3.2687925925925927,24.12514074074074,42.599999999999994
+TX-000267,train,paid,2025-01-02,Agricultural,0.0,69.82155603140613,Medium,2,ticket_to_revenue_est high vs goods_category=Agricultural; outstanding_to_revenue_est high vs goods_category=Agricultural,9.951846153846153,47.72703846153846,33.75
+TX-004616,train,paid,2025-03-09,Machinery,0.0,69.66452533904354,Medium,2,ticket_to_revenue_est high vs goods_category=Machinery; outstanding_to_revenue_est high vs goods_category=Machinery,3.382974358974359,88.32848076923077,34.2
+TX-002582,train,paid,2025-07-10,Textiles,0.0,69.56459671663097,Medium,2,ticket_to_revenue_est high vs goods_category=Textiles; outstanding_to_revenue_est high vs goods_category=Textiles,4.699602564102564,119.76758333333333,31.95
+TX-003293,validation,paid,2025-12-17,Chemicals,0.0,68.9650249821556,Medium,2,ticket_to_revenue_est high vs goods_category=Chemicals; outstanding_to_revenue_est high vs goods_category=Chemicals,2.7186337209302325,78.30086046511627,34.2
+TX-003357,train,paid,2025-05-22,Food,0.0,68.89364739471806,Medium,2,ticket_to_revenue_est high vs goods_category=Food; outstanding_to_revenue_est high vs goods_category=Food,6.033901639344262,54.95996721311475,31.95
+TX-000527,train,paid,2025-08-24,Pharmaceuticals,0.0,68.7937187723055,Medium,2,ticket_to_revenue_est high vs goods_category=Pharmaceuticals; outstanding_to_revenue_est high vs goods_category=Pharmaceuticals,2.1068770491803277,75.6002131147541,36.45
+TX-004571,train,paid,2025-05-30,Agricultural,0.0,68.72234118486794,Medium,2,ticket_to_revenue_est high vs goods_category=Agricultural; outstanding_to_revenue_est high vs goods_category=Agricultural,3.196037037037037,86.94685185185185,32.4
+TX-000417,open_holdout,open,2026-01-26,Pharmaceuticals,,68.30835117773019,Medium,2,ticket_to_revenue_est high vs goods_category=Pharmaceuticals; outstanding_to_revenue_est high vs goods_category=Pharmaceuticals,1.9767625,62.62368125,36.45
+TX-004619,validation,paid,2025-10-08,Food,0.0,67.89436117059243,Medium,2,ticket_to_revenue_est high vs goods_category=Food; outstanding_to_revenue_est high vs goods_category=Food,2.462275675675676,26.774927027027026,38.7
+TX-004870,train,paid,2025-06-21,Agricultural,0.0,67.48037116345468,Medium,2,ticket_to_revenue_est high vs goods_category=Agricultural; outstanding_to_revenue_est high vs goods_category=Agricultural,8.160196721311475,62.32820491803279,24.0
+TX-002482,train,paid,2024-12-23,Food,0.0,67.43754461099215,Medium,2,ticket_to_revenue_est high vs goods_category=Food; outstanding_to_revenue_est high vs goods_category=Food,3.0460793103448274,28.92155172413793,35.1
+TX-000424,train,paid,2025-07-25,Food,0.0,67.42326909350464,Medium,2,ticket_to_revenue_est high vs goods_category=Food; outstanding_to_revenue_est high vs goods_category=Food,2.8146967213114755,70.48840163934426,31.499999999999996
+TX-004697,train,paid,2025-05-02,Food,0.0,67.15203426124197,Medium,2,ticket_to_revenue_est high vs goods_category=Food; outstanding_to_revenue_est high vs goods_category=Food,2.540581395348837,58.06888953488372,31.95
+TX-002037,validation,paid,2025-12-13,Chemicals,0.0,67.06638115631691,Medium,2,ticket_to_revenue_est high vs goods_category=Chemicals; outstanding_to_revenue_est high vs goods_category=Chemicals,1.774035135135135,30.16157837837838,39.15
+TX-003772,validation,paid,2025-11-21,Pharmaceuticals,0.0,67.00927908636687,Medium,2,ticket_to_revenue_est high vs goods_category=Pharmaceuticals; outstanding_to_revenue_est high vs goods_category=Pharmaceuticals,2.1692023121387285,26.30872543352601,38.25
+TX-001847,open_holdout,open,2025-10-18,Machinery,,66.95217701641684,Medium,2,outstanding_to_revenue_est high vs goods_category=Machinery; advance_tenor_exposure high vs goods_category=Machinery,0.2052378752886836,21.150130484988452,135.0
+TX-000905,open_holdout,open,2025-12-18,Agricultural,,66.63811563169165,Medium,2,ticket_to_revenue_est high vs goods_category=Agricultural; outstanding_to_revenue_est high vs goods_category=Agricultural,1.9063333333333334,153.65182558139534,31.499999999999996
+TX-003496,open_holdout,open,2025-11-19,Food,,66.58101356174161,Medium,2,outstanding_to_revenue_est high vs goods_category=Food; advance_tenor_exposure high vs goods_category=Food,0.1781482558139535,21.787427325581394,154.8
+TX-004586,train,paid,2023-11-29,Pharmaceuticals,0.0,66.40970735189151,Medium,2,ticket_to_revenue_est high vs goods_category=Pharmaceuticals; advance_tenor_exposure high vs goods_category=Pharmaceuticals,2.44066,0.0,160.2
+TX-004653,validation,paid,2026-01-27,Pharmaceuticals,0.0,66.39543183440398,Medium,2,ticket_to_revenue_est high vs goods_category=Pharmaceuticals; outstanding_to_revenue_est high vs goods_category=Pharmaceuticals,5.052134615384615,154.86172435897436,21.599999999999998
+TX-001493,train,paid,2025-08-04,Metals,0.0,66.32405424696645,Medium,2,ticket_to_revenue_est high vs goods_category=Metals; outstanding_to_revenue_est high vs goods_category=Metals,2.525436507936508,26.77428306878307,34.65
+TX-004015,open_holdout,open,2025-11-19,Pharmaceuticals,,66.28122769450391,Medium,2,outstanding_to_revenue_est high vs goods_category=Pharmaceuticals; advance_tenor_exposure high vs goods_category=Pharmaceuticals,0.17948036951501153,21.59841454965358,147.6
+TX-004739,validation,paid,2025-10-28,Food,0.0,66.2669521770164,Medium,2,ticket_to_revenue_est high vs goods_category=Food; outstanding_to_revenue_est high vs goods_category=Food,2.343301282051282,148.54914102564103,24.9
+TX-003346,train,paid,2025-04-03,Textiles,0.0,65.56745182012848,Medium,2,ticket_to_revenue_est high vs goods_category=Textiles; outstanding_to_revenue_est high vs goods_category=Textiles,4.801801282051282,97.9459423076923,21.0
+TX-000965,validation,paid,2025-12-11,Textiles,0.0,65.56745182012847,Medium,2,ticket_to_revenue_est high vs goods_category=Textiles; outstanding_to_revenue_est high vs goods_category=Textiles,3.168467948717949,150.8924423076923,21.599999999999998
+TX-000966,train,paid,2025-07-01,Consumer Goods,0.0,65.39614561027837,Medium,2,ticket_to_revenue_est high vs goods_category=Consumer Goods; outstanding_to_revenue_est high vs goods_category=Consumer Goods,3.6975967741935483,117.54073387096774,21.0
+TX-001593,train,defaulted,2025-07-02,Food,1.0,65.1106352605282,Medium,2,ticket_to_revenue_est high vs goods_category=Food; outstanding_to_revenue_est high vs goods_category=Food,1.9432041666666666,47.56005833333333,31.499999999999996
+TX-000093,train,paid,2025-08-22,Textiles,0.0,64.78229835831549,Medium,2,ticket_to_revenue_est high vs goods_category=Textiles; outstanding_to_revenue_est high vs goods_category=Textiles,1.7890608465608466,29.29971957671958,34.2
+TX-004110,validation,paid,2025-12-09,Consumer Goods,0.0,64.78229835831549,Medium,2,ticket_to_revenue_est high vs goods_category=Consumer Goods; outstanding_to_revenue_est high vs goods_category=Consumer Goods,3.6670759493670886,50.62243670886076,22.2
+TX-003942,train,paid,2024-08-09,Agricultural,0.0,64.71092077087795,Medium,2,ticket_to_revenue_est high vs goods_category=Agricultural; outstanding_to_revenue_est high vs goods_category=Agricultural,3.8215503875968992,39.37572093023256,22.8
+TX-001261,validation,paid,2025-12-24,Machinery,0.0,64.4967880085653,Medium,2,ticket_to_revenue_est high vs goods_category=Machinery; outstanding_to_revenue_est high vs goods_category=Machinery,3.77423417721519,54.28951265822785,21.299999999999997
+TX-000070,open_holdout,open,2026-02-26,Food,,63.5260528194147,Medium,2,ticket_to_revenue_est high vs goods_category=Food; outstanding_to_revenue_est high vs goods_category=Food,1.6370838150289018,29.66234971098266,32.4
+TX-002532,train,paid,2025-05-22,Chemicals,0.0,63.25481798715204,Medium,2,ticket_to_revenue_est high vs goods_category=Chemicals; outstanding_to_revenue_est high vs goods_category=Chemicals,2.1181153846153844,104.37477564102564,21.0
+TX-000375,train,paid,2024-11-25,Machinery,0.0,62.94075660242684,Medium,2,ticket_to_revenue_est high vs goods_category=Machinery; outstanding_to_revenue_est high vs goods_category=Machinery,2.135377906976744,43.7394011627907,22.8
+TX-004753,train,paid,2024-09-14,Machinery,0.0,62.84082798001427,Medium,2,ticket_to_revenue_est high vs goods_category=Machinery; outstanding_to_revenue_est high vs goods_category=Machinery,2.396354651162791,37.74866279069767,22.5
+TX-003702,train,paid,2024-08-06,Consumer Goods,0.0,62.51249107780157,Medium,2,ticket_to_revenue_est high vs goods_category=Consumer Goods; outstanding_to_revenue_est high vs goods_category=Consumer Goods,2.676062015503876,36.69965891472868,21.0
+TX-001064,validation,paid,2025-10-27,Consumer Goods,0.0,62.31263383297644,Medium,2,ticket_to_revenue_est high vs goods_category=Consumer Goods; outstanding_to_revenue_est high vs goods_category=Consumer Goods,1.9090277777777778,24.791932098765432,25.8
+TX-002716,train,paid,2025-02-03,Machinery,0.0,60.92790863668808,Medium,2,ticket_to_revenue_est high vs goods_category=Machinery; outstanding_to_revenue_est high vs goods_category=Machinery,1.7709666666666666,22.730041666666665,24.599999999999998
+TX-004230,validation,paid,2025-12-01,Food,0.0,60.25695931477516,Medium,2,ticket_to_revenue_est high vs goods_category=Food; outstanding_to_revenue_est high vs goods_category=Food,1.763318918918919,28.39825945945946,21.9
+TX-003667,open_holdout,open,2026-02-20,Textiles,,91.46324054246966,High,1,outstanding_to_revenue_est high vs goods_category=Textiles,1.3721602564102564,159.913858974359,102.0
+TX-000502,open_holdout,open,2025-10-19,Pharmaceuticals,,91.3775874375446,High,1,outstanding_to_revenue_est high vs goods_category=Pharmaceuticals,1.527748062015504,136.80892635658915,98.39999999999999
+TX-004263,train,paid,2024-04-13,Metals,0.0,90.97787294789435,High,1,ticket_to_revenue_est high vs goods_category=Metals,3.8042777777777776,15.685009259259258,106.8
+TX-002169,open_holdout,open,2025-10-30,Metals,,90.52105638829407,High,1,outstanding_to_revenue_est high vs goods_category=Metals,1.177379746835443,49.44505696202532,138.6
+TX-000865,train,paid,2025-04-23,Metals,0.0,90.20699500356888,High,1,ticket_to_revenue_est high vs goods_category=Metals,5.2591063829787235,16.208063829787235,100.8
+TX-001835,train,paid,2025-05-06,Textiles,0.0,90.10706638115632,High,1,outstanding_to_revenue_est high vs goods_category=Textiles,1.3716902654867256,29.328526548672567,133.2
+TX-002589,open_holdout,open,2026-01-06,Textiles,,88.72234118486796,High,1,outstanding_to_revenue_est high vs goods_category=Textiles,1.0924666666666667,60.36851875,103.2
+TX-003366,train,defaulted,2025-05-18,Agricultural,1.0,88.06566738044253,High,1,ticket_to_revenue_est high vs goods_category=Agricultural,1.9792027027027026,16.396313513513512,103.2
+TX-001821,train,paid,2024-12-17,Agricultural,0.0,87.92291220556744,High,1,outstanding_to_revenue_est high vs goods_category=Agricultural,1.270648275862069,39.08855862068965,99.6
+TX-003618,train,paid,2025-02-12,Food,0.0,87.00927908636687,High,1,ticket_to_revenue_est high vs goods_category=Food,3.865087719298246,21.260622807017544,79.2
+TX-004026,train,defaulted,2024-08-08,Food,1.0,86.93790149892934,High,1,ticket_to_revenue_est high vs goods_category=Food,3.8308333333333335,11.878245614035087,99.6
+TX-001123,train,paid,2025-04-30,Agricultural,0.0,86.8950749464668,High,1,ticket_to_revenue_est high vs goods_category=Agricultural,2.1763015873015874,17.51047619047619,94.80000000000001
+TX-003305,open_holdout,open,2025-12-31,Agricultural,,86.89507494646679,High,1,outstanding_to_revenue_est high vs goods_category=Agricultural,1.3304665492957746,39.16774471830986,92.4
+TX-004364,open_holdout,open,2026-02-25,Machinery,,86.75231977159171,High,1,outstanding_to_revenue_est high vs goods_category=Machinery,1.4379583333333332,65.80699375,80.1
+TX-001188,train,paid,2025-09-27,Pharmaceuticals,0.0,86.63811563169165,High,1,advance_tenor_exposure high vs goods_category=Pharmaceuticals,1.2240957446808511,17.00618794326241,136.8
+TX-000600,validation,paid,2025-10-03,Machinery,0.0,86.60956459671662,High,1,outstanding_to_revenue_est high vs goods_category=Machinery,0.8153034482758621,68.1328827586207,106.8
+TX-002109,train,paid,2025-04-25,Textiles,0.0,86.59528907922912,High,1,ticket_to_revenue_est high vs goods_category=Textiles,1.8193780487804878,16.286821138211383,99.6
+TX-002466,train,paid,2025-08-30,Pharmaceuticals,0.0,86.49536045681656,High,1,outstanding_to_revenue_est high vs goods_category=Pharmaceuticals,1.1079146341463415,20.60849593495935,125.99999999999999
+TX-000092,validation,paid,2025-11-30,Pharmaceuticals,0.0,86.32405424696645,High,1,outstanding_to_revenue_est high vs goods_category=Pharmaceuticals,1.1380203252032521,23.43868292682927,103.2
+TX-001804,validation,defaulted,2025-10-28,Machinery,1.0,86.29550321199142,High,1,outstanding_to_revenue_est high vs goods_category=Machinery,1.5196916666666667,56.28745625,79.2
+TX-001088,train,paid,2025-04-06,Machinery,0.0,85.98144182726624,High,1,outstanding_to_revenue_est high vs goods_category=Machinery,0.9212758620689655,50.781458620689655,100.8
+TX-001785,train,paid,2024-10-15,Chemicals,0.0,85.83868665239115,High,1,advance_tenor_exposure high vs goods_category=Chemicals,1.1193083333333333,15.775058333333334,151.2
+TX-003697,train,paid,2025-05-26,Pharmaceuticals,0.0,85.72448251249108,High,1,outstanding_to_revenue_est high vs goods_category=Pharmaceuticals,1.053173076923077,110.34769871794872,87.6
+TX-000374,train,paid,2023-11-22,Pharmaceuticals,0.0,85.69593147751607,High,1,ticket_to_revenue_est high vs goods_category=Pharmaceuticals,3.091048275862069,13.828131034482759,90.0
+TX-003716,train,paid,2025-04-15,Consumer Goods,0.0,85.58172733761597,High,1,ticket_to_revenue_est high vs goods_category=Consumer Goods,8.11591836734694,13.46284693877551,81.0
+TX-003760,train,paid,2025-04-13,Metals,0.0,85.22483940042827,High,1,ticket_to_revenue_est high vs goods_category=Metals,2.075684971098266,15.531361271676301,91.2
+TX-004550,train,paid,2024-09-25,Metals,0.0,85.06780870806566,High,1,outstanding_to_revenue_est high vs goods_category=Metals,1.429562015503876,49.593507751937985,78.3
+TX-003383,train,paid,2025-04-06,Chemicals,0.0,85.01070663811564,High,1,ticket_to_revenue_est high vs goods_category=Chemicals,2.287862162162162,14.108451351351352,92.4
+TX-003862,train,paid,2025-09-24,Metals,0.0,84.93932905067808,High,1,ticket_to_revenue_est high vs goods_category=Metals,2.415681318681319,17.66597802197802,80.1
+TX-003692,train,paid,2025-09-19,Agricultural,0.0,84.86795146324053,High,1,outstanding_to_revenue_est high vs goods_category=Agricultural,1.5968008849557522,34.39694690265487,78.3
+TX-003079,train,paid,2024-12-31,Consumer Goods,0.0,84.82512491077802,High,1,ticket_to_revenue_est high vs goods_category=Consumer Goods,1.8800083333333333,19.806175,81.0
+TX-004210,train,paid,2025-01-24,Agricultural,0.0,84.4825124910778,High,1,outstanding_to_revenue_est high vs goods_category=Agricultural,1.2180931034482758,42.002158620689656,81.0
+TX-000386,train,paid,2025-02-28,Chemicals,0.0,84.4682369735903,High,1,outstanding_to_revenue_est high vs goods_category=Chemicals,0.8736854166666667,35.06857083333333,100.8
+TX-004892,train,paid,2025-06-16,Food,0.0,84.38258386866524,High,1,outstanding_to_revenue_est high vs goods_category=Food,0.8512113821138212,26.968936991869917,105.6
+TX-003871,train,paid,2024-11-04,Chemicals,0.0,84.33975731620271,High,1,outstanding_to_revenue_est high vs goods_category=Chemicals,1.2059385964912281,20.054684210526315,96.0
+TX-001200,train,paid,2024-12-21,Machinery,0.0,84.26837972876517,High,1,advance_tenor_exposure high vs goods_category=Machinery,0.9198678861788618,15.991873983739838,162.0
+TX-002250,train,paid,2023-11-21,Metals,0.0,84.1541755888651,High,1,ticket_to_revenue_est high vs goods_category=Metals,2.116696551724138,11.711434482758621,97.2
+TX-001190,train,paid,2024-12-22,Metals,0.0,84.11134903640257,High,1,outstanding_to_revenue_est high vs goods_category=Metals,1.642951724137931,40.359206896551726,75.6
+TX-004094,train,paid,2024-09-13,Pharmaceuticals,0.0,84.02569593147751,High,1,ticket_to_revenue_est high vs goods_category=Pharmaceuticals,1.8440859030837005,9.956022026431718,104.4
+TX-003188,train,paid,2025-01-06,Chemicals,0.0,83.89721627408993,High,1,ticket_to_revenue_est high vs goods_category=Chemicals,1.62329012345679,13.107765432098766,97.2
+TX-000455,train,paid,2024-07-06,Consumer Goods,0.0,83.8401142041399,High,1,advance_tenor_exposure high vs goods_category=Consumer Goods,1.1081895833333333,12.898252083333333,140.4
+TX-001863,open_holdout,open,2025-10-10,Pharmaceuticals,,83.78301213418986,High,1,outstanding_to_revenue_est high vs goods_category=Pharmaceuticals,0.8697413793103448,68.94818620689655,91.2
+TX-002752,open_holdout,open,2026-02-27,Food,,83.72591006423983,High,1,outstanding_to_revenue_est high vs goods_category=Food,1.1340679012345678,33.813163580246915,85.19999999999999
+TX-002952,train,paid,2024-09-14,Metals,0.0,83.71163454675232,High,1,outstanding_to_revenue_est high vs goods_category=Metals,1.0795,28.075789655172414,90.0
+TX-003034,train,paid,2025-03-11,Textiles,0.0,83.58315488936474,High,1,outstanding_to_revenue_est high vs goods_category=Textiles,1.4498888888888888,79.06233333333333,73.8
+TX-002271,train,paid,2025-07-15,Machinery,0.0,83.45467523197715,High,1,outstanding_to_revenue_est high vs goods_category=Machinery,1.2845973451327433,31.96008849557522,79.2
+TX-001162,train,paid,2025-02-27,Machinery,0.0,83.06923625981442,High,1,ticket_to_revenue_est high vs goods_category=Machinery,2.0628080357142857,9.824549107142857,99.6
+TX-003127,train,paid,2025-01-11,Textiles,0.0,83.01213418986438,High,1,ticket_to_revenue_est high vs goods_category=Textiles,2.6590320512820513,9.087224358974359,97.2
+TX-000275,open_holdout,open,2026-03-19,Machinery,,82.8836545324768,High,1,outstanding_to_revenue_est high vs goods_category=Machinery,1.1601684782608697,28.08854891304348,81.0
+TX-002167,open_holdout,open,2026-02-07,Metals,,82.82655246252676,High,1,outstanding_to_revenue_est high vs goods_category=Metals,1.6990849802371542,23.806693675889328,76.5
+TX-001275,open_holdout,open,2026-02-08,Textiles,,82.81227694503926,High,1,outstanding_to_revenue_est high vs goods_category=Textiles,0.941692607003891,40.56456809338521,87.6
+TX-000639,train,paid,2025-07-27,Metals,0.0,82.59814418272661,High,1,outstanding_to_revenue_est high vs goods_category=Metals,1.3913333333333333,24.092805555555554,78.3
+TX-000789,open_holdout,open,2025-12-30,Consumer Goods,,82.5695931477516,High,1,outstanding_to_revenue_est high vs goods_category=Consumer Goods,1.2409586206896552,74.00633448275862,74.7
+TX-004348,train,paid,2025-01-18,Metals,0.0,82.51249107780157,High,1,advance_tenor_exposure high vs goods_category=Metals,1.330474043715847,8.856896174863389,154.8
+TX-003857,train,paid,2025-09-19,Food,0.0,82.49821556031407,High,1,ticket_to_revenue_est high vs goods_category=Food,2.2024225352112676,7.1216197183098595,106.8
+TX-000607,open_holdout,open,2026-03-08,Metals,,82.32690935046395,High,1,outstanding_to_revenue_est high vs goods_category=Metals,0.7554513274336283,51.01292477876106,94.80000000000001
+TX-001375,train,paid,2024-08-29,Food,0.0,82.28408279800144,High,1,outstanding_to_revenue_est high vs goods_category=Food,1.09825,33.00751162790698,79.2
+TX-001633,train,paid,2025-03-26,Machinery,0.0,82.26980728051392,High,1,ticket_to_revenue_est high vs goods_category=Machinery,2.1381146341463415,9.907643902439025,94.80000000000001
+TX-003149,train,paid,2025-05-21,Textiles,0.0,82.26980728051392,High,1,outstanding_to_revenue_est high vs goods_category=Textiles,1.4484883720930233,63.073058139534886,72.0
+TX-004392,train,paid,2024-12-02,Metals,0.0,82.26980728051392,High,1,outstanding_to_revenue_est high vs goods_category=Metals,0.6711344827586206,38.417424137931036,103.2
+TX-003160,train,paid,2025-01-19,Machinery,0.0,82.19842969307638,High,1,ticket_to_revenue_est high vs goods_category=Machinery,2.007503086419753,14.731055555555555,79.2
+TX-004940,validation,paid,2025-10-08,Machinery,0.0,82.18415417558886,High,1,outstanding_to_revenue_est high vs goods_category=Machinery,0.970627098321343,21.106591127098323,94.80000000000001
+TX-001366,train,paid,2025-01-15,Pharmaceuticals,0.0,82.04139900071377,High,1,ticket_to_revenue_est high vs goods_category=Pharmaceuticals,3.873191489361702,9.703159574468085,84.0
+TX-004881,open_holdout,open,2026-02-25,Food,,81.9414703783012,High,1,ticket_to_revenue_est high vs goods_category=Food,1.668010101010101,12.610186868686869,88.8
+TX-002397,train,paid,2025-08-10,Consumer Goods,0.0,81.89864382583869,High,1,ticket_to_revenue_est high vs goods_category=Consumer Goods,1.7531277533039649,20.19002643171806,75.6
+TX-001964,train,defaulted,2025-04-11,Agricultural,1.0,81.87009279086365,High,1,outstanding_to_revenue_est high vs goods_category=Agricultural,0.8678791666666666,40.972229166666665,87.6
+TX-003026,validation,paid,2025-11-12,Agricultural,0.0,81.82726623840114,High,1,ticket_to_revenue_est high vs goods_category=Agricultural,2.383885638297872,8.365037234042553,97.2
+TX-003515,train,paid,2024-07-12,Metals,0.0,81.81299072091363,High,1,outstanding_to_revenue_est high vs goods_category=Metals,0.8910241935483871,43.302120967741935,85.19999999999999
+TX-001960,train,paid,2024-09-12,Chemicals,0.0,81.78443968593861,High,1,outstanding_to_revenue_est high vs goods_category=Chemicals,0.9107922535211268,16.923450704225353,102.0
+TX-001210,validation,paid,2025-10-25,Metals,0.0,81.72733761598857,High,1,ticket_to_revenue_est high vs goods_category=Metals,2.2726458333333333,8.780511574074074,96.0
+TX-003273,train,paid,2024-10-03,Textiles,0.0,81.64168451106352,High,1,ticket_to_revenue_est high vs goods_category=Textiles,2.0295190476190474,6.716026190476191,106.8
+TX-000186,open_holdout,open,2026-01-12,Textiles,,81.42755174875089,High,1,outstanding_to_revenue_est high vs goods_category=Textiles,1.1342993827160495,32.678864197530864,77.4
+TX-002813,train,paid,2025-07-21,Metals,0.0,81.41327623126338,High,1,outstanding_to_revenue_est high vs goods_category=Metals,1.0353381502890173,19.829826589595374,88.8
+TX-004891,open_holdout,open,2026-01-19,Textiles,,81.39900071377586,High,1,advance_tenor_exposure high vs goods_category=Textiles,0.9634913294797688,10.571494219653179,162.0
+TX-001721,train,paid,2025-01-29,Metals,0.0,81.34189864382583,High,1,outstanding_to_revenue_est high vs goods_category=Metals,1.0438583333333333,21.686183333333332,86.39999999999999
+TX-001644,validation,paid,2025-11-29,Machinery,0.0,81.25624553890079,High,1,outstanding_to_revenue_est high vs goods_category=Machinery,0.9315054347826087,22.16802445652174,91.2
+TX-003420,train,paid,2024-08-19,Metals,0.0,81.18486795146323,High,1,ticket_to_revenue_est high vs goods_category=Metals,4.217384615384615,15.530807692307691,72.0
+TX-000046,open_holdout,open,2026-01-10,Food,,81.1134903640257,High,1,outstanding_to_revenue_est high vs goods_category=Food,0.8357522123893806,49.18742920353982,84.0
+TX-001754,validation,paid,2025-10-04,Metals,0.0,81.09921484653819,High,1,outstanding_to_revenue_est high vs goods_category=Metals,0.9064207048458149,21.943154185022028,92.4
+TX-002652,train,paid,2024-05-19,Textiles,0.0,81.04211277658814,High,1,ticket_to_revenue_est high vs goods_category=Textiles,1.8515175438596492,6.3638508771929825,127.8
+TX-001364,train,paid,2025-05-29,Metals,0.0,80.9707351891506,High,1,outstanding_to_revenue_est high vs goods_category=Metals,1.4244724137931035,58.66488275862069,70.2
+TX-001916,train,paid,2025-04-14,Metals,0.0,80.9707351891506,High,1,ticket_to_revenue_est high vs goods_category=Metals,3.049824074074074,19.362956790123455,70.2
+TX-004814,train,paid,2025-07-16,Food,0.0,80.92790863668807,High,1,outstanding_to_revenue_est high vs goods_category=Food,1.296484496124031,112.29048062015504,70.2
+TX-004159,train,paid,2025-06-23,Machinery,0.0,80.61384725196288,High,1,advance_tenor_exposure high vs goods_category=Machinery,0.7625078864353312,13.050578864353312,162.0
+TX-004676,train,paid,2025-09-09,Textiles,0.0,80.4710920770878,High,1,ticket_to_revenue_est high vs goods_category=Textiles,2.1202820512820515,16.65575,73.8
+TX-004917,validation,paid,2025-12-14,Consumer Goods,0.0,80.41399000713776,High,1,outstanding_to_revenue_est high vs goods_category=Consumer Goods,1.1927135135135136,31.935613513513513,74.7
+TX-004630,validation,defaulted,2025-10-01,Metals,1.0,80.28551034975018,High,1,outstanding_to_revenue_est high vs goods_category=Metals,1.0356320422535212,35.0657323943662,76.5
+TX-000806,train,paid,2025-04-27,Food,0.0,80.27123483226266,High,1,outstanding_to_revenue_est high vs goods_category=Food,0.8800752032520325,24.044239837398376,87.6
+TX-002922,train,paid,2024-11-07,Metals,0.0,80.24268379728764,High,1,outstanding_to_revenue_est high vs goods_category=Metals,0.8239630281690141,20.68505105633803,94.80000000000001
+TX-000682,train,paid,2025-09-09,Textiles,0.0,80.1713062098501,High,1,outstanding_to_revenue_est high vs goods_category=Textiles,1.1538891891891891,25.62103783783784,76.5
+TX-002664,train,paid,2025-01-07,Food,0.0,80.15703069236258,High,1,ticket_to_revenue_est high vs goods_category=Food,2.6017074074074076,7.330088888888889,92.4
+TX-003707,open_holdout,open,2025-09-13,Machinery,,80.14275517487509,High,1,outstanding_to_revenue_est high vs goods_category=Machinery,0.7471296296296296,23.37801111111111,97.2
+TX-004896,train,paid,2025-06-14,Food,0.0,80.14275517487508,High,1,ticket_to_revenue_est high vs goods_category=Food,2.344828947368421,9.11958552631579,86.39999999999999
+TX-001124,train,paid,2025-01-17,Machinery,0.0,79.95717344753747,High,1,outstanding_to_revenue_est high vs goods_category=Machinery,1.089216814159292,21.98641150442478,78.3
+TX-004237,train,paid,2024-12-04,Pharmaceuticals,0.0,79.94289793004995,High,1,ticket_to_revenue_est high vs goods_category=Pharmaceuticals,2.1451682926829267,5.507873170731707,105.6
+TX-004784,train,paid,2024-08-02,Agricultural,0.0,79.94289793004995,High,1,advance_tenor_exposure high vs goods_category=Agricultural,0.9382283950617284,10.229515432098765,138.6
+TX-003220,train,paid,2024-08-03,Agricultural,0.0,79.91434689507494,High,1,ticket_to_revenue_est high vs goods_category=Agricultural,2.472049751243781,7.080848258706467,93.60000000000001
+TX-000641,open_holdout,open,2025-11-19,Food,,79.82869379014988,High,1,outstanding_to_revenue_est high vs goods_category=Food,0.5853372093023256,150.03283333333334,91.2
+TX-002810,open_holdout,open,2026-02-01,Agricultural,,79.78586723768736,High,1,outstanding_to_revenue_est high vs goods_category=Agricultural,1.1154083333333333,55.05314166666667,72.0
+TX-000136,validation,paid,2025-10-21,Agricultural,0.0,79.71448965024982,High,1,outstanding_to_revenue_est high vs goods_category=Agricultural,1.3011481481481482,29.175379629629628,72.9
+TX-003055,open_holdout,open,2025-10-18,Machinery,,79.64311206281226,High,1,outstanding_to_revenue_est high vs goods_category=Machinery,0.6640620689655172,69.81792758620689,86.39999999999999
+TX-000392,train,paid,2024-09-22,Metals,0.0,79.57173447537473,High,1,advance_tenor_exposure high vs goods_category=Metals,0.6833922764227642,14.253888211382113,151.2
+TX-004093,open_holdout,open,2026-01-22,Textiles,,79.5289079229122,High,1,outstanding_to_revenue_est high vs goods_category=Textiles,0.5121219512195122,38.16095528455285,108.0
+TX-001994,train,paid,2024-05-11,Textiles,0.0,79.51463240542469,High,1,ticket_to_revenue_est high vs goods_category=Textiles,1.677389655172414,16.98823448275862,73.8
+TX-000285,train,paid,2024-06-23,Textiles,0.0,79.2005710206995,High,1,ticket_to_revenue_est high vs goods_category=Textiles,1.9861994680851063,7.981853723404256,90.0
+TX-004441,train,paid,2024-12-14,Food,0.0,79.15774446823697,High,1,outstanding_to_revenue_est high vs goods_category=Food,0.8477833333333333,23.344520833333334,85.19999999999999
+TX-000049,train,defaulted,2025-01-21,Textiles,1.0,78.90078515346181,High,1,outstanding_to_revenue_est high vs goods_category=Textiles,0.7486083333333333,31.060170833333334,85.19999999999999
+TX-003563,train,paid,2024-08-05,Food,0.0,78.90078515346181,High,1,ticket_to_revenue_est high vs goods_category=Food,2.577437837837838,5.780991891891892,96.0
+TX-002346,train,paid,2025-08-03,Machinery,0.0,78.7294789436117,High,1,outstanding_to_revenue_est high vs goods_category=Machinery,0.809625,31.028577464788732,79.2
+TX-000622,open_holdout,open,2026-03-16,Metals,,78.71520342612419,High,1,outstanding_to_revenue_est high vs goods_category=Metals,1.0001737588652482,19.869251773049644,78.3
+TX-003327,train,paid,2025-08-10,Chemicals,0.0,78.67237687366166,High,1,outstanding_to_revenue_est high vs goods_category=Chemicals,1.2130722543352601,22.8275,73.8
+TX-001488,open_holdout,open,2025-11-10,Machinery,,78.48679514632406,High,1,outstanding_to_revenue_est high vs goods_category=Machinery,1.2255931034482759,71.90484137931034,67.5
+TX-004561,open_holdout,open,2026-01-27,Pharmaceuticals,,78.35831548893647,High,1,advance_tenor_exposure high vs goods_category=Pharmaceuticals,1.3594102564102564,5.435382783882784,149.4
+TX-004238,open_holdout,open,2025-10-02,Agricultural,,78.18700927908637,High,1,outstanding_to_revenue_est high vs goods_category=Agricultural,0.5307596899224806,132.57894573643412,90.0
+TX-002722,train,paid,2025-05-07,Agricultural,0.0,78.04425410421128,High,1,outstanding_to_revenue_est high vs goods_category=Agricultural,1.529452380952381,22.018171957671957,69.3
+TX-003236,train,defaulted,2025-03-22,Machinery,1.0,78.04425410421128,High,1,outstanding_to_revenue_est high vs goods_category=Machinery,0.9722645833333333,39.99996458333333,72.9
+TX-000871,train,paid,2024-04-11,Pharmaceuticals,0.0,77.81584582441113,High,1,advance_tenor_exposure high vs goods_category=Pharmaceuticals,1.3400350877192981,5.023815789473685,154.8
+TX-004447,train,paid,2025-09-18,Agricultural,0.0,77.74446823697359,High,1,outstanding_to_revenue_est high vs goods_category=Agricultural,1.8248068965517241,49.29043793103448,54.0
+TX-004525,train,paid,2025-01-03,Consumer Goods,0.0,77.70164168451106,High,1,advance_tenor_exposure high vs goods_category=Consumer Goods,0.7372361419068736,10.687861419068737,145.8
+TX-001385,train,paid,2025-06-08,Machinery,0.0,77.53033547466094,High,1,ticket_to_revenue_est high vs goods_category=Machinery,2.1695536585365853,12.045758536585366,72.9
+TX-002402,train,defaulted,2025-03-30,Consumer Goods,1.0,77.51605995717344,High,1,outstanding_to_revenue_est high vs goods_category=Consumer Goods,1.1024793103448276,49.67897931034483,68.4
+TX-002459,open_holdout,open,2025-12-19,Chemicals,,77.33047822983582,High,1,outstanding_to_revenue_est high vs goods_category=Chemicals,0.46002334630350195,37.608003891050586,104.4
+TX-000658,train,paid,2024-12-08,Consumer Goods,0.0,77.30192719486081,High,1,advance_tenor_exposure high vs goods_category=Consumer Goods,0.7623875,9.20714,156.6
+TX-000684,train,paid,2025-02-21,Metals,0.0,77.30192719486081,High,1,outstanding_to_revenue_est high vs goods_category=Metals,1.60273125,31.808779166666667,64.8
+TX-000041,train,paid,2025-03-10,Chemicals,0.0,77.2733761598858,High,1,outstanding_to_revenue_est high vs goods_category=Chemicals,0.7678137931034483,46.339644827586206,75.6
+TX-001342,train,paid,2024-09-25,Chemicals,0.0,77.25910064239828,High,1,outstanding_to_revenue_est high vs goods_category=Chemicals,1.2195813953488372,40.14501744186047,67.5
+TX-002044,train,paid,2025-04-12,Consumer Goods,0.0,77.24482512491078,High,1,outstanding_to_revenue_est high vs goods_category=Consumer Goods,0.7762758620689655,51.70273448275862,74.7
+TX-002779,train,paid,2025-08-24,Metals,0.0,77.18772305496074,High,1,outstanding_to_revenue_est high vs goods_category=Metals,0.8795555555555555,22.498455555555555,77.4
+TX-000114,validation,paid,2025-11-16,Consumer Goods,0.0,77.14489650249821,High,1,outstanding_to_revenue_est high vs goods_category=Consumer Goods,1.2748539823008849,43.00026548672567,66.6
+TX-002647,validation,paid,2025-11-16,Chemicals,0.0,77.07351891506067,High,1,outstanding_to_revenue_est high vs goods_category=Chemicals,0.4936962962962963,31.973255555555557,100.8
+TX-000387,train,paid,2024-05-09,Food,0.0,77.07351891506066,High,1,outstanding_to_revenue_est high vs goods_category=Food,1.0657519379844962,25.967228682170543,72.0
+TX-002702,open_holdout,open,2026-02-12,Pharmaceuticals,,77.07351891506066,High,1,outstanding_to_revenue_est high vs goods_category=Pharmaceuticals,1.437248275862069,75.68709310344828,54.0
+TX-003389,open_holdout,open,2025-10-23,Chemicals,,76.802284082798,High,1,advance_tenor_exposure high vs goods_category=Chemicals,0.6501672025723473,12.340953376205787,127.8
+TX-001220,train,paid,2024-04-05,Machinery,0.0,76.75945753033548,High,1,ticket_to_revenue_est high vs goods_category=Machinery,1.8390575221238938,8.040911504424779,79.2
+TX-000082,train,paid,2024-02-20,Chemicals,0.0,76.68807994289793,High,1,ticket_to_revenue_est high vs goods_category=Chemicals,4.140955696202532,9.670525316455697,71.10000000000001
+TX-000674,train,defaulted,2025-05-23,Consumer Goods,1.0,76.61670235546038,High,1,outstanding_to_revenue_est high vs goods_category=Consumer Goods,0.9129630281690141,27.029834507042253,73.8
+TX-001781,train,paid,2025-02-13,Consumer Goods,0.0,76.53104925053532,High,1,outstanding_to_revenue_est high vs goods_category=Consumer Goods,0.5599103448275862,44.77941724137931,87.6
+TX-000902,validation,paid,2025-10-24,Textiles,0.0,76.4739471805853,High,1,outstanding_to_revenue_est high vs goods_category=Textiles,1.2486413043478262,20.919383152173914,70.2
+TX-003579,validation,paid,2025-10-08,Chemicals,0.0,76.4739471805853,High,1,outstanding_to_revenue_est high vs goods_category=Chemicals,1.322219298245614,51.00961403508772,63.9
+TX-001428,train,paid,2025-03-14,Agricultural,0.0,76.35974304068523,High,1,outstanding_to_revenue_est high vs goods_category=Agricultural,1.7897,37.07135625,52.8
+TX-003710,train,paid,2025-02-22,Machinery,0.0,76.30264097073518,High,1,outstanding_to_revenue_est high vs goods_category=Machinery,1.1525833333333333,33.411510416666665,67.5
+TX-000528,train,paid,2024-07-20,Metals,0.0,76.14561027837259,High,1,ticket_to_revenue_est high vs goods_category=Metals,2.6325350877192983,8.21536842105263,74.7
+TX-000846,validation,paid,2025-10-31,Agricultural,0.0,76.08850820842255,High,1,outstanding_to_revenue_est high vs goods_category=Agricultural,0.9930148148148148,30.98024074074074,70.2
+TX-000206,validation,paid,2025-11-03,Agricultural,0.0,75.93147751605996,High,1,outstanding_to_revenue_est high vs goods_category=Agricultural,1.5819945945945946,23.93087027027027,64.8
+TX-002807,train,paid,2024-12-14,Metals,0.0,75.87437544610992,High,1,outstanding_to_revenue_est high vs goods_category=Metals,1.4133208333333334,21.9312,66.6
+TX-003099,train,paid,2025-01-14,Textiles,0.0,75.8315488936474,High,1,advance_tenor_exposure high vs goods_category=Textiles,0.5743577235772358,11.68470325203252,158.4
+TX-003494,train,paid,2025-09-11,Agricultural,0.0,75.56031406138473,High,1,outstanding_to_revenue_est high vs goods_category=Agricultural,1.562338028169014,31.838202464788733,53.4
+TX-002971,train,paid,2024-09-21,Textiles,0.0,75.43183440399714,High,1,outstanding_to_revenue_est high vs goods_category=Textiles,1.3785241379310345,30.228193103448277,63.9
+TX-003465,open_holdout,open,2026-02-23,Metals,,75.31763026409708,High,1,outstanding_to_revenue_est high vs goods_category=Metals,0.7958996478873239,40.685596830985915,72.0
+TX-004388,train,paid,2025-05-08,Metals,0.0,75.27480371163455,High,1,outstanding_to_revenue_est high vs goods_category=Metals,0.9338,35.02138333333333,69.3
+TX-002877,train,paid,2025-08-19,Textiles,0.0,75.26052819414703,High,1,outstanding_to_revenue_est high vs goods_category=Textiles,0.41863229571984434,28.84387354085603,104.4
+TX-003596,train,paid,2025-09-16,Machinery,0.0,75.203426124197,High,1,advance_tenor_exposure high vs goods_category=Machinery,0.8855863970588236,5.8166746323529415,158.4
+TX-001674,train,paid,2025-09-06,Agricultural,0.0,75.13204853675946,High,1,outstanding_to_revenue_est high vs goods_category=Agricultural,0.8212451361867704,29.262505836575876,72.9
+TX-001985,open_holdout,open,2025-09-28,Consumer Goods,,75.13204853675946,High,1,outstanding_to_revenue_est high vs goods_category=Consumer Goods,1.216903448275862,66.91597931034482,53.4
+TX-001578,train,paid,2025-09-01,Textiles,0.0,75.08922198429693,High,1,outstanding_to_revenue_est high vs goods_category=Textiles,1.4403488372093023,70.70493604651163,51.0
+TX-004030,train,paid,2024-01-02,Metals,0.0,75.07494646680942,High,1,ticket_to_revenue_est high vs goods_category=Metals,2.0268837209302326,15.114480620155039,65.7
+TX-000304,train,paid,2024-08-25,Textiles,0.0,75.0463954318344,High,1,ticket_to_revenue_est high vs goods_category=Textiles,2.5816216216216215,8.669745945945946,72.0
+TX-000209,train,paid,2025-02-28,Food,0.0,74.8893647394718,High,1,outstanding_to_revenue_est high vs goods_category=Food,0.41951232394366195,24.195658450704226,105.6
+TX-004843,open_holdout,open,2026-03-20,Machinery,,74.84653818700927,High,1,outstanding_to_revenue_est high vs goods_category=Machinery,0.7694432176656152,20.552181388012617,76.5
+TX-003063,train,paid,2025-03-25,Pharmaceuticals,0.0,74.77516059957173,High,1,outstanding_to_revenue_est high vs goods_category=Pharmaceuticals,0.41178395061728396,23.106703703703705,106.8
+TX-003017,train,paid,2025-06-06,Food,0.0,74.7180585296217,High,1,ticket_to_revenue_est high vs goods_category=Food,2.0046026785714286,12.808236607142858,67.5
+TX-001361,open_holdout,open,2026-03-29,Consumer Goods,,74.70378301213418,High,1,outstanding_to_revenue_est high vs goods_category=Consumer Goods,1.3775034013605443,25.172795918367346,63.9
+TX-000479,train,paid,2025-07-12,Consumer Goods,0.0,74.60385438972163,High,1,ticket_to_revenue_est high vs goods_category=Consumer Goods,1.7167422907488987,18.473284140969163,63.9
+TX-001052,open_holdout,open,2025-11-07,Metals,,74.51820128479658,High,1,outstanding_to_revenue_est high vs goods_category=Metals,1.4927131782945737,141.75608914728681,49.199999999999996
+TX-004457,train,paid,2024-07-22,Textiles,0.0,74.46109921484653,High,1,advance_tenor_exposure high vs goods_category=Textiles,0.9994333333333333,4.6982566666666665,145.8
+TX-001706,open_holdout,open,2025-10-03,Textiles,,74.38972162740899,High,1,outstanding_to_revenue_est high vs goods_category=Textiles,1.1012026378896882,20.005388489208634,68.4
+TX-002880,train,paid,2025-06-03,Pharmaceuticals,0.0,74.06138472519628,High,1,outstanding_to_revenue_est high vs goods_category=Pharmaceuticals,0.6659961089494163,24.721558365758757,76.5
+TX-002500,train,paid,2025-06-03,Agricultural,0.0,74.01855817273376,High,1,outstanding_to_revenue_est high vs goods_category=Agricultural,1.1269,60.089355172413796,52.8
+TX-002703,train,paid,2024-06-05,Agricultural,0.0,73.97573162027123,High,1,outstanding_to_revenue_est high vs goods_category=Agricultural,1.0274302325581395,27.03298062015504,66.6
+TX-002837,train,paid,2025-05-13,Machinery,0.0,73.89007851534618,High,1,outstanding_to_revenue_est high vs goods_category=Machinery,1.3661139240506328,35.27085443037975,52.2
+TX-000378,open_holdout,open,2026-01-25,Textiles,,73.89007851534618,High,1,outstanding_to_revenue_est high vs goods_category=Textiles,0.8008141025641026,154.06091025641027,65.7
+TX-000174,train,paid,2025-08-21,Chemicals,0.0,73.84725196288366,High,1,outstanding_to_revenue_est high vs goods_category=Chemicals,1.2030891891891893,24.41794864864865,64.8
+TX-000794,open_holdout,open,2026-03-28,Agricultural,,73.6188436830835,High,1,outstanding_to_revenue_est high vs goods_category=Agricultural,0.6313560311284047,42.31288910505837,73.8
+TX-004575,train,paid,2025-09-02,Food,0.0,73.57601713062098,High,1,outstanding_to_revenue_est high vs goods_category=Food,0.5701443089430894,30.137542682926828,78.3
+TX-004275,train,paid,2024-03-29,Food,0.0,73.43326195574589,High,1,ticket_to_revenue_est high vs goods_category=Food,2.4333653846153847,19.99653846153846,50.4
+TX-004427,open_holdout,open,2025-11-01,Pharmaceuticals,,73.43326195574589,High,1,outstanding_to_revenue_est high vs goods_category=Pharmaceuticals,0.4834978197674419,21.230614825581394,94.80000000000001
+TX-003311,train,paid,2025-07-22,Pharmaceuticals,0.0,73.37615988579586,High,1,outstanding_to_revenue_est high vs goods_category=Pharmaceuticals,0.8644961089494163,26.36662645914397,69.3
+TX-003004,train,paid,2024-10-08,Chemicals,0.0,73.33333333333333,High,1,ticket_to_revenue_est high vs goods_category=Chemicals,1.6498245614035087,15.709078947368422,63.9
+TX-004837,train,paid,2025-04-17,Food,0.0,73.23340471092077,High,1,outstanding_to_revenue_est high vs goods_category=Food,0.5204979674796748,21.885394308943088,87.6
+TX-002982,open_holdout,open,2026-02-28,Pharmaceuticals,,73.21912919343326,High,1,outstanding_to_revenue_est high vs goods_category=Pharmaceuticals,0.49996002906976744,22.74678270348837,88.8
+TX-002492,train,paid,2025-07-25,Machinery,0.0,73.17630264097073,High,1,outstanding_to_revenue_est high vs goods_category=Machinery,0.6709066147859922,27.231122568093387,73.8
+TX-000330,open_holdout,open,2026-02-11,Pharmaceuticals,,72.90506780870805,High,1,outstanding_to_revenue_est high vs goods_category=Pharmaceuticals,0.7114595375722543,28.950890173410404,72.0
+TX-002383,train,paid,2023-12-22,Metals,0.0,72.86224125624554,High,1,advance_tenor_exposure high vs goods_category=Metals,1.505530303030303,2.2108989898989897,153.0
+TX-000520,train,paid,2024-07-23,Pharmaceuticals,0.0,72.80513918629549,High,1,outstanding_to_revenue_est high vs goods_category=Pharmaceuticals,0.5727551724137931,24.16141379310345,78.3
+TX-004123,open_holdout,open,2026-02-16,Metals,,72.73376159885795,High,1,outstanding_to_revenue_est high vs goods_category=Metals,1.20655,64.60044375,50.4
+TX-001039,open_holdout,open,2025-09-07,Pharmaceuticals,,72.70521056388293,High,1,outstanding_to_revenue_est high vs goods_category=Pharmaceuticals,0.3702585034013605,19.963666666666665,106.8
+TX-001423,train,paid,2025-05-29,Pharmaceuticals,0.0,72.67665952890792,High,1,outstanding_to_revenue_est high vs goods_category=Pharmaceuticals,0.654570796460177,30.70021681415929,72.9
+TX-004941,train,paid,2024-11-30,Agricultural,0.0,72.59100642398286,High,1,outstanding_to_revenue_est high vs goods_category=Agricultural,0.7250872093023256,45.87477906976744,68.4
+TX-002049,open_holdout,open,2026-02-28,Chemicals,,72.56245538900785,High,1,outstanding_to_revenue_est high vs goods_category=Chemicals,0.5775275862068966,78.1925448275862,72.0
+TX-004542,train,defaulted,2025-01-10,Metals,1.0,72.51962883654531,High,1,advance_tenor_exposure high vs goods_category=Metals,0.46947113163972287,11.055540415704389,156.6
+TX-000796,train,paid,2025-06-29,Textiles,0.0,72.46252676659529,High,1,outstanding_to_revenue_est high vs goods_category=Textiles,1.6348609154929576,27.942797535211266,49.8
+TX-004611,train,paid,2025-07-10,Consumer Goods,0.0,72.46252676659529,High,1,ticket_to_revenue_est high vs goods_category=Consumer Goods,3.0185128205128207,12.87049358974359,52.2
+TX-003342,train,defaulted,2025-08-02,Textiles,1.0,72.3197715917202,High,1,outstanding_to_revenue_est high vs goods_category=Textiles,0.5897821011673152,27.902029182879378,75.6
+TX-002999,train,paid,2025-08-31,Metals,0.0,72.29122055674517,High,1,outstanding_to_revenue_est high vs goods_category=Metals,1.0580243243243244,22.227683783783785,64.8
+TX-000299,train,paid,2024-12-10,Machinery,0.0,72.07708779443254,High,1,outstanding_to_revenue_est high vs goods_category=Machinery,0.7001931034482759,28.221358620689657,71.10000000000001
+TX-001338,train,paid,2024-01-12,Food,0.0,72.04853675945753,High,1,ticket_to_revenue_est high vs goods_category=Food,1.6155325203252033,2.9578048780487807,98.39999999999999
+TX-001937,train,paid,2024-07-13,Pharmaceuticals,0.0,72.0199857244825,High,1,ticket_to_revenue_est high vs goods_category=Pharmaceuticals,1.9348585657370518,4.420189243027888,79.2
+TX-000629,train,defaulted,2025-06-03,Agricultural,1.0,71.99143468950749,High,1,outstanding_to_revenue_est high vs goods_category=Agricultural,1.34801875,45.7472875,49.199999999999996
+TX-002693,train,paid,2025-01-26,Consumer Goods,0.0,71.99143468950749,High,1,advance_tenor_exposure high vs goods_category=Consumer Goods,0.6404574132492113,6.76452523659306,140.4
+TX-002253,train,paid,2025-05-16,Consumer Goods,0.0,71.94860813704497,High,1,advance_tenor_exposure high vs goods_category=Consumer Goods,0.5950068493150685,6.889010273972603,160.2
+TX-003167,train,paid,2024-10-09,Textiles,0.0,71.92005710206995,High,1,outstanding_to_revenue_est high vs goods_category=Textiles,1.0567034482758622,33.28539310344828,52.8
+TX-004915,train,paid,2024-08-28,Textiles,0.0,71.6773733047823,High,1,outstanding_to_revenue_est high vs goods_category=Textiles,1.3685058139534885,31.63900581395349,49.8
+TX-000511,train,paid,2024-08-02,Textiles,0.0,71.66309778729479,High,1,outstanding_to_revenue_est high vs goods_category=Textiles,0.5508068965517241,24.73416896551724,77.4
+TX-004698,train,paid,2024-04-13,Machinery,0.0,71.63454675231976,High,1,ticket_to_revenue_est high vs goods_category=Machinery,5.395449367088608,13.811481012658227,49.199999999999996
+TX-003946,train,paid,2025-02-16,Chemicals,0.0,71.60599571734475,High,1,ticket_to_revenue_est high vs goods_category=Chemicals,1.9173211382113822,12.259060975609756,62.99999999999999
+TX-000233,train,defaulted,2025-06-15,Metals,1.0,71.60599571734474,High,1,outstanding_to_revenue_est high vs goods_category=Metals,1.2988689655172414,61.216255172413796,48.0
+TX-000132,train,paid,2025-09-30,Textiles,0.0,71.42041399000713,High,1,outstanding_to_revenue_est high vs goods_category=Textiles,0.8281829268292683,20.763564301552105,68.4
+TX-001367,validation,paid,2025-10-01,Chemicals,0.0,71.40613847251963,High,1,outstanding_to_revenue_est high vs goods_category=Chemicals,0.6604249011857708,21.906859683794465,72.9
+TX-003580,validation,paid,2025-11-08,Consumer Goods,0.0,71.26338329764454,High,1,outstanding_to_revenue_est high vs goods_category=Consumer Goods,1.2128135135135134,25.512864864864866,51.6
+TX-004861,train,paid,2023-11-20,Metals,0.0,70.99214846538186,High,1,ticket_to_revenue_est high vs goods_category=Metals,1.8767751937984496,3.6043217054263565,80.1
+TX-004570,train,paid,2025-06-05,Agricultural,0.0,70.97787294789435,High,1,outstanding_to_revenue_est high vs goods_category=Agricultural,1.3343360655737706,60.993868852459016,46.800000000000004
+TX-000836,train,paid,2024-05-03,Chemicals,0.0,70.9064953604568,High,1,ticket_to_revenue_est high vs goods_category=Chemicals,2.014160714285714,3.933392857142857,78.3
+TX-002193,train,paid,2025-05-04,Textiles,0.0,70.79229122055673,High,1,outstanding_to_revenue_est high vs goods_category=Textiles,1.3201814159292036,28.00834513274336,49.8
+TX-001831,train,paid,2025-03-27,Food,0.0,70.64953604568166,High,1,ticket_to_revenue_est high vs goods_category=Food,1.8572470355731225,14.670612648221343,51.0
+TX-003183,validation,paid,2026-01-07,Textiles,0.0,70.5638829407566,High,1,outstanding_to_revenue_est high vs goods_category=Textiles,1.5220130718954248,22.112506535947713,49.199999999999996
+TX-002609,train,paid,2024-11-19,Chemicals,0.0,70.53533190578158,High,1,outstanding_to_revenue_est high vs goods_category=Chemicals,0.5608,24.611496551724137,74.7
+TX-001904,train,paid,2025-04-06,Chemicals,0.0,70.50678087080657,High,1,outstanding_to_revenue_est high vs goods_category=Chemicals,0.6499085365853658,21.235485772357723,72.0
+TX-001315,train,defaulted,2025-09-24,Pharmaceuticals,1.0,70.47822983583154,High,1,outstanding_to_revenue_est high vs goods_category=Pharmaceuticals,0.9255428015564202,30.083750972762648,53.4
+TX-003023,train,paid,2025-05-24,Textiles,0.0,70.44967880085653,High,1,outstanding_to_revenue_est high vs goods_category=Textiles,1.572589655172414,57.09229310344828,44.4
+TX-004245,train,paid,2023-11-25,Chemicals,0.0,70.43540328336901,High,1,outstanding_to_revenue_est high vs goods_category=Chemicals,0.9372931034482759,16.919179310344827,66.6
+TX-000943,train,paid,2025-05-15,Chemicals,0.0,70.14989293361884,High,1,outstanding_to_revenue_est high vs goods_category=Chemicals,0.6773170731707318,25.719841463414635,68.4
+TX-000468,validation,paid,2026-01-18,Agricultural,0.0,70.14989293361884,High,1,outstanding_to_revenue_est high vs goods_category=Agricultural,1.199179347826087,25.989815217391303,50.4
+TX-004105,train,paid,2024-10-23,Machinery,0.0,70.10706638115632,High,1,ticket_to_revenue_est high vs goods_category=Machinery,2.468994791666667,5.339356770833334,71.10000000000001
+TX-004999,train,defaulted,2025-01-15,Textiles,1.0,70.1070663811563,High,1,outstanding_to_revenue_est high vs goods_category=Textiles,0.5284859154929578,23.20511971830986,75.6
+TX-004380,train,paid,2024-03-15,Chemicals,0.0,70.09279086366881,High,1,ticket_to_revenue_est high vs goods_category=Chemicals,7.942472222222222,7.742537037037037,52.8
+TX-002117,validation,paid,2025-12-30,Consumer Goods,0.0,70.03568879371878,High,1,ticket_to_revenue_est high vs goods_category=Consumer Goods,2.4833936170212767,18.26483510638298,46.2
+TX-004180,train,paid,2025-05-26,Agricultural,0.0,69.97858672376873,Medium,1,outstanding_to_revenue_est high vs goods_category=Agricultural,1.585589947089947,23.54762433862434,47.400000000000006
+TX-003005,train,paid,2025-09-30,Pharmaceuticals,0.0,69.96431120628122,Medium,1,outstanding_to_revenue_est high vs goods_category=Pharmaceuticals,0.4618599221789883,31.447955252918288,76.5
+TX-000558,train,paid,2025-01-19,Metals,0.0,69.95003568879372,Medium,1,outstanding_to_revenue_est high vs goods_category=Metals,0.5810802469135803,20.77933024691358,73.8
+TX-001541,open_holdout,open,2026-02-14,Food,,69.9214846538187,Medium,1,outstanding_to_revenue_est high vs goods_category=Food,0.9897433628318584,50.0231814159292,49.8
+TX-003237,train,paid,2025-08-18,Chemicals,0.0,69.7787294789436,Medium,1,outstanding_to_revenue_est high vs goods_category=Chemicals,0.7920731707317074,29.345469512195123,63.9
+TX-000182,validation,paid,2026-01-08,Food,0.0,69.6074232690935,Medium,1,outstanding_to_revenue_est high vs goods_category=Food,0.5957723577235773,37.345928861788614,68.4
+TX-002453,open_holdout,open,2026-02-06,Pharmaceuticals,,69.56459671663097,Medium,1,outstanding_to_revenue_est high vs goods_category=Pharmaceuticals,0.3359838337182448,23.176960739030022,96.0
+TX-002012,open_holdout,open,2025-11-30,Textiles,,69.53604568165596,Medium,1,outstanding_to_revenue_est high vs goods_category=Textiles,0.5163551724137931,73.13043448275862,69.3
+TX-000952,open_holdout,open,2026-01-16,Agricultural,,69.53604568165595,Medium,1,outstanding_to_revenue_est high vs goods_category=Agricultural,1.1626958333333333,61.46098541666667,46.2
+TX-000159,train,paid,2024-09-10,Agricultural,0.0,69.49321912919342,Medium,1,ticket_to_revenue_est high vs goods_category=Agricultural,2.405247474747475,5.614616161616162,69.3
+TX-000735,train,paid,2025-03-15,Textiles,0.0,69.19343326195573,Medium,1,outstanding_to_revenue_est high vs goods_category=Textiles,0.9241265432098765,22.182577160493828,53.4
+TX-004503,train,paid,2024-03-24,Chemicals,0.0,69.16488222698072,Medium,1,ticket_to_revenue_est high vs goods_category=Chemicals,6.019179487179487,13.977358974358975,45.0
+TX-003177,train,defaulted,2024-10-31,Agricultural,1.0,68.9793004996431,Medium,1,outstanding_to_revenue_est high vs goods_category=Agricultural,1.3957931034482758,35.94545172413793,45.0
+TX-000993,train,paid,2025-02-07,Textiles,0.0,68.93647394718059,Medium,1,outstanding_to_revenue_est high vs goods_category=Textiles,1.5591655172413794,43.22025172413793,43.199999999999996
+TX-003444,train,paid,2025-09-11,Agricultural,0.0,68.93647394718059,Medium,1,outstanding_to_revenue_est high vs goods_category=Agricultural,1.3659615384615384,142.57891025641027,42.0
+TX-004954,validation,paid,2025-10-14,Chemicals,0.0,68.85082084225553,Medium,1,ticket_to_revenue_est high vs goods_category=Chemicals,2.478247340425532,3.898688829787234,72.9
+TX-001293,train,paid,2024-05-16,Pharmaceuticals,0.0,68.7937187723055,Medium,1,ticket_to_revenue_est high vs goods_category=Pharmaceuticals,2.2209537572254336,7.353739884393064,64.8
+TX-001312,train,paid,2024-10-05,Pharmaceuticals,0.0,68.76516773733047,Medium,1,ticket_to_revenue_est high vs goods_category=Pharmaceuticals,1.956420634920635,9.68384126984127,52.8
+TX-000288,train,paid,2025-05-19,Machinery,0.0,68.73661670235546,Medium,1,advance_tenor_exposure high vs goods_category=Machinery,0.41248581560283687,9.153609929078014,142.20000000000002
+TX-000237,train,paid,2024-04-07,Consumer Goods,0.0,68.57958600999285,Medium,1,ticket_to_revenue_est high vs goods_category=Consumer Goods,1.8785669642857143,2.054825892857143,90.0
+TX-004907,train,paid,2025-05-18,Chemicals,0.0,68.56531049250535,Medium,1,outstanding_to_revenue_est high vs goods_category=Chemicals,0.3841751662971175,16.368575388026606,93.60000000000001
+TX-000127,train,paid,2025-06-16,Chemicals,0.0,68.52248394004282,Medium,1,outstanding_to_revenue_est high vs goods_category=Chemicals,1.2062,23.211748648648648,48.6
+TX-003103,validation,paid,2025-10-05,Agricultural,0.0,68.42255531763026,Medium,1,outstanding_to_revenue_est high vs goods_category=Agricultural,0.8985809312638581,21.591747228381376,52.8
+TX-002715,train,paid,2025-07-18,Food,0.0,68.40827980014275,Medium,1,outstanding_to_revenue_est high vs goods_category=Food,0.6188080985915493,29.577658450704224,66.6
+TX-000383,train,paid,2025-08-21,Food,0.0,68.26552462526766,Medium,1,ticket_to_revenue_est high vs goods_category=Food,2.001988425925926,6.778523148148148,65.7
+TX-001031,train,paid,2024-02-03,Pharmaceuticals,0.0,68.1798715203426,Medium,1,ticket_to_revenue_est high vs goods_category=Pharmaceuticals,2.1958410852713177,17.14136434108527,45.0
+TX-003963,train,paid,2024-10-08,Chemicals,0.0,68.1798715203426,Medium,1,advance_tenor_exposure high vs goods_category=Chemicals,1.2930465753424658,1.5809328767123287,129.6
+TX-002941,train,paid,2024-10-30,Agricultural,0.0,68.07994289793005,Medium,1,outstanding_to_revenue_est high vs goods_category=Agricultural,1.1588758620689654,34.786575862068965,46.2
+TX-002051,open_holdout,open,2025-12-05,Metals,,68.05139186295503,Medium,1,outstanding_to_revenue_est high vs goods_category=Metals,1.0606479166666667,58.3248125,45.6
+TX-001910,train,paid,2024-07-26,Food,0.0,67.994289793005,Medium,1,outstanding_to_revenue_est high vs goods_category=Food,0.5644612403100775,30.073372093023256,68.4
+TX-000617,validation,paid,2025-11-08,Pharmaceuticals,0.0,67.92291220556746,Medium,1,outstanding_to_revenue_est high vs goods_category=Pharmaceuticals,0.9680038910505837,34.803538910505836,48.6
+TX-002977,validation,paid,2026-01-14,Textiles,0.0,67.88008565310493,Medium,1,outstanding_to_revenue_est high vs goods_category=Textiles,1.158151724137931,54.002975862068965,44.4
+TX-000463,validation,defaulted,2025-10-18,Metals,1.0,67.88008565310491,Medium,1,outstanding_to_revenue_est high vs goods_category=Metals,0.4191705426356589,136.38975581395349,70.2
+TX-001000,train,paid,2025-03-08,Machinery,0.0,67.80870806566739,Medium,1,ticket_to_revenue_est high vs goods_category=Machinery,1.679905,2.44066,81.0
+TX-003129,open_holdout,open,2026-01-19,Machinery,,67.66595289079228,Medium,1,outstanding_to_revenue_est high vs goods_category=Machinery,0.3192660753880266,25.311057649667404,87.6
+TX-000723,validation,paid,2025-12-29,Food,0.0,67.50892219842969,Medium,1,outstanding_to_revenue_est high vs goods_category=Food,0.44935011990407675,23.56109232613909,74.7
+TX-001095,train,paid,2025-09-09,Food,0.0,67.33761598857959,Medium,1,outstanding_to_revenue_est high vs goods_category=Food,0.5294228395061729,26.692246913580245,69.3
+TX-003334,train,paid,2024-07-14,Chemicals,0.0,67.33761598857959,Medium,1,outstanding_to_revenue_est high vs goods_category=Chemicals,0.8573206896551724,23.304093103448277,51.6
+TX-002617,validation,paid,2026-02-13,Textiles,0.0,67.33761598857959,Medium,1,outstanding_to_revenue_est high vs goods_category=Textiles,1.5956837837837838,36.216991891891894,39.6
+TX-002990,train,paid,2025-08-07,Chemicals,0.0,67.32334047109207,Medium,1,outstanding_to_revenue_est high vs goods_category=Chemicals,1.1654402173913043,16.029334239130435,50.4
+TX-000543,open_holdout,open,2026-01-17,Consumer Goods,,67.32334047109207,Medium,1,outstanding_to_revenue_est high vs goods_category=Consumer Goods,0.44528532608695653,25.544529891304347,73.8
+TX-002396,validation,paid,2026-02-05,Textiles,0.0,67.25196288365453,Medium,1,outstanding_to_revenue_est high vs goods_category=Textiles,0.9213983739837398,39.33607113821138,48.0
+TX-002507,train,defaulted,2023-11-28,Metals,1.0,67.09493219129193,Medium,1,ticket_to_revenue_est high vs goods_category=Metals,1.8937708333333334,2.7914208333333335,76.5
+TX-002705,train,paid,2025-03-28,Chemicals,0.0,67.0235546038544,Medium,1,outstanding_to_revenue_est high vs goods_category=Chemicals,0.5295853658536586,20.705900406504064,71.10000000000001
+TX-003104,validation,paid,2025-10-06,Consumer Goods,0.0,66.99500356887938,Medium,1,outstanding_to_revenue_est high vs goods_category=Consumer Goods,0.7103893805309734,40.18019469026549,51.6
+TX-000282,train,paid,2025-01-02,Consumer Goods,0.0,66.76659528907922,Medium,1,outstanding_to_revenue_est high vs goods_category=Consumer Goods,0.5055,26.459272916666666,69.3
+TX-001636,train,paid,2025-01-22,Textiles,0.0,66.75231977159171,Medium,1,outstanding_to_revenue_est high vs goods_category=Textiles,1.0975077519379846,74.33396899224806,42.599999999999994
+TX-003413,train,defaulted,2025-06-11,Consumer Goods,1.0,66.49536045681656,Medium,1,outstanding_to_revenue_est high vs goods_category=Consumer Goods,1.452717741935484,116.08801612903225,34.65
+TX-004531,train,paid,2025-01-31,Textiles,0.0,66.48108493932905,Medium,1,outstanding_to_revenue_est high vs goods_category=Textiles,0.6968372093023256,52.749075581395346,50.4
+TX-004985,train,paid,2025-01-20,Agricultural,0.0,66.42398286937902,Medium,1,outstanding_to_revenue_est high vs goods_category=Agricultural,0.8221666666666667,21.36041049382716,51.6
+TX-004688,train,paid,2025-05-06,Pharmaceuticals,0.0,66.395431834404,Medium,1,ticket_to_revenue_est high vs goods_category=Pharmaceuticals,3.5282814814814816,13.661944444444444,42.599999999999994
+TX-002004,train,paid,2025-04-18,Metals,0.0,66.38115631691647,Medium,1,outstanding_to_revenue_est high vs goods_category=Metals,0.37921724137931034,55.80925517241379,72.0
+TX-004065,train,defaulted,2025-04-22,Machinery,1.0,66.30977872947894,Medium,1,outstanding_to_revenue_est high vs goods_category=Machinery,0.8650330739299611,22.950610894941633,50.4
+TX-003868,open_holdout,open,2026-03-14,Consumer Goods,,66.30977872947894,Medium,1,ticket_to_revenue_est high vs goods_category=Consumer Goods,2.5257371794871797,20.815833333333334,36.9
+TX-001450,train,paid,2025-08-10,Metals,0.0,66.2384011420414,Medium,1,outstanding_to_revenue_est high vs goods_category=Metals,0.6890275862068965,63.98213448275862,49.8
+TX-003379,train,paid,2025-09-27,Metals,0.0,66.15274803711634,Medium,1,outstanding_to_revenue_est high vs goods_category=Metals,1.2095916666666666,54.22993125,39.6
+TX-001341,validation,paid,2025-10-01,Consumer Goods,0.0,66.13847251962883,Medium,1,outstanding_to_revenue_est high vs goods_category=Consumer Goods,0.8771913580246914,28.29818827160494,48.6
+TX-000338,train,paid,2025-04-22,Food,0.0,66.02426837972877,Medium,1,outstanding_to_revenue_est high vs goods_category=Food,0.3172023346303502,22.633408560311285,80.1
+TX-001235,train,defaulted,2025-07-19,Pharmaceuticals,1.0,65.76730906495361,Medium,1,outstanding_to_revenue_est high vs goods_category=Pharmaceuticals,1.4670103448275862,62.51512413793103,34.65
+TX-001655,train,paid,2025-01-16,Food,0.0,65.69593147751605,Medium,1,advance_tenor_exposure high vs goods_category=Food,0.7567138157894737,2.153595394736842,151.2
+TX-004227,train,paid,2025-08-10,Consumer Goods,0.0,65.59600285510349,Medium,1,outstanding_to_revenue_est high vs goods_category=Consumer Goods,0.3520622568093385,28.491811284046694,75.6
+TX-002744,open_holdout,open,2026-01-23,Pharmaceuticals,,65.581727337616,Medium,1,outstanding_to_revenue_est high vs goods_category=Pharmaceuticals,0.47967816091954024,20.342118390804597,71.10000000000001
+TX-003622,train,defaulted,2025-07-25,Food,1.0,65.39614561027838,Medium,1,outstanding_to_revenue_est high vs goods_category=Food,0.7658583333333333,49.5032625,47.400000000000006
+TX-001057,train,paid,2025-06-28,Pharmaceuticals,0.0,65.25339043540328,Medium,1,outstanding_to_revenue_est high vs goods_category=Pharmaceuticals,0.5743179012345679,23.51848765432099,64.8
+TX-002472,validation,paid,2025-12-12,Chemicals,0.0,65.11063526052818,Medium,1,outstanding_to_revenue_est high vs goods_category=Chemicals,1.2512438271604938,31.066956790123456,40.05
+TX-004141,train,paid,2023-09-01,Machinery,0.0,65.03925767309065,Medium,1,ticket_to_revenue_est high vs goods_category=Machinery,2.4948,0.0,106.8
+TX-001966,train,paid,2024-07-08,Chemicals,0.0,65.02498215560314,Medium,1,ticket_to_revenue_est high vs goods_category=Chemicals,2.587837037037037,2.2132185185185187,72.9
+TX-001841,train,paid,2025-02-09,Textiles,0.0,64.98215560314061,Medium,1,outstanding_to_revenue_est high vs goods_category=Textiles,0.4620528169014084,23.733605633802817,69.3
+TX-003226,train,paid,2024-08-10,Pharmaceuticals,0.0,64.92505353319058,Medium,1,advance_tenor_exposure high vs goods_category=Pharmaceuticals,0.3113162162162162,8.35842972972973,153.0
+TX-003876,train,paid,2025-08-17,Textiles,0.0,64.78229835831549,Medium,1,outstanding_to_revenue_est high vs goods_category=Textiles,1.208108024691358,25.48413888888889,42.599999999999994
+TX-001786,train,paid,2024-06-17,Agricultural,0.0,64.73947180585296,Medium,1,ticket_to_revenue_est high vs goods_category=Agricultural,2.6726063829787234,3.9265106382978723,64.8
+TX-004811,train,paid,2025-06-25,Agricultural,0.0,64.6538187009279,Medium,1,ticket_to_revenue_est high vs goods_category=Agricultural,2.538210144927536,4.230539855072464,63.9
+TX-001663,validation,paid,2025-11-20,Metals,0.0,64.6538187009279,Medium,1,outstanding_to_revenue_est high vs goods_category=Metals,0.8398191056910569,34.6420569105691,46.2
+TX-001993,train,paid,2024-04-17,Machinery,0.0,64.56816559600286,Medium,1,ticket_to_revenue_est high vs goods_category=Machinery,7.668704918032787,10.479524590163935,40.05
+TX-004089,train,paid,2023-11-11,Agricultural,0.0,64.4682369735903,Medium,1,ticket_to_revenue_est high vs goods_category=Agricultural,3.9265106382978723,0.0,99.6
+TX-000277,train,paid,2025-06-02,Consumer Goods,0.0,64.45396145610277,Medium,1,outstanding_to_revenue_est high vs goods_category=Consumer Goods,0.6053008849557522,31.354787610619468,51.6
+TX-004148,open_holdout,open,2026-01-03,Pharmaceuticals,,64.38258386866525,Medium,1,outstanding_to_revenue_est high vs goods_category=Pharmaceuticals,0.7018252032520326,36.64410365853659,48.6
+TX-002905,open_holdout,open,2025-12-05,Textiles,,64.35403283369023,Medium,1,outstanding_to_revenue_est high vs goods_category=Textiles,0.35954482758620687,73.64678965517241,68.4
+TX-001511,open_holdout,open,2026-01-03,Pharmaceuticals,,64.12562455389008,Medium,1,outstanding_to_revenue_est high vs goods_category=Pharmaceuticals,0.24129065040650408,36.40281300813008,79.2
+TX-004479,train,paid,2023-11-21,Consumer Goods,0.0,64.06852248394004,Medium,1,ticket_to_revenue_est high vs goods_category=Consumer Goods,5.098807692307692,10.432,40.5
+TX-001753,train,paid,2023-08-30,Consumer Goods,0.0,64.05424696645252,Medium,1,ticket_to_revenue_est high vs goods_category=Consumer Goods,2.9109032258064516,13.699088709677419,37.35
+TX-002710,train,defaulted,2024-12-18,Agricultural,1.0,63.9971448965025,Medium,1,outstanding_to_revenue_est high vs goods_category=Agricultural,1.31125,24.192304166666666,39.15
+TX-002420,validation,paid,2025-10-27,Textiles,0.0,63.9971448965025,Medium,1,ticket_to_revenue_est high vs goods_category=Textiles,2.3492928571428573,16.260990476190475,36.45
+TX-002574,train,defaulted,2025-03-12,Pharmaceuticals,1.0,63.99714489650249,Medium,1,outstanding_to_revenue_est high vs goods_category=Pharmaceuticals,1.3719758620689655,47.107458620689656,33.3
+TX-001806,open_holdout,open,2025-11-23,Chemicals,,63.91149179157745,Medium,1,outstanding_to_revenue_est high vs goods_category=Chemicals,0.32330155642023345,36.67623151750973,72.9
+TX-001328,validation,paid,2025-11-14,Textiles,0.0,63.82583868665239,Medium,1,outstanding_to_revenue_est high vs goods_category=Textiles,0.9046887159533074,35.77154280155642,43.8
+TX-000660,train,paid,2025-09-27,Agricultural,0.0,63.78301213418986,Medium,1,outstanding_to_revenue_est high vs goods_category=Agricultural,0.4386614785992218,31.009293774319065,66.6
+TX-002750,train,paid,2024-05-13,Chemicals,0.0,63.768736616702355,Medium,1,outstanding_to_revenue_est high vs goods_category=Chemicals,0.6996686046511628,19.711063953488374,51.0
+TX-001476,open_holdout,open,2026-03-03,Chemicals,,63.6830835117773,Medium,1,outstanding_to_revenue_est high vs goods_category=Chemicals,0.29011724137931033,21.730927586206896,78.3
+TX-002988,validation,paid,2026-01-27,Agricultural,0.0,63.66880799428979,Medium,1,outstanding_to_revenue_est high vs goods_category=Agricultural,0.5146186770428015,39.48303307392996,52.8
+TX-000695,train,paid,2025-03-24,Metals,0.0,63.65453247680228,Medium,1,outstanding_to_revenue_est high vs goods_category=Metals,1.1995448275862068,48.47943448275862,35.1
+TX-000672,train,paid,2023-09-23,Pharmaceuticals,0.0,63.64025695931477,Medium,1,ticket_to_revenue_est high vs goods_category=Pharmaceuticals,7.742537037037037,0.0,91.2
+TX-002092,train,paid,2025-05-03,Textiles,0.0,63.59743040685225,Medium,1,outstanding_to_revenue_est high vs goods_category=Textiles,1.15644375,44.59084375,36.0
+TX-001146,train,paid,2024-12-01,Textiles,0.0,63.540328336902206,Medium,1,outstanding_to_revenue_est high vs goods_category=Textiles,1.0761793103448276,37.34124482758621,38.25
+TX-002916,train,paid,2023-09-15,Consumer Goods,0.0,63.48322626695217,Medium,1,ticket_to_revenue_est high vs goods_category=Consumer Goods,1.722453488372093,4.435447674418604,64.8
+TX-000077,train,paid,2025-04-30,Food,0.0,63.46895074946465,Medium,1,outstanding_to_revenue_est high vs goods_category=Food,0.9038206896551724,56.1884724137931,40.05
+TX-003270,train,paid,2024-04-04,Agricultural,0.0,63.269093504639535,Medium,1,ticket_to_revenue_est high vs goods_category=Agricultural,2.830953488372093,16.039180232558138,33.3
+TX-003525,train,paid,2025-09-25,Food,0.0,63.197715917202,Medium,1,outstanding_to_revenue_est high vs goods_category=Food,1.0765185185185184,27.22166975308642,39.6
+TX-004064,train,paid,2024-02-18,Textiles,0.0,63.054960742326905,Medium,1,ticket_to_revenue_est high vs goods_category=Textiles,3.3805,6.290025316455696,47.400000000000006
+TX-000044,train,paid,2024-09-09,Metals,0.0,62.94075660242684,Medium,1,outstanding_to_revenue_est high vs goods_category=Metals,1.213875968992248,48.37963178294574,33.3
+TX-002782,train,paid,2024-11-09,Metals,0.0,62.91220556745182,Medium,1,outstanding_to_revenue_est high vs goods_category=Metals,0.6900862676056339,21.509014084507044,49.8
+TX-003941,train,paid,2024-12-19,Pharmaceuticals,0.0,62.89793004996431,Medium,1,outstanding_to_revenue_est high vs goods_category=Pharmaceuticals,0.95571875,25.503554166666667,43.199999999999996
+TX-000525,validation,paid,2025-10-26,Textiles,0.0,62.883654532476804,Medium,1,outstanding_to_revenue_est high vs goods_category=Textiles,0.6679715447154472,33.97408536585366,47.400000000000006
+TX-000666,train,paid,2024-02-08,Pharmaceuticals,0.0,62.8836545324768,Medium,1,ticket_to_revenue_est high vs goods_category=Pharmaceuticals,5.208487341772152,0.0,90.0
+TX-002303,train,paid,2024-09-20,Textiles,0.0,62.81227694503926,Medium,1,ticket_to_revenue_est high vs goods_category=Textiles,14.420775862068966,5.997241379310345,45.6
+TX-000512,train,paid,2024-03-26,Food,0.0,62.7266238401142,Medium,1,ticket_to_revenue_est high vs goods_category=Food,1.9167513513513514,8.542994594594594,46.2
+TX-004866,validation,paid,2026-01-26,Food,0.0,62.68379728765168,Medium,1,ticket_to_revenue_est high vs goods_category=Food,1.8816523809523809,19.157888095238096,33.3
+TX-001600,train,paid,2025-07-31,Textiles,0.0,62.64097073518916,Medium,1,outstanding_to_revenue_est high vs goods_category=Textiles,1.5216993464052289,18.260549019607843,36.45
+TX-000341,train,paid,2025-08-24,Pharmaceuticals,0.0,62.55531763026409,Medium,1,ticket_to_revenue_est high vs goods_category=Pharmaceuticals,1.894170731707317,18.71432520325203,33.3
+TX-000514,train,paid,2024-09-07,Pharmaceuticals,0.0,62.541042112776594,Medium,1,outstanding_to_revenue_est high vs goods_category=Pharmaceuticals,1.5845137931034483,26.491275862068967,31.95
+TX-002043,train,paid,2025-04-24,Agricultural,0.0,62.526766595289075,Medium,1,outstanding_to_revenue_est high vs goods_category=Agricultural,0.9377945736434109,92.41008527131783,35.550000000000004
+TX-000199,train,paid,2025-09-09,Chemicals,0.0,62.51249107780156,Medium,1,advance_tenor_exposure high vs goods_category=Chemicals,0.2526619870410367,9.12302807775378,136.8
+TX-004514,validation,paid,2025-12-28,Metals,0.0,62.341184867951455,Medium,1,outstanding_to_revenue_est high vs goods_category=Metals,0.37941260162601625,36.02340040650407,66.6
+TX-000915,train,paid,2024-04-15,Food,0.0,62.184154175588866,Medium,1,advance_tenor_exposure high vs goods_category=Food,0.3735609756097561,4.900508130081301,142.20000000000002
+TX-004266,train,paid,2023-08-06,Food,0.0,62.184154175588866,Medium,1,ticket_to_revenue_est high vs goods_category=Food,2.4071275862068964,0.0,96.0
+TX-004869,open_holdout,open,2025-08-13,Metals,,62.06995003568879,Medium,1,advance_tenor_exposure high vs goods_category=Metals,0.08416279069767442,18.15949781976744,153.0
+TX-002273,train,paid,2025-01-25,Pharmaceuticals,0.0,61.89864382583868,Medium,1,ticket_to_revenue_est high vs goods_category=Pharmaceuticals,2.6317127659574466,13.576351063829787,33.75
+TX-004318,train,defaulted,2024-09-16,Consumer Goods,1.0,61.88436830835118,Medium,1,outstanding_to_revenue_est high vs goods_category=Consumer Goods,1.0729034482758621,29.155289655172414,36.45
+TX-002103,train,paid,2025-07-18,Consumer Goods,0.0,61.67023554603854,Medium,1,outstanding_to_revenue_est high vs goods_category=Consumer Goods,0.4047237354085603,25.96190272373541,65.7
+TX-003317,open_holdout,open,2026-01-03,Machinery,,61.641684511063524,Medium,1,outstanding_to_revenue_est high vs goods_category=Machinery,0.3418418013856813,22.110113163972287,71.10000000000001
+TX-001442,train,paid,2025-06-30,Food,0.0,61.55603140613847,Medium,1,ticket_to_revenue_est high vs goods_category=Food,1.7790150943396226,5.554809433962264,50.4
+TX-000005,open_holdout,open,2026-02-09,Food,,61.484653818700934,Medium,1,advance_tenor_exposure high vs goods_category=Food,0.23836324786324786,8.364864102564102,142.20000000000002
+TX-002150,open_holdout,open,2026-01-04,Pharmaceuticals,,61.45610278372591,Medium,1,outstanding_to_revenue_est high vs goods_category=Pharmaceuticals,0.4015785219399538,22.451954965357967,66.6
+TX-004307,open_holdout,open,2026-03-09,Machinery,,61.41327623126338,Medium,1,advance_tenor_exposure high vs goods_category=Machinery,0.26266270337922404,7.159818523153943,154.8
+TX-002340,train,paid,2024-07-04,Pharmaceuticals,0.0,61.09921484653818,Medium,1,advance_tenor_exposure high vs goods_category=Pharmaceuticals,0.3942793103448276,3.5934333333333335,156.6
+TX-002463,train,paid,2024-10-02,Pharmaceuticals,0.0,61.09921484653818,Medium,1,ticket_to_revenue_est high vs goods_category=Pharmaceuticals,8.306408163265306,5.156438775510204,45.0
+TX-003955,open_holdout,open,2026-02-09,Pharmaceuticals,,61.08493932905067,Medium,1,outstanding_to_revenue_est high vs goods_category=Pharmaceuticals,1.1812764227642276,27.946048780487803,33.3
+TX-003725,train,paid,2024-01-02,Machinery,0.0,60.9707351891506,Medium,1,ticket_to_revenue_est high vs goods_category=Machinery,2.420426356589147,12.694054263565892,33.75
+TX-003418,validation,paid,2025-12-23,Chemicals,0.0,60.9707351891506,Medium,1,outstanding_to_revenue_est high vs goods_category=Chemicals,0.7465639534883721,81.01949418604651,38.7
+TX-001360,train,paid,2025-05-17,Chemicals,0.0,60.9564596716631,Medium,1,outstanding_to_revenue_est high vs goods_category=Chemicals,0.2531829268292683,26.397158536585366,74.7
+TX-003020,train,paid,2023-12-30,Food,0.0,60.88508208422555,Medium,1,ticket_to_revenue_est high vs goods_category=Food,2.4338875968992246,10.260166666666667,37.35
+TX-000686,validation,paid,2025-10-23,Consumer Goods,0.0,60.85653104925053,Medium,1,outstanding_to_revenue_est high vs goods_category=Consumer Goods,0.5177548638132295,33.104138132295716,49.8
+TX-003219,train,paid,2023-08-23,Agricultural,0.0,60.82798001427551,Medium,1,ticket_to_revenue_est high vs goods_category=Agricultural,5.95825,7.740838709677419,38.25
+TX-000979,open_holdout,open,2026-02-27,Chemicals,,60.71377587437544,Medium,1,outstanding_to_revenue_est high vs goods_category=Chemicals,1.068203448275862,77.12434137931035,25.5
+TX-004454,train,paid,2024-10-19,Pharmaceuticals,0.0,60.713775874375436,Medium,1,ticket_to_revenue_est high vs goods_category=Pharmaceuticals,2.6957807017543858,17.35890350877193,23.400000000000002
+TX-004325,train,paid,2024-11-06,Machinery,0.0,60.685224839400426,Medium,1,outstanding_to_revenue_est high vs goods_category=Machinery,0.8043416666666666,19.981104166666668,44.4
+TX-002489,train,paid,2024-07-15,Consumer Goods,0.0,60.6423982869379,Medium,1,ticket_to_revenue_est high vs goods_category=Consumer Goods,2.378526455026455,5.246243386243386,48.0
+TX-001305,validation,paid,2026-01-02,Textiles,0.0,60.585296216987864,Medium,1,outstanding_to_revenue_est high vs goods_category=Textiles,1.3166106194690266,47.8708185840708,23.400000000000002
+TX-000890,validation,paid,2026-01-09,Textiles,0.0,60.57102069950036,Medium,1,outstanding_to_revenue_est high vs goods_category=Textiles,0.7652142857142857,24.407581632653063,43.8
+TX-001294,train,paid,2024-03-14,Food,0.0,60.52819414703782,Medium,1,ticket_to_revenue_est high vs goods_category=Food,2.7488846153846156,2.3309294871794872,63.9
+TX-003364,train,paid,2025-01-07,Metals,0.0,60.456816559600284,Medium,1,outstanding_to_revenue_est high vs goods_category=Metals,1.0918395833333334,26.964772916666668,33.75
+TX-001144,train,paid,2023-08-29,Chemicals,0.0,60.413990007137755,Medium,1,ticket_to_revenue_est high vs goods_category=Chemicals,5.997241379310345,0.0,78.3
+TX-004239,train,defaulted,2025-03-14,Consumer Goods,1.0,60.1713062098501,Medium,1,outstanding_to_revenue_est high vs goods_category=Consumer Goods,1.1389083333333334,38.86105625,25.8
+TX-002496,train,paid,2025-05-20,Pharmaceuticals,0.0,60.114204139900075,Medium,1,outstanding_to_revenue_est high vs goods_category=Pharmaceuticals,0.6833677042801557,24.0381906614786,45.0
+TX-003078,open_holdout,open,2026-03-01,Pharmaceuticals,,60.11420413990006,Medium,1,outstanding_to_revenue_est high vs goods_category=Pharmaceuticals,0.7055,84.43575,37.8
+TX-002237,validation,defaulted,2025-10-09,Textiles,1.0,60.04282655246253,Medium,1,outstanding_to_revenue_est high vs goods_category=Textiles,0.28252886836027713,20.41787297921478,72.9
+TX-003172,train,paid,2024-11-01,Textiles,0.0,60.04282655246252,Medium,1,outstanding_to_revenue_est high vs goods_category=Textiles,0.44228169014084506,18.739091549295775,63.9
+TX-002440,train,paid,2024-11-23,Metals,0.0,60.042826552462515,Medium,1,ticket_to_revenue_est high vs goods_category=Metals,3.1040425531914893,6.599117021276596,42.599999999999994
+TX-001710,train,paid,2024-06-25,Food,0.0,59.85724482512491,Medium,1,ticket_to_revenue_est high vs goods_category=Food,2.414230769230769,2.301478021978022,63.9
+TX-000725,train,paid,2023-12-29,Agricultural,0.0,59.77159172019985,Medium,1,advance_tenor_exposure high vs goods_category=Agricultural,0.9963123287671233,0.0,149.4
+TX-002878,train,paid,2025-09-22,Pharmaceuticals,0.0,59.74304068522484,Medium,1,outstanding_to_revenue_est high vs goods_category=Pharmaceuticals,0.775900406504065,30.99754674796748,39.15
+TX-000034,validation,defaulted,2025-10-26,Chemicals,1.0,59.72876516773733,Medium,1,outstanding_to_revenue_est high vs goods_category=Chemicals,0.8479333333333333,55.43952291666667,33.75
+TX-001318,train,paid,2024-01-09,Chemicals,0.0,59.65738758029978,Medium,1,advance_tenor_exposure high vs goods_category=Chemicals,0.6056756756756757,1.349990171990172,138.6
+TX-002176,open_holdout,open,2025-12-18,Machinery,,59.614561027837254,Medium,1,advance_tenor_exposure high vs goods_category=Machinery,0.3765813008130081,3.408471544715447,144.0
+TX-000980,train,paid,2025-02-02,Machinery,0.0,59.528907922912204,Medium,1,advance_tenor_exposure high vs goods_category=Machinery,0.21486119873817033,7.280930599369086,151.2
+TX-003722,validation,paid,2025-11-11,Textiles,0.0,59.51463240542469,Medium,1,outstanding_to_revenue_est high vs goods_category=Textiles,1.3333162162162162,27.064943243243242,24.3
+TX-000207,validation,paid,2025-12-14,Machinery,0.0,59.42897930049964,Medium,1,outstanding_to_revenue_est high vs goods_category=Machinery,0.8573082039911308,23.7680022172949,38.7
+TX-004433,train,paid,2025-03-06,Pharmaceuticals,0.0,59.38615274803712,Medium,1,ticket_to_revenue_est high vs goods_category=Pharmaceuticals,1.7549148148148148,11.119781481481482,36.0
+TX-003084,validation,paid,2025-11-20,Machinery,0.0,59.357601713062095,Medium,1,outstanding_to_revenue_est high vs goods_category=Machinery,0.5476047619047619,18.610283333333335,50.4
+TX-001760,validation,paid,2026-01-29,Metals,0.0,59.34332619557459,Medium,1,outstanding_to_revenue_est high vs goods_category=Metals,0.6629939024390243,38.67307723577236,42.0
+TX-001819,train,paid,2025-05-28,Food,0.0,59.30049964311206,Medium,1,outstanding_to_revenue_est high vs goods_category=Food,1.4529068965517242,34.421441379310345,21.299999999999997
+TX-002276,train,paid,2023-12-31,Chemicals,0.0,59.229122055674516,Medium,1,ticket_to_revenue_est high vs goods_category=Chemicals,2.346390243902439,0.0,80.1
+TX-001642,validation,paid,2026-01-20,Agricultural,0.0,59.15774446823697,Medium,1,outstanding_to_revenue_est high vs goods_category=Agricultural,0.6709221789883268,38.81211089494163,40.05
+TX-003512,validation,paid,2025-11-26,Machinery,0.0,59.057815845824415,Medium,1,outstanding_to_revenue_est high vs goods_category=Machinery,0.8000407407407407,35.46681111111111,36.0
+TX-003810,train,paid,2024-05-22,Textiles,0.0,59.029264810849384,Medium,1,ticket_to_revenue_est high vs goods_category=Textiles,2.878969387755102,0.0,78.3
+TX-004574,train,paid,2024-12-02,Pharmaceuticals,0.0,58.957887223411845,Medium,1,ticket_to_revenue_est high vs goods_category=Pharmaceuticals,1.8073021978021977,6.034697802197802,45.6
+TX-002189,train,paid,2023-04-10,Agricultural,0.0,58.85795860099928,Medium,1,ticket_to_revenue_est high vs goods_category=Agricultural,2.01134375,0.0,84.0
+TX-004731,train,paid,2023-07-17,Machinery,0.0,58.829407566024265,Medium,1,advance_tenor_exposure high vs goods_category=Machinery,0.96789248434238,0.0,135.0
+TX-000354,train,paid,2025-02-27,Chemicals,0.0,58.81513204853675,Medium,1,outstanding_to_revenue_est high vs goods_category=Chemicals,0.48191666666666666,17.67385569105691,52.2
+TX-001125,train,defaulted,2025-03-10,Machinery,1.0,58.77230549607423,Medium,1,outstanding_to_revenue_est high vs goods_category=Machinery,1.1291,35.94225625,23.700000000000003
+TX-001176,open_holdout,open,2025-12-10,Machinery,,58.67237687366167,Medium,1,outstanding_to_revenue_est high vs goods_category=Machinery,0.9423967391304348,23.099529891304346,34.65
+TX-003027,train,paid,2024-12-27,Pharmaceuticals,0.0,58.472519628836544,Medium,1,ticket_to_revenue_est high vs goods_category=Pharmaceuticals,2.3113253968253966,11.640261904761905,26.7
+TX-004792,train,paid,2024-02-07,Agricultural,0.0,58.42969307637401,Medium,1,ticket_to_revenue_est high vs goods_category=Agricultural,4.041191666666666,5.363158333333334,42.0
+TX-004742,train,paid,2024-12-30,Consumer Goods,0.0,58.329764453961445,Medium,1,ticket_to_revenue_est high vs goods_category=Consumer Goods,1.8233018867924529,1.7537,66.6
+TX-003766,validation,paid,2026-01-07,Metals,0.0,58.301213418986435,Medium,1,outstanding_to_revenue_est high vs goods_category=Metals,0.5510617283950617,29.811336419753086,45.6
+TX-000409,train,paid,2025-08-07,Agricultural,0.0,58.20128479657387,Medium,1,outstanding_to_revenue_est high vs goods_category=Agricultural,0.2509901185770751,20.142201581027667,72.0
+TX-004905,train,paid,2025-07-04,Consumer Goods,0.0,58.158458244111344,Medium,1,advance_tenor_exposure high vs goods_category=Consumer Goods,0.4401202830188679,2.1755542452830188,136.8
+TX-001555,validation,paid,2026-01-07,Metals,0.0,58.129907209136334,Medium,1,outstanding_to_revenue_est high vs goods_category=Metals,1.2935666666666668,36.266851851851854,21.0
+TX-001981,train,paid,2024-12-18,Machinery,0.0,58.01570306923626,Medium,1,advance_tenor_exposure high vs goods_category=Machinery,0.2700748663101604,4.863013368983958,138.6
+TX-001987,train,paid,2025-06-28,Chemicals,0.0,57.95860099928622,Medium,1,advance_tenor_exposure high vs goods_category=Chemicals,0.3944644396551724,2.492948275862069,142.20000000000002
+TX-002310,train,paid,2025-09-25,Textiles,0.0,57.94432548179871,Medium,1,outstanding_to_revenue_est high vs goods_category=Textiles,0.6377853717026379,19.035489208633095,45.0
+TX-004375,train,paid,2024-09-08,Machinery,0.0,57.93004996431121,Medium,1,advance_tenor_exposure high vs goods_category=Machinery,0.6654095394736842,0.7598355263157894,131.4
+TX-000804,train,paid,2024-02-01,Agricultural,0.0,57.81584582441114,Medium,1,ticket_to_revenue_est high vs goods_category=Agricultural,2.3034418604651163,9.735389534883721,32.4
+TX-003267,train,paid,2025-02-16,Chemicals,0.0,57.75874375446109,Medium,1,outstanding_to_revenue_est high vs goods_category=Chemicals,1.255438596491228,25.12571052631579,22.8
+TX-003535,open_holdout,open,2025-11-27,Textiles,,57.70164168451106,Medium,1,outstanding_to_revenue_est high vs goods_category=Textiles,0.5176645833333333,57.807147916666665,43.199999999999996
+TX-000143,train,paid,2025-06-13,Chemicals,0.0,57.68736616702354,Medium,1,ticket_to_revenue_est high vs goods_category=Chemicals,1.4894473684210527,7.630138157894737,42.599999999999994
+TX-000345,validation,paid,2025-10-11,Textiles,0.0,57.65881513204853,Medium,1,outstanding_to_revenue_est high vs goods_category=Textiles,0.6997026378896882,22.077218225419664,40.5
+TX-003235,train,paid,2024-11-03,Chemicals,0.0,57.6017130620985,Medium,1,outstanding_to_revenue_est high vs goods_category=Chemicals,0.41243774319066145,16.70929766536965,54.0
+TX-004184,train,paid,2025-08-06,Consumer Goods,0.0,57.55888650963596,Medium,1,outstanding_to_revenue_est high vs goods_category=Consumer Goods,0.7754825581395349,68.10623255813954,26.4
+TX-000490,train,paid,2025-09-28,Textiles,0.0,57.53033547466095,Medium,1,ticket_to_revenue_est high vs goods_category=Textiles,2.8835704225352115,9.324042253521126,26.7
+TX-002016,train,paid,2024-04-29,Machinery,0.0,57.45895788722341,Medium,1,ticket_to_revenue_est high vs goods_category=Machinery,1.6983265306122448,3.9293537414965987,48.6
+TX-000342,train,paid,2024-11-06,Food,0.0,57.4446823697359,Medium,1,advance_tenor_exposure high vs goods_category=Food,0.8570965665236051,0.0,135.0
+TX-003450,train,paid,2024-10-01,Machinery,0.0,57.430406852248396,Medium,1,ticket_to_revenue_est high vs goods_category=Machinery,1.7639552845528454,9.467369918699188,34.65
+TX-000100,train,paid,2025-06-10,Chemicals,0.0,57.43040685224839,Medium,1,outstanding_to_revenue_est high vs goods_category=Chemicals,0.6081260162601626,18.10619918699187,45.6
+TX-001383,train,paid,2024-07-27,Food,0.0,57.35902926481085,Medium,1,ticket_to_revenue_est high vs goods_category=Food,2.30085838150289,10.43406936416185,26.4
+TX-000360,train,paid,2024-10-20,Machinery,0.0,57.34475374732333,Medium,1,outstanding_to_revenue_est high vs goods_category=Machinery,0.44447931034482757,34.34209655172414,47.400000000000006
+TX-002948,train,paid,2023-09-20,Chemicals,0.0,57.287651677373304,Medium,1,advance_tenor_exposure high vs goods_category=Chemicals,0.7858732394366197,0.0,153.0
+TX-003163,open_holdout,open,2026-02-26,Textiles,,57.23054960742327,Medium,1,outstanding_to_revenue_est high vs goods_category=Textiles,0.36409310344827583,21.36683448275862,53.4
+TX-004306,train,paid,2023-09-29,Agricultural,0.0,57.21627408993576,Medium,1,ticket_to_revenue_est high vs goods_category=Agricultural,2.345,3.720573770491803,46.800000000000004
+TX-003492,validation,paid,2025-11-30,Food,0.0,57.159172019985725,Medium,1,outstanding_to_revenue_est high vs goods_category=Food,0.6072949002217295,23.16070731707317,43.199999999999996
+TX-000128,train,paid,2025-05-15,Chemicals,0.0,57.15917201998572,Medium,1,ticket_to_revenue_est high vs goods_category=Chemicals,1.4973639455782313,12.458183673469387,31.499999999999996
+TX-000006,train,paid,2025-05-27,Food,0.0,57.102069950035684,Medium,1,ticket_to_revenue_est high vs goods_category=Food,2.293416666666667,11.61967142857143,24.3
+TX-001817,train,paid,2025-03-17,Textiles,0.0,56.94503925767309,Medium,1,ticket_to_revenue_est high vs goods_category=Textiles,1.7041861702127659,12.660715425531915,25.2
+TX-003479,open_holdout,open,2026-02-14,Metals,,56.94503925767309,Medium,1,outstanding_to_revenue_est high vs goods_category=Metals,0.8964966740576497,25.630323725055433,31.499999999999996
+TX-004797,validation,paid,2026-01-09,Consumer Goods,0.0,56.902212705210566,Medium,1,outstanding_to_revenue_est high vs goods_category=Consumer Goods,0.3335489130434783,25.21098097826087,53.4
+TX-000040,train,paid,2024-10-07,Food,0.0,56.90221270521056,Medium,1,outstanding_to_revenue_est high vs goods_category=Food,0.9355965517241379,32.34979655172414,24.3
+TX-001992,train,paid,2024-03-23,Machinery,0.0,56.630977872947895,Medium,1,ticket_to_revenue_est high vs goods_category=Machinery,2.111933628318584,5.928977876106194,40.05
+TX-003779,train,paid,2025-01-24,Textiles,0.0,56.63097787294789,Medium,1,ticket_to_revenue_est high vs goods_category=Textiles,1.959335164835165,9.081186813186813,32.85
+TX-001444,open_holdout,open,2025-12-09,Chemicals,,56.531049250535325,Medium,1,advance_tenor_exposure high vs goods_category=Chemicals,0.22675991501416431,4.6517131728045324,156.6
+TX-004053,train,paid,2025-08-28,Consumer Goods,0.0,56.51677373304782,Medium,1,advance_tenor_exposure high vs goods_category=Consumer Goods,0.18318164435946463,5.979282026768643,151.2
+TX-004911,train,paid,2024-08-29,Pharmaceuticals,0.0,56.47394718058529,Medium,1,advance_tenor_exposure high vs goods_category=Pharmaceuticals,0.3321694214876033,2.506935261707989,156.6
+TX-000604,train,paid,2023-12-03,Machinery,0.0,56.45967166309779,Medium,1,ticket_to_revenue_est high vs goods_category=Machinery,1.8256276041666666,0.0,77.4
+TX-004530,open_holdout,open,2026-01-08,Agricultural,,56.37401855817273,Medium,1,outstanding_to_revenue_est high vs goods_category=Agricultural,0.07721148255813953,21.96557558139535,80.1
+TX-002203,train,paid,2024-05-24,Textiles,0.0,56.34546752319771,Medium,1,advance_tenor_exposure high vs goods_category=Textiles,0.4989599303135889,1.1810505226480836,140.4
+TX-000776,train,paid,2024-05-25,Machinery,0.0,56.21698786581014,Medium,1,ticket_to_revenue_est high vs goods_category=Machinery,1.6245978260869565,0.7021014492753623,72.0
+TX-003899,train,paid,2024-07-29,Food,0.0,56.13133476088508,Medium,1,advance_tenor_exposure high vs goods_category=Food,0.48702093596059115,1.1868805418719213,145.8
+TX-002538,train,paid,2025-01-30,Chemicals,0.0,56.131334760885075,Medium,1,outstanding_to_revenue_est high vs goods_category=Chemicals,0.9223891050583658,20.854869649805448,26.7
+TX-000971,train,paid,2023-11-27,Chemicals,0.0,56.08850820842256,Medium,1,ticket_to_revenue_est high vs goods_category=Chemicals,2.8977583333333334,2.4654,48.0
+TX-001824,train,paid,2025-09-21,Food,0.0,56.07423269093504,Medium,1,outstanding_to_revenue_est high vs goods_category=Food,1.0332485549132948,24.04057225433526,23.1
+TX-001110,train,defaulted,2025-07-28,Machinery,1.0,56.01713062098501,Medium,1,outstanding_to_revenue_est high vs goods_category=Machinery,0.51139375,50.26912083333333,39.6
+TX-002717,validation,defaulted,2025-11-15,Chemicals,1.0,55.86009992862241,Medium,1,outstanding_to_revenue_est high vs goods_category=Chemicals,0.4506031042128603,22.710104212860312,47.400000000000006
+TX-000953,validation,paid,2026-01-19,Pharmaceuticals,0.0,55.81727337615988,Medium,1,ticket_to_revenue_est high vs goods_category=Pharmaceuticals,1.8820252525252525,10.728161616161616,24.599999999999998
+TX-000671,validation,paid,2025-10-25,Chemicals,0.0,55.745895788722336,Medium,1,outstanding_to_revenue_est high vs goods_category=Chemicals,0.35021595330739297,33.62189299610895,49.8
+TX-002331,open_holdout,open,2026-01-11,Food,,55.73162027123483,Medium,1,outstanding_to_revenue_est high vs goods_category=Food,0.1873855633802817,40.49821126760563,67.5
+TX-003443,train,paid,2025-02-04,Consumer Goods,0.0,55.71734475374733,Medium,1,advance_tenor_exposure high vs goods_category=Consumer Goods,0.23699754901960784,3.9571887254901963,153.0
+TX-004809,train,paid,2025-06-29,Textiles,0.0,55.57458957887223,Medium,1,advance_tenor_exposure high vs goods_category=Textiles,0.2628032345013477,3.5489636118598384,145.8
+TX-000764,validation,defaulted,2025-10-05,Textiles,1.0,55.54603854389722,Medium,1,outstanding_to_revenue_est high vs goods_category=Textiles,0.5272274709302326,19.549772529069767,45.0
+TX-003243,validation,paid,2025-10-04,Pharmaceuticals,0.0,55.431834403997144,Medium,1,outstanding_to_revenue_est high vs goods_category=Pharmaceuticals,0.7652073170731707,32.63793699186992,25.8
+TX-004577,validation,paid,2026-01-15,Pharmaceuticals,0.0,55.431834403997144,Medium,1,outstanding_to_revenue_est high vs goods_category=Pharmaceuticals,0.49181494252873564,19.53655632183908,46.2
+TX-001279,train,paid,2025-08-15,Textiles,0.0,55.28907922912205,Medium,1,outstanding_to_revenue_est high vs goods_category=Textiles,1.107337037037037,21.391118518518518,21.599999999999998
+TX-002961,train,paid,2024-12-17,Food,0.0,55.18915060670949,Medium,1,advance_tenor_exposure high vs goods_category=Food,0.28853623188405797,2.740613526570048,151.2
+TX-000618,open_holdout,open,2026-01-11,Metals,,55.03211991434689,Medium,1,outstanding_to_revenue_est high vs goods_category=Metals,0.4398,75.24729310344827,42.0
+TX-001131,train,paid,2025-08-24,Textiles,0.0,54.989293361884364,Medium,1,outstanding_to_revenue_est high vs goods_category=Textiles,0.6143836930455635,18.42110551558753,40.05
+TX-004794,train,paid,2025-04-11,Textiles,0.0,54.84653818700928,Medium,1,outstanding_to_revenue_est high vs goods_category=Textiles,0.6937645833333334,41.84010833333333,25.8
+TX-003252,train,paid,2025-09-24,Pharmaceuticals,0.0,54.76088508208422,Medium,1,outstanding_to_revenue_est high vs goods_category=Pharmaceuticals,0.864489837398374,31.773447154471544,22.5
+TX-004165,train,paid,2025-03-23,Metals,0.0,54.74660956459671,Medium,1,outstanding_to_revenue_est high vs goods_category=Metals,0.24074390243902438,19.750680894308942,66.6
+TX-003162,open_holdout,open,2026-01-29,Chemicals,,54.689507494646676,Medium,1,outstanding_to_revenue_est high vs goods_category=Chemicals,0.5669163424124514,39.997651750972764,35.550000000000004
+TX-001460,train,paid,2025-04-30,Consumer Goods,0.0,54.64668094218415,Medium,1,advance_tenor_exposure high vs goods_category=Consumer Goods,0.15433085501858737,5.309744423791821,160.2
+TX-000493,train,paid,2024-07-07,Food,0.0,54.361170592433965,Medium,1,outstanding_to_revenue_est high vs goods_category=Food,0.42539655172413793,22.878696551724136,46.2
+TX-004587,train,paid,2023-12-20,Chemicals,0.0,54.332619557458955,Medium,1,outstanding_to_revenue_est high vs goods_category=Chemicals,1.1828655172413793,17.856472413793103,21.0
+TX-004776,train,paid,2024-03-22,Machinery,0.0,54.27551748750892,Medium,1,advance_tenor_exposure high vs goods_category=Machinery,0.39806060606060606,1.3137772727272727,153.0
+TX-000869,train,paid,2023-09-03,Pharmaceuticals,0.0,53.69022127052105,Medium,1,ticket_to_revenue_est high vs goods_category=Pharmaceuticals,2.185643243243243,2.4948,46.2
+TX-001050,validation,paid,2026-01-08,Chemicals,0.0,53.604568165596,Medium,1,outstanding_to_revenue_est high vs goods_category=Chemicals,0.33261621621621623,33.84021891891892,47.400000000000006
+TX-004840,train,paid,2024-03-03,Food,0.0,53.361884368308345,Medium,1,ticket_to_revenue_est high vs goods_category=Food,2.3438297872340423,5.638023936170213,32.85
+TX-002416,open_holdout,open,2026-02-27,Food,,53.276231263383295,Medium,1,outstanding_to_revenue_est high vs goods_category=Food,0.4865161662817552,23.512944572748268,42.0
+TX-002082,open_holdout,open,2025-10-16,Agricultural,,53.26195574589578,Medium,1,outstanding_to_revenue_est high vs goods_category=Agricultural,0.4497286374133949,20.70040184757506,44.4
+TX-000577,train,paid,2024-09-26,Food,0.0,53.21912919343326,Medium,1,outstanding_to_revenue_est high vs goods_category=Food,0.7430793103448275,31.60671724137931,22.8
+TX-002908,train,paid,2024-10-30,Consumer Goods,0.0,53.21912919343326,Medium,1,advance_tenor_exposure high vs goods_category=Consumer Goods,0.33907987220447283,1.5185079872204472,156.6
+TX-000062,train,paid,2025-01-04,Machinery,0.0,53.16202712348322,Medium,1,outstanding_to_revenue_est high vs goods_category=Machinery,0.45186964980544747,18.52851945525292,45.0
+TX-002139,train,paid,2023-11-17,Food,0.0,52.89079229122055,Medium,1,advance_tenor_exposure high vs goods_category=Food,0.36619242902208204,1.3626230283911671,136.8
+TX-003945,train,paid,2024-11-19,Metals,0.0,52.847965738758035,Medium,1,outstanding_to_revenue_est high vs goods_category=Metals,0.45710625,21.47409375,43.199999999999996
+TX-003085,train,paid,2025-04-18,Agricultural,0.0,52.84796573875803,Medium,1,outstanding_to_revenue_est high vs goods_category=Agricultural,0.8432947154471545,22.405892276422765,22.2
+TX-004339,train,paid,2024-02-07,Agricultural,0.0,52.748037116345465,Medium,1,advance_tenor_exposure high vs goods_category=Agricultural,0.28254914004914006,2.2467948402948403,135.0
+TX-002558,validation,paid,2025-12-15,Agricultural,0.0,52.748037116345465,Medium,1,outstanding_to_revenue_est high vs goods_category=Agricultural,0.5086358695652174,24.702345108695653,37.8
+TX-002600,train,paid,2025-09-22,Textiles,0.0,52.74803711634546,Medium,1,outstanding_to_revenue_est high vs goods_category=Textiles,0.3235532150776053,20.440011086474502,49.8
+TX-002895,train,paid,2025-08-05,Textiles,0.0,52.67665952890792,Medium,1,ticket_to_revenue_est high vs goods_category=Textiles,2.13584,4.863345,34.65
+TX-001234,train,paid,2024-05-17,Machinery,0.0,52.63383297644539,Medium,1,ticket_to_revenue_est high vs goods_category=Machinery,3.0666203703703703,6.353277777777778,23.1
+TX-001372,train,paid,2025-07-12,Metals,0.0,52.63383297644539,Medium,1,outstanding_to_revenue_est high vs goods_category=Metals,0.7053963414634147,28.640073170731707,23.400000000000002
+TX-000518,train,paid,2025-06-18,Consumer Goods,0.0,52.44825124910777,Medium,1,outstanding_to_revenue_est high vs goods_category=Consumer Goods,0.5743482490272374,25.38755447470817,33.3
+TX-003948,open_holdout,open,2025-12-19,Food,,52.41970021413276,Medium,1,advance_tenor_exposure high vs goods_category=Food,0.24777593085106384,2.7281030585106385,127.8
+TX-003339,train,paid,2025-09-29,Chemicals,0.0,52.33404710920771,Medium,1,outstanding_to_revenue_est high vs goods_category=Chemicals,0.14799540229885058,18.834812643678163,70.2
+TX-000244,train,paid,2023-11-03,Consumer Goods,0.0,52.21984296930764,Medium,1,ticket_to_revenue_est high vs goods_category=Consumer Goods,2.450226063829787,0.6261090425531914,53.4
+TX-002587,train,paid,2025-08-24,Chemicals,0.0,52.14846538187009,Medium,1,outstanding_to_revenue_est high vs goods_category=Chemicals,0.3550323325635104,19.932196304849885,47.400000000000006
+TX-004069,train,paid,2025-07-25,Textiles,0.0,52.11991434689508,Medium,1,outstanding_to_revenue_est high vs goods_category=Textiles,0.9135790513833992,18.382830039525693,21.299999999999997
+TX-001047,train,paid,2024-01-22,Textiles,0.0,51.834403997144896,Medium,1,ticket_to_revenue_est high vs goods_category=Textiles,1.8981868686868686,3.716429292929293,38.25
+TX-004634,train,paid,2025-03-26,Chemicals,0.0,51.46324054246966,Medium,1,outstanding_to_revenue_est high vs goods_category=Chemicals,0.4633141592920354,25.418849557522122,37.35
+TX-003038,validation,paid,2025-10-02,Chemicals,0.0,51.30620985010706,Medium,1,outstanding_to_revenue_est high vs goods_category=Chemicals,0.6451621621621622,23.285708108108107,24.599999999999998
+TX-004072,train,paid,2024-05-19,Food,0.0,51.206281227694504,Medium,1,advance_tenor_exposure high vs goods_category=Food,0.18926588235294117,3.0797835294117646,133.2
+TX-002430,open_holdout,open,2026-03-09,Chemicals,,51.206281227694504,Medium,1,outstanding_to_revenue_est high vs goods_category=Chemicals,0.45713793103448275,55.161127586206895,32.4
+TX-003727,train,paid,2024-10-25,Pharmaceuticals,0.0,51.09207708779442,Medium,1,outstanding_to_revenue_est high vs goods_category=Pharmaceuticals,0.4018914728682171,59.65975968992248,35.1
+TX-004678,open_holdout,open,2026-01-20,Chemicals,,50.806566738044246,Medium,1,outstanding_to_revenue_est high vs goods_category=Chemicals,0.3137471264367816,20.028371264367816,47.400000000000006
+TX-001122,validation,paid,2025-12-05,Textiles,0.0,50.76374018558173,Medium,1,outstanding_to_revenue_est high vs goods_category=Textiles,0.7691703470031546,18.39928548895899,22.2
+TX-002963,train,defaulted,2025-07-01,Machinery,1.0,50.66381156316916,Medium,1,outstanding_to_revenue_est high vs goods_category=Machinery,0.1835866050808314,19.74860969976905,63.9
+TX-001768,train,paid,2023-12-25,Food,0.0,50.62098501070663,Medium,1,ticket_to_revenue_est high vs goods_category=Food,3.7770128205128204,4.851852564102564,22.8
+TX-003062,train,paid,2024-02-17,Metals,0.0,50.535331905781575,Medium,1,ticket_to_revenue_est high vs goods_category=Metals,1.9531560693641619,1.7097803468208093,46.2
+TX-001923,train,paid,2024-09-27,Machinery,0.0,50.364025695931474,Medium,1,advance_tenor_exposure high vs goods_category=Machinery,0.23006382978723405,1.9470538172715894,156.6
+TX-001033,train,paid,2025-02-08,Machinery,0.0,50.29264810849393,Medium,1,advance_tenor_exposure high vs goods_category=Machinery,0.4234214780600462,0.2767759815242494,158.4
+TX-002879,validation,defaulted,2025-10-10,Agricultural,1.0,49.850107066381156,Medium,1,outstanding_to_revenue_est high vs goods_category=Agricultural,0.581015988372093,20.077,25.8
+TX-004755,validation,paid,2025-12-24,Food,0.0,49.76445396145609,Medium,1,outstanding_to_revenue_est high vs goods_category=Food,0.5415243902439024,35.48187601626016,23.400000000000002
+TX-004480,train,paid,2024-09-10,Agricultural,0.0,49.73590292648108,Medium,1,ticket_to_revenue_est high vs goods_category=Agricultural,2.1304574468085105,0.0,63.9
+TX-003761,train,paid,2025-07-28,Consumer Goods,0.0,49.56459671663097,Medium,1,outstanding_to_revenue_est high vs goods_category=Consumer Goods,0.5129278169014084,30.515649647887322,25.2
+TX-003781,train,paid,2025-01-22,Chemicals,0.0,49.39329050678087,Medium,1,outstanding_to_revenue_est high vs goods_category=Chemicals,0.4382568093385214,19.622046692607004,37.35
+TX-001950,train,paid,2024-09-29,Consumer Goods,0.0,49.37901498929336,Medium,1,advance_tenor_exposure high vs goods_category=Consumer Goods,0.386,0.38743139841688656,151.2
+TX-000519,train,paid,2023-11-12,Food,0.0,49.19343326195575,Medium,1,ticket_to_revenue_est high vs goods_category=Food,2.5616888297872342,3.0763351063829787,32.4
+TX-002093,train,paid,2024-08-21,Machinery,0.0,49.16488222698072,Medium,1,ticket_to_revenue_est high vs goods_category=Machinery,2.5290333333333335,4.801055555555555,22.5
+TX-002610,train,paid,2023-11-27,Pharmaceuticals,0.0,49.079229122055665,Medium,1,ticket_to_revenue_est high vs goods_category=Pharmaceuticals,2.2108989898989897,0.0,54.0
+TX-001664,train,paid,2025-04-26,Food,0.0,48.89364739471806,Medium,1,advance_tenor_exposure high vs goods_category=Food,0.1586196319018405,2.523375255623722,145.8
+TX-003056,train,paid,2023-09-09,Machinery,0.0,48.879371877230554,Medium,1,ticket_to_revenue_est high vs goods_category=Machinery,3.6043217054263565,0.0,51.0
+TX-001621,open_holdout,open,2026-02-03,Food,,48.72234118486794,Medium,1,outstanding_to_revenue_est high vs goods_category=Food,0.32342725173210163,22.85353348729792,43.199999999999996
+TX-004580,train,paid,2024-03-03,Chemicals,0.0,48.67951463240542,Medium,1,ticket_to_revenue_est high vs goods_category=Chemicals,1.644388888888889,4.708888888888889,25.5
+TX-003823,train,paid,2024-08-12,Chemicals,0.0,48.66523911491792,Medium,1,ticket_to_revenue_est high vs goods_category=Chemicals,5.2473618421052635,1.6217039473684212,37.35
+TX-001056,train,paid,2024-06-24,Chemicals,0.0,48.593861527480364,Medium,1,ticket_to_revenue_est high vs goods_category=Chemicals,2.277469387755102,2.878969387755102,33.75
+TX-001135,train,paid,2023-09-13,Food,0.0,48.57958600999286,Medium,1,ticket_to_revenue_est high vs goods_category=Food,2.42321511627907,2.012232558139535,38.7
+TX-004862,train,paid,2023-06-10,Textiles,0.0,48.26552462526766,Medium,1,ticket_to_revenue_est high vs goods_category=Textiles,10.432,0.0,48.6
+TX-002111,train,paid,2024-11-11,Chemicals,0.0,48.1655960028551,Medium,1,outstanding_to_revenue_est high vs goods_category=Chemicals,0.4924454225352113,22.199100352112676,26.1
+TX-002870,validation,paid,2025-11-11,Food,0.0,48.10849393290506,Medium,1,outstanding_to_revenue_est high vs goods_category=Food,0.33926486486486485,26.72567837837838,38.7
+TX-001980,train,paid,2025-05-21,Consumer Goods,0.0,48.06566738044254,Medium,1,outstanding_to_revenue_est high vs goods_category=Consumer Goods,0.31859552845528455,26.650341463414634,39.6
+TX-000197,open_holdout,open,2026-01-20,Pharmaceuticals,,47.88008565310493,Medium,1,outstanding_to_revenue_est high vs goods_category=Pharmaceuticals,0.4988408430232558,22.042787063953487,25.2
+TX-000635,train,paid,2024-10-12,Consumer Goods,0.0,47.5231977159172,Medium,1,ticket_to_revenue_est high vs goods_category=Consumer Goods,1.7682313829787235,2.1304574468085105,38.7
+TX-000433,validation,paid,2026-01-02,Consumer Goods,0.0,47.40899357601713,Medium,1,outstanding_to_revenue_est high vs goods_category=Consumer Goods,0.4729624277456647,28.47792774566474,23.700000000000003
+TX-000247,train,paid,2025-01-14,Consumer Goods,0.0,47.280513918629545,Medium,1,advance_tenor_exposure high vs goods_category=Consumer Goods,0.07907783211083945,2.9648406682966586,149.4
+TX-000919,train,paid,2024-03-15,Food,0.0,47.066381156316915,Medium,1,ticket_to_revenue_est high vs goods_category=Food,1.6550232558139535,4.385608527131783,23.400000000000002
+TX-002118,train,paid,2024-06-27,Metals,0.0,47.066381156316915,Medium,1,ticket_to_revenue_est high vs goods_category=Metals,1.9549552631578948,0.0,51.6
+TX-000246,train,paid,2023-08-20,Pharmaceuticals,0.0,46.95217701641684,Medium,1,ticket_to_revenue_est high vs goods_category=Pharmaceuticals,2.388837931034483,2.4071275862068964,32.4
+TX-000261,train,paid,2025-07-10,Chemicals,0.0,46.680942184154176,Medium,1,advance_tenor_exposure high vs goods_category=Chemicals,0.23187827426810473,1.156161787365177,138.6
+TX-003373,train,paid,2023-05-20,Textiles,0.0,46.595289079229126,Medium,1,ticket_to_revenue_est high vs goods_category=Textiles,6.247782258064516,0.0,46.800000000000004
+TX-003472,train,paid,2025-07-09,Agricultural,0.0,45.99571734475374,Medium,1,outstanding_to_revenue_est high vs goods_category=Agricultural,0.35934349593495934,28.28072967479675,31.95
+TX-004976,train,paid,2023-12-09,Consumer Goods,0.0,45.653104925053526,Medium,1,advance_tenor_exposure high vs goods_category=Consumer Goods,0.24383781869688384,0.615657223796034,158.4
+TX-000420,open_holdout,open,2026-01-30,Agricultural,,45.5960028551035,Medium,1,outstanding_to_revenue_est high vs goods_category=Agricultural,0.3355574712643678,20.821796551724137,35.550000000000004
+TX-003755,validation,paid,2025-10-14,Machinery,0.0,45.18201284796574,Medium,1,outstanding_to_revenue_est high vs goods_category=Machinery,0.2736284046692607,32.830509727626456,36.0
+TX-004836,train,paid,2024-08-22,Pharmaceuticals,0.0,45.096359743040686,Medium,1,advance_tenor_exposure high vs goods_category=Pharmaceuticals,0.1939199475065617,0.992518372703412,151.2
+TX-004743,train,defaulted,2023-11-16,Consumer Goods,1.0,45.03925767309065,Medium,1,ticket_to_revenue_est high vs goods_category=Consumer Goods,2.3096741293532337,0.0,48.0
+TX-001737,train,paid,2023-09-10,Machinery,0.0,45.01070663811563,Medium,1,ticket_to_revenue_est high vs goods_category=Machinery,4.851852564102564,0.0,45.0
+TX-002391,validation,paid,2025-11-29,Textiles,0.0,44.867951463240544,Medium,1,outstanding_to_revenue_est high vs goods_category=Textiles,0.29586964980544744,36.99953307392996,32.4
+TX-002123,open_holdout,open,2025-09-22,Pharmaceuticals,,44.85367594575303,Medium,1,outstanding_to_revenue_est high vs goods_category=Pharmaceuticals,0.13064434180138568,20.287228637413396,49.8
+TX-001609,train,paid,2024-01-05,Consumer Goods,0.0,44.154175588865094,Medium,1,advance_tenor_exposure high vs goods_category=Consumer Goods,0.2831150519031142,0.0,151.2
+TX-001660,train,paid,2025-01-14,Food,0.0,44.03997144896503,Medium,1,advance_tenor_exposure high vs goods_category=Food,0.1252546749777382,1.3416179875333927,160.2
+TX-004153,train,paid,2024-08-15,Pharmaceuticals,0.0,43.92576730906495,Medium,1,advance_tenor_exposure high vs goods_category=Pharmaceuticals,0.0820018115942029,2.0607312801932367,127.8
+TX-002759,train,paid,2024-01-17,Textiles,0.0,43.51177730192719,Medium,1,advance_tenor_exposure high vs goods_category=Textiles,0.21387547169811322,0.6005132075471699,138.6
+TX-004705,train,paid,2024-06-14,Textiles,0.0,43.48322626695217,Medium,1,advance_tenor_exposure high vs goods_category=Textiles,0.11154693366708386,1.5666871088861076,136.8
+TX-001507,validation,paid,2025-10-07,Machinery,0.0,43.240542469664526,Medium,1,outstanding_to_revenue_est high vs goods_category=Machinery,0.3239329268292683,33.65015243902439,23.700000000000003
+TX-001362,train,paid,2025-09-11,Textiles,0.0,42.62669521770164,Medium,1,outstanding_to_revenue_est high vs goods_category=Textiles,0.289859756097561,30.70768699186992,25.5
+TX-004898,train,paid,2024-08-07,Machinery,0.0,42.59814418272662,Medium,1,advance_tenor_exposure high vs goods_category=Machinery,0.22934924623115577,0.29108479899497486,145.8
+TX-004864,train,paid,2024-10-29,Chemicals,0.0,42.14132762312634,Medium,1,advance_tenor_exposure high vs goods_category=Chemicals,0.129810082063306,0.93660550996483,153.0
+TX-004216,open_holdout,open,2026-03-31,Metals,,41.7558886509636,Medium,1,outstanding_to_revenue_est high vs goods_category=Metals,0.15298620689655174,22.021044827586206,43.8
+TX-001734,train,paid,2023-12-30,Food,0.0,40.61384725196288,Medium,1,advance_tenor_exposure high vs goods_category=Food,0.1895212765957447,0.11049002659574468,153.0
+TX-000432,train,paid,2023-11-02,Consumer Goods,0.0,40.52819414703782,Medium,1,advance_tenor_exposure high vs goods_category=Consumer Goods,0.18600465838509314,0.0,162.0
+TX-003331,train,paid,2024-01-10,Machinery,0.0,40.14275517487509,Medium,1,advance_tenor_exposure high vs goods_category=Machinery,0.19181633771929824,0.18257072368421054,129.6
+TX-002333,validation,paid,2026-01-18,Machinery,0.0,40.12847965738758,Medium,1,outstanding_to_revenue_est high vs goods_category=Machinery,0.2192540650406504,37.9417012195122,25.5
+TX-003921,validation,defaulted,2025-10-19,Metals,1.0,39.72876516773733,Low,1,outstanding_to_revenue_est high vs goods_category=Metals,0.27632374100719426,22.776920863309353,23.700000000000003
+TX-000839,train,paid,2025-08-25,Machinery,0.0,39.15774446823698,Low,1,outstanding_to_revenue_est high vs goods_category=Machinery,0.16422058823529412,19.78224836601307,37.35
+TX-002133,train,paid,2025-08-04,Pharmaceuticals,0.0,38.829407566024265,Low,1,outstanding_to_revenue_est high vs goods_category=Pharmaceuticals,0.29675055432372505,19.572344789356986,21.9
+TX-000526,train,paid,2024-02-24,Pharmaceuticals,0.0,38.37259100642398,Low,1,ticket_to_revenue_est high vs goods_category=Pharmaceuticals,3.7727280701754387,0.0,31.95
+TX-002165,train,paid,2025-02-13,Agricultural,0.0,38.21556031406138,Low,1,outstanding_to_revenue_est high vs goods_category=Agricultural,0.2763599221789883,21.777258754863812,21.599999999999998
+TX-000549,train,paid,2023-11-08,Machinery,0.0,38.05852962169878,Low,1,advance_tenor_exposure high vs goods_category=Machinery,0.14577989601386482,0.0,144.0
+TX-002074,train,paid,2023-11-03,Textiles,0.0,37.9300499643112,Low,1,ticket_to_revenue_est high vs goods_category=Textiles,1.7483953488372093,0.0,36.9
+TX-003908,train,paid,2025-06-13,Chemicals,0.0,37.84439685938615,Low,1,advance_tenor_exposure high vs goods_category=Chemicals,0.04839331366764995,0.585220255653884,142.20000000000002
+TX-003019,validation,defaulted,2025-11-07,Chemicals,1.0,37.47323340471092,Low,1,outstanding_to_revenue_est high vs goods_category=Chemicals,0.2197760532150776,22.490328159645234,24.0
+TX-001239,train,paid,2023-05-16,Agricultural,0.0,37.38758029978586,Low,1,advance_tenor_exposure high vs goods_category=Agricultural,0.09485551948051948,0.34153896103896103,136.8
+TX-000336,train,paid,2024-10-21,Consumer Goods,0.0,37.187723054960735,Low,1,ticket_to_revenue_est high vs goods_category=Consumer Goods,1.7298040293040293,0.0,35.550000000000004
+TX-002552,train,paid,2025-03-26,Machinery,0.0,36.6452533904354,Low,1,advance_tenor_exposure high vs goods_category=Machinery,0.07268230452674897,0.31350699588477365,136.8
+TX-002924,train,paid,2024-07-24,Agricultural,0.0,35.974304068522486,Low,1,advance_tenor_exposure high vs goods_category=Agricultural,0.04521111111111111,0.0813724279835391,160.2
+TX-001199,train,paid,2024-08-03,Machinery,0.0,35.94575303354746,Low,1,ticket_to_revenue_est high vs goods_category=Machinery,1.6217039473684212,0.0,33.75

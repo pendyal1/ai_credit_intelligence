@@ -1,0 +1,4 @@
+feature,description,why_cross_sector,training_rows,min,p25,median,p75,max,mad
+ticket_to_revenue_est,Invoice size relative to exporter annual revenue.,A large invoice is only risky relative to the exporter's scale.,2335,0.014836773219229802,0.27029959531724235,0.5195315457413249,1.0264430047090993,14.499692307692309,0.3098587225223275
+outstanding_to_revenue_est,Existing Rawasi exposure relative to exporter annual revenue.,Measures concentration and overextension independent of industry labels.,2335,0.0,1.3498206068284193,4.526024042379788,12.04386349542202,148.26104838709676,3.8989934976327065
+advance_tenor_exposure,Advance percentage multiplied by payment tenor in days.,Combines how much Rawasi advances with how long capital is at risk.,2335,21.0,42.599999999999994,62.99999999999999,78.3,162.0,18.000000000000007
