@@ -1,0 +1,14 @@
+feature,gain,weight,gain_share
+stage_b_outstanding_to_revenue_est_peer_z,89.36058807373047,73.0,0.18884357622865802
+stage_b_outstanding_to_revenue_est_risk_percentile,64.449462890625,17.0,0.1361994960042089
+outstanding_to_revenue_est,43.55818176269531,78.0,0.09205045530025352
+stage_b_benchmark_score,40.91196060180664,48.0,0.08645825992322832
+stage_b_ticket_to_revenue_est_risk_percentile,38.92292404174805,21.0,0.08225487691794757
+stage_b_peer_outlier_score,36.64897537231445,82.0,0.07744939602135893
+advance_tenor_exposure,34.828853607177734,59.0,0.07360297657953031
+stage_b_ticket_to_revenue_est_peer_z,32.0443000793457,48.0,0.06771844674673581
+stage_b_advance_tenor_exposure_risk_percentile,31.221460342407227,8.0,0.06597955936991706
+stage_b_advance_tenor_exposure_peer_z,30.812644958496094,55.0,0.06511561967592835
+ticket_to_revenue_est,30.43963050842285,73.0,0.06432733723223319
+stage_b_peer_outlier_count,0.0,0.0,0.0
+stage_b_peer_high_risk_outlier_count,0.0,0.0,0.0

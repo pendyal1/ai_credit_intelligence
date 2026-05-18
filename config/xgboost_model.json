@@ -1,0 +1,36 @@
+{
+  "version": "2026-05-18",
+  "random_state": 42,
+  "features": [
+    "ticket_to_revenue_est",
+    "outstanding_to_revenue_est",
+    "advance_tenor_exposure",
+    "stage_b_ticket_to_revenue_est_risk_percentile",
+    "stage_b_outstanding_to_revenue_est_risk_percentile",
+    "stage_b_advance_tenor_exposure_risk_percentile",
+    "stage_b_benchmark_score",
+    "stage_b_ticket_to_revenue_est_peer_z",
+    "stage_b_outstanding_to_revenue_est_peer_z",
+    "stage_b_advance_tenor_exposure_peer_z",
+    "stage_b_peer_outlier_count",
+    "stage_b_peer_high_risk_outlier_count",
+    "stage_b_peer_outlier_score"
+  ],
+  "grid_search": {
+    "cv_splits": 3,
+    "scoring": "average_precision",
+    "param_grid": {
+      "n_estimators": [100, 200],
+      "max_depth": [2, 3],
+      "learning_rate": [0.03, 0.08],
+      "subsample": [0.8, 1.0],
+      "colsample_bytree": [0.8],
+      "min_child_weight": [1, 5],
+      "reg_lambda": [1.0]
+    }
+  },
+  "threshold": {
+    "strategy": "top_train_risk_quantile",
+    "review_rate": 0.2
+  }
+}
