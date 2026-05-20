@@ -43,6 +43,7 @@ Generated files:
 - `reports/stage_c_report.md`
 - `reports/stage_c_metrics.csv`
 - `reports/stage_c_validation_predictions.csv`
+- `reports/stage_c_validation_shap_explanations.csv`
 - `reports/layer1_validation_metrics.csv`
 - `reports/layer1_validation_predictions.csv`
 - `reports/stage_c_open_predictions.csv`
@@ -54,4 +55,16 @@ Generated files:
 - `reports/stage_c_confusion_matrix.png`
 - `reports/stage_c_feature_importance.csv`
 - `reports/stage_c_feature_importance.png`
+- `reports/stage_c_shap_feature_importance.csv`
+- `reports/stage_c_shap_feature_importance.png`
 - `models/stage_c_xgboost_model.joblib`
+
+## Explainability
+
+Stage C now reports SHAP explanations wherever model interpretation is needed:
+
+- `stage_c_shap_feature_importance.csv/png` gives global validation-set importance using mean absolute SHAP contribution.
+- `stage_c_validation_shap_explanations.csv` gives per-deal positive and negative SHAP drivers.
+- `layer1_validation_predictions.csv` carries the same per-deal SHAP reason fields for Stage-A-passed deals that reached the model.
+
+SHAP values are in the XGBoost margin/log-odds contribution space. Positive values push a transaction toward higher predicted default risk; negative values push it toward lower predicted default risk.

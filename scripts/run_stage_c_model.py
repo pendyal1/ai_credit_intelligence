@@ -142,6 +142,28 @@ def main() -> None:
     validation_predictions["stage_c_predicted_default"] = (
         validation_predictions["stage_c_default_probability"] >= threshold
     ).astype(int)
+    open_predictions = _score_open_holdout(best_model, stage_b_open, feature_columns)
+    feature_importance = feature_importance_frame(best_model, feature_columns)
+    shap_importance, validation_shap_explanations = _build_shap_outputs(
+        model=best_model,
+        feature_frame=x_validation,
+        source_frame=validation_sorted,
+        probabilities=validation_prob,
+        predictions=validation_predictions["stage_c_predicted_default"],
+        feature_importance=feature_importance,
+    )
+    validation_predictions = validation_predictions.merge(
+        validation_shap_explanations[
+            [
+                "transaction_id",
+                "stage_c_top_positive_shap_reasons",
+                "stage_c_top_negative_shap_reasons",
+                "stage_c_shap_margin",
+            ]
+        ],
+        on="transaction_id",
+        how="left",
+    )
     layer1_validation_predictions = _build_layer1_validation_predictions(
         dataset_path,
         hard_filter_config,
@@ -151,9 +173,6 @@ def main() -> None:
         layer1_validation_predictions,
         flag_col="layer1_flagged_for_review",
     )
-
-    open_predictions = _score_open_holdout(best_model, stage_b_open, feature_columns)
-    feature_importance = feature_importance_frame(best_model, feature_columns)
     cv_results = pd.DataFrame(grid.cv_results_).sort_values("rank_test_score")
     calibration = calibration_table(y_validation, validation_prob, bins=5)
     threshold_analysis = threshold_analysis_table(y_validation, validation_prob)
@@ -169,6 +188,11 @@ def main() -> None:
     layer1_metrics.to_csv(args.output_dir / "layer1_validation_metrics.csv", index=False)
     open_predictions.to_csv(args.output_dir / "stage_c_open_predictions.csv", index=False)
     feature_importance.to_csv(args.output_dir / "stage_c_feature_importance.csv", index=False)
+    shap_importance.to_csv(args.output_dir / "stage_c_shap_feature_importance.csv", index=False)
+    validation_shap_explanations.to_csv(
+        args.output_dir / "stage_c_validation_shap_explanations.csv",
+        index=False,
+    )
     cv_results.to_csv(args.output_dir / "stage_c_gridsearch_results.csv", index=False)
     calibration.to_csv(args.output_dir / "stage_c_calibration_table.csv", index=False)
     threshold_analysis.to_csv(args.output_dir / "stage_c_threshold_analysis.csv", index=False)
@@ -181,6 +205,7 @@ def main() -> None:
         args.output_dir / "stage_c_confusion_matrix.png",
     )
     _plot_feature_importance(feature_importance, args.output_dir / "stage_c_feature_importance.png")
+    _plot_shap_importance(shap_importance, args.output_dir / "stage_c_shap_feature_importance.png")
 
     model_artifact = {
         "model": best_model,
@@ -215,6 +240,7 @@ def main() -> None:
         calibration=calibration,
         threshold_analysis=threshold_analysis,
         feature_importance=feature_importance,
+        shap_importance=shap_importance,
     )
     (args.output_dir / "stage_c_report.md").write_text(report)
 
@@ -273,17 +299,25 @@ def _build_layer1_validation_predictions(
             "stage_a_reject_reasons",
         ]
     ].copy()
+    prediction_columns = [
+        "transaction_id",
+        "stage_b_benchmark_score",
+        "stage_b_benchmark_band",
+        "stage_b_peer_outlier_count",
+        "stage_c_default_probability",
+        "stage_c_predicted_default",
+    ]
+    prediction_columns.extend(
+        col
+        for col in [
+            "stage_c_top_positive_shap_reasons",
+            "stage_c_top_negative_shap_reasons",
+            "stage_c_shap_margin",
+        ]
+        if col in validation_predictions.columns
+    )
     output = output.merge(
-        validation_predictions[
-            [
-                "transaction_id",
-                "stage_b_benchmark_score",
-                "stage_b_benchmark_band",
-                "stage_b_peer_outlier_count",
-                "stage_c_default_probability",
-                "stage_c_predicted_default",
-            ]
-        ],
+        validation_predictions[prediction_columns],
         on="transaction_id",
         how="left",
     )
@@ -408,6 +442,114 @@ def _plot_feature_importance(feature_importance: pd.DataFrame, output_path: Path
     plt.close(fig)
 
 
+def _build_shap_outputs(
+    *,
+    model: XGBClassifier,
+    feature_frame: pd.DataFrame,
+    source_frame: pd.DataFrame,
+    probabilities: np.ndarray,
+    predictions: pd.Series,
+    feature_importance: pd.DataFrame,
+) -> tuple[pd.DataFrame, pd.DataFrame]:
+    try:
+        import shap
+    except ImportError as exc:
+        raise ImportError(
+            "SHAP is required for Stage C explainability. Install it with "
+            "`python -m pip install shap==0.44.1` in this environment."
+        ) from exc
+
+    explainer = shap.TreeExplainer(model)
+    shap_values = explainer.shap_values(feature_frame)
+    if isinstance(shap_values, list):
+        shap_values = shap_values[-1]
+    shap_values = np.asarray(shap_values)
+
+    expected_value = explainer.expected_value
+    if isinstance(expected_value, (list, tuple, np.ndarray)):
+        expected_value = np.asarray(expected_value).ravel()[-1]
+    expected_value = float(expected_value)
+
+    shap_importance = pd.DataFrame(
+        {
+            "feature": list(feature_frame.columns),
+            "mean_abs_shap": np.abs(shap_values).mean(axis=0),
+            "mean_shap": shap_values.mean(axis=0),
+        }
+    )
+    shap_importance = shap_importance.merge(
+        feature_importance[["feature", "gain", "gain_share"]],
+        on="feature",
+        how="left",
+    ).sort_values("mean_abs_shap", ascending=False)
+
+    explanation_rows: list[dict] = []
+    for row_idx, (_, source_row) in enumerate(source_frame.iterrows()):
+        row_values = shap_values[row_idx]
+        feature_values = feature_frame.iloc[row_idx]
+        explanation_rows.append(
+            {
+                "transaction_id": source_row["transaction_id"],
+                "invoice_date": source_row["invoice_date"],
+                "status": source_row.get("status"),
+                "defaulted": source_row.get("defaulted"),
+                "stage_c_default_probability": probabilities[row_idx],
+                "stage_c_predicted_default": int(predictions.iloc[row_idx]),
+                "stage_c_shap_base_value": expected_value,
+                "stage_c_shap_margin": expected_value + float(row_values.sum()),
+                "stage_c_top_positive_shap_reasons": _format_shap_reasons(
+                    row_values,
+                    feature_values,
+                    largest_positive=True,
+                ),
+                "stage_c_top_negative_shap_reasons": _format_shap_reasons(
+                    row_values,
+                    feature_values,
+                    largest_positive=False,
+                ),
+            }
+        )
+
+    return shap_importance, pd.DataFrame(explanation_rows)
+
+
+def _format_shap_reasons(
+    shap_row: np.ndarray,
+    feature_values: pd.Series,
+    *,
+    largest_positive: bool,
+    limit: int = 5,
+) -> str:
+    values = pd.Series(shap_row, index=feature_values.index)
+    values = values[values.gt(0)] if largest_positive else values[values.lt(0)]
+    if values.empty:
+        return ""
+    values = values.sort_values(ascending=not largest_positive).head(limit)
+    return "; ".join(
+        f"{feature}={_format_feature_value(feature_values[feature])} ({shap_value:+.4f})"
+        for feature, shap_value in values.items()
+    )
+
+
+def _format_feature_value(value: object) -> str:
+    if pd.isna(value):
+        return "missing"
+    if isinstance(value, (int, float, np.integer, np.floating)):
+        return f"{float(value):.4g}"
+    return str(value)
+
+
+def _plot_shap_importance(shap_importance: pd.DataFrame, output_path: Path) -> None:
+    top = shap_importance.head(20).sort_values("mean_abs_shap")
+    fig, ax = plt.subplots(figsize=(10, 7))
+    ax.barh(top["feature"], top["mean_abs_shap"])
+    ax.set_title("Stage C SHAP Feature Importance - Validation")
+    ax.set_xlabel("Mean absolute SHAP value")
+    fig.tight_layout()
+    fig.savefig(output_path, dpi=160)
+    plt.close(fig)
+
+
 def _render_report(
     *,
     dataset_path: str,
@@ -424,6 +566,7 @@ def _render_report(
     calibration: pd.DataFrame,
     threshold_analysis: pd.DataFrame,
     feature_importance: pd.DataFrame,
+    shap_importance: pd.DataFrame,
 ) -> str:
     return "\n".join(
         [
@@ -466,7 +609,13 @@ def _render_report(
             "",
             threshold_analysis.to_markdown(index=False),
             "",
-            "## Feature Importance",
+            "## SHAP Feature Importance - Validation",
+            "",
+            "SHAP values are computed on the out-of-time validation rows. They explain the model margin/log-odds contribution, so positive values push a deal toward higher default risk and negative values push it toward lower default risk.",
+            "",
+            shap_importance.head(25).to_markdown(index=False),
+            "",
+            "## XGBoost Gain Feature Importance",
             "",
             feature_importance.to_markdown(index=False),
             "",
@@ -485,6 +634,9 @@ def _render_report(
             "- `reports/stage_c_confusion_matrix.png`",
             "- `reports/stage_c_feature_importance.csv`",
             "- `reports/stage_c_feature_importance.png`",
+            "- `reports/stage_c_shap_feature_importance.csv`",
+            "- `reports/stage_c_shap_feature_importance.png`",
+            "- `reports/stage_c_validation_shap_explanations.csv`",
             "- `models/stage_c_xgboost_model.joblib`",
         ]
     )

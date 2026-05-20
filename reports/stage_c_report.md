@@ -65,7 +65,39 @@ These metrics treat Stage A rejects and Stage C high-risk predictions as deals r
 |       0.85  |             19 |      0.0440835 |              406 |                11 |                 6 |                8 |   0.421053  | 0.571429 | 0.484848  |
 |       0.9   |             12 |      0.0278422 |              413 |                 4 |                 6 |                8 |   0.666667  | 0.571429 | 0.615385  |
 
-## Feature Importance
+## SHAP Feature Importance - Validation
+
+SHAP values are computed on the out-of-time validation rows. They explain the model margin/log-odds contribution, so positive values push a deal toward higher default risk and negative values push it toward lower default risk.
+
+| feature                                                |   mean_abs_shap |   mean_shap |     gain |   gain_share |
+|:-------------------------------------------------------|----------------:|------------:|---------:|-------------:|
+| log_cumulative_outstanding_usd                         |       0.540196  | -0.120486   | 248.337  |   0.0375499  |
+| stage_b_exp_debt_to_equity_peer_z                      |       0.380535  | -0.169801   |  79.2273 |   0.0119796  |
+| stage_b_benchmark_score                                |       0.222053  | -0.148877   |  50.3401 |   0.00761168 |
+| stage_b_log_cumulative_outstanding_usd_risk_percentile |       0.177816  | -0.0402108  | 230.413  |   0.0348396  |
+| stage_b_exposure_quality_pressure_peer_z               |       0.126187  |  0.0178245  | 120.932  |   0.0182855  |
+| stage_b_concentration_adjusted_total_exposure_peer_z   |       0.106367  | -0.0428139  |  32.7089 |   0.00494575 |
+| ticket_to_revenue_est                                  |       0.105654  | -0.0075848  |  53.6052 |   0.00810538 |
+| stage_b_exp_leverage_liquidity_stress_peer_z           |       0.102623  | -0.0567187  |  30.9843 |   0.00468498 |
+| stage_b_uninsured_funded_amount_usd_peer_z             |       0.100589  | -0.0458777  |  63.3028 |   0.00957171 |
+| stage_b_funded_amount_usd_peer_z                       |       0.0926462 | -0.0402897  |  29.3836 |   0.00444294 |
+| buyer_terms_uninsured_pressure                         |       0.0874894 | -0.0397969  |  95.3273 |   0.014414   |
+| stage_b_total_exposure_tenor_to_revenue_days_peer_z    |       0.0825568 | -0.0273438  |  47.3317 |   0.0071568  |
+| stage_b_uninsured_funded_to_revenue_est_peer_z         |       0.0779058 | -0.0348419  | 118.34   |   0.0178936  |
+| exp_quick_ratio_shortfall                              |       0.0701795 | -0.0288051  |  62.434  |   0.00944034 |
+| log_annual_revenue_usd_est                             |       0.0700303 |  0.00306206 |  48.4951 |   0.00733271 |
+| buyer_terms_pressure                                   |       0.0679969 | -0.0315433  |  43.4259 |   0.00656621 |
+| exp_dispute_to_history_pressure                        |       0.0629374 | -0.0235251  |  36.8621 |   0.00557374 |
+| stage_b_exp_fx_loss_x_tenor_peer_z                     |       0.0590816 | -0.0331627  |  38.2686 |   0.00578641 |
+| exp_iscore_risk                                        |       0.059046  | -0.0424541  |  34.4535 |   0.00520955 |
+| exp_young_firm_risk                                    |       0.0561509 | -0.0219566  |  48.3762 |   0.00731473 |
+| exp_debt_to_equity                                     |       0.0554681 | -0.0245341  |  83.6322 |   0.0126456  |
+| buyer_risk_pressure                                    |       0.054726  | -0.0254415  |  50.7954 |   0.00768053 |
+| exp_history_depth_risk                                 |       0.0517175 | -0.0407569  |  55.6837 |   0.00841966 |
+| concentration_adjusted_total_exposure                  |       0.0492415 |  0.00246177 |  45.0138 |   0.00680632 |
+| exp_low_history_flag                                   |       0.0490323 | -0.0377971  |  82.6657 |   0.0124995  |
+
+## XGBoost Gain Feature Importance
 
 | feature                                                          |      gain |   weight |   gain_share |
 |:-----------------------------------------------------------------|----------:|---------:|-------------:|
@@ -279,4 +311,7 @@ These metrics treat Stage A rejects and Stage C high-risk predictions as deals r
 - `reports/stage_c_confusion_matrix.png`
 - `reports/stage_c_feature_importance.csv`
 - `reports/stage_c_feature_importance.png`
+- `reports/stage_c_shap_feature_importance.csv`
+- `reports/stage_c_shap_feature_importance.png`
+- `reports/stage_c_validation_shap_explanations.csv`
 - `models/stage_c_xgboost_model.joblib`

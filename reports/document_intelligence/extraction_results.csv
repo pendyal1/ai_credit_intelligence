@@ -1,0 +1,7 @@
+document,field,display_name,extracted_thousands_egp,extracted_egp,ground_truth_thousands_egp,ground_truth_egp,absolute_error_thousands_egp,match,source_line,matched_label
+english,total_revenue_2024,Total Revenue 2024,487350,487350000,487350,487350000,0,True,"Total Revenue 487,350 412,890",Total Revenue
+english,net_income_2024,Net Income 2024,64530,64530000,64530,64530000,0,True,"Net Income (thousands EGP) 64,530 53,860",Net Income
+english,total_assets_2024,Total Assets 2024,721350,721350000,721350,721350000,0,True,"Total Assets 721,350 634,130",Total Assets
+arabic,total_revenue_2024,Total Revenue 2024,487350,487350000,487350,487350000,0,True,"إجمالي الإيرادات ‎E,8: EAV,F0-‏",إجمالي الإيرادات
+arabic,net_income_2024,Net Income 2024,64530,64530000,64530,64530000,0,True,"صافي الدخل ‎OF,81: 1€,0F«‏",صافي الدخل
+arabic,total_assets_2024,Total Assets 2024,721350,721350000,721350,721350000,0,True,"إجمالي الأصول - ‎1FE,1r- VY1,¥30‏",إجمالي الأصول
