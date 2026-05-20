@@ -1,7 +1,5 @@
 rule,description,reject_reason,hit_rows,hit_rate,resolved_hit_rows,defaults_captured,default_rate_if_hit
-acceptable_auditor_tier,Reject exporters whose auditor tier is below the accepted quality bar.,Auditor tier is not accepted,973,0.1946,919,52,0.056583242655059846
 buyer_country_risk_ceiling,Reject deals where buyer country risk is above the committee ceiling.,Buyer country risk score above 8,622,0.1244,578,35,0.06055363321799308
 missing_mandatory_docs,Reject when required onboarding and transaction documentation is incomplete.,Missing mandatory documentation,372,0.0744,345,19,0.05507246376811594
 historical_dispute_ceiling,Reject exporters with extreme prior dispute rates.,Exporter historical dispute rate at or above 8%,335,0.067,311,41,0.13183279742765272
-minimum_iscore,Reject exporters below the minimum acceptable Egyptian credit bureau score.,Exporter i-score below 550,186,0.0372,176,5,0.028409090909090908
 creditsafe_floor,Reject buyers with ratings considered default-imminent.,Buyer CreditSafe rating is E,72,0.0144,65,4,0.06153846153846154

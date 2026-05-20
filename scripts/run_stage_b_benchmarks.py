@@ -135,6 +135,11 @@ def _peer_outliers(scored: pd.DataFrame) -> pd.DataFrame:
         "ticket_to_revenue_est",
         "outstanding_to_revenue_est",
         "advance_tenor_exposure",
+        "buyer_risk_pressure",
+        "trade_history_pressure",
+        "liquidity_pressure",
+        "buyer_terms_pressure",
+        "insurance_not_covered_flag",
     ]
     present_cols = [col for col in cols if col in outliers.columns]
     return outliers[present_cols].sort_values(
@@ -164,7 +169,7 @@ def _render_report(
             "",
             "## Purpose",
             "",
-            "Stage B creates cross-sector benchmark features for deals that pass Stage A. It also identifies within-sector peer outliers using the same three features.",
+            "Stage B creates cross-sector benchmark features for deals that pass Stage A. It also identifies within-sector peer outliers for continuous decision-time risk features.",
             "",
             "## Features Used",
             "",

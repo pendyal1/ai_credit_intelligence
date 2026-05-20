@@ -10,6 +10,7 @@ from sklearn.metrics import (
     average_precision_score,
     brier_score_loss,
     confusion_matrix,
+    f1_score,
     precision_score,
     recall_score,
     roc_auc_score,
@@ -113,6 +114,54 @@ def calibration_table(
         )
         .reset_index()
     )
+
+
+def threshold_analysis_table(
+    y_true: pd.Series | np.ndarray,
+    y_probability: pd.Series | np.ndarray,
+    thresholds: list[float] | None = None,
+) -> pd.DataFrame:
+    if thresholds is None:
+        thresholds = [
+            0.05,
+            0.066,
+            0.1,
+            0.17,
+            0.2,
+            0.3,
+            0.4,
+            0.5,
+            0.55,
+            0.6,
+            0.65,
+            0.7,
+            0.75,
+            0.8,
+            0.85,
+            0.9,
+        ]
+
+    y_true_arr = np.asarray(y_true).astype(int)
+    y_prob_arr = np.asarray(y_probability)
+    rows = []
+    for threshold in thresholds:
+        y_pred = (y_prob_arr >= threshold).astype(int)
+        tn, fp, fn, tp = confusion_matrix(y_true_arr, y_pred, labels=[0, 1]).ravel()
+        rows.append(
+            {
+                "threshold": threshold,
+                "flagged_rows": int(y_pred.sum()),
+                "flagged_rate": float(y_pred.mean()),
+                "true_negatives": int(tn),
+                "false_positives": int(fp),
+                "false_negatives": int(fn),
+                "true_positives": int(tp),
+                "precision": float(precision_score(y_true_arr, y_pred, zero_division=0)),
+                "recall": float(recall_score(y_true_arr, y_pred, zero_division=0)),
+                "f1": float(f1_score(y_true_arr, y_pred, zero_division=0)),
+            }
+        )
+    return pd.DataFrame(rows)
 
 
 def feature_importance_frame(model: Any, feature_columns: list[str]) -> pd.DataFrame:

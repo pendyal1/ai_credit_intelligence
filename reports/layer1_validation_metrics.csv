@@ -1,0 +1,2 @@
+scope,rows,defaults,flagged_rows,flagged_rate,precision,recall,true_negatives,false_positives,false_negatives,true_positives
+full_layer1_validation,573,20,250,0.4363001745200698,0.076,0.95,322,231,1,19

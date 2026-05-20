@@ -1,0 +1,574 @@
+transaction_id,invoice_date,status,defaulted,stage_a_decision,stage_a_reject_reasons,stage_b_benchmark_score,stage_b_benchmark_band,stage_b_peer_outlier_count,stage_c_default_probability,stage_c_predicted_default,layer1_flagged_for_review,layer1_route
+TX-000129,2025-10-01,paid,0,REJECT_STAGE_A,Buyer country risk score above 8; Buyer CreditSafe rating is E,,,,,0,1,Stage A reject
+TX-000327,2025-10-01,paid,0,REJECT_STAGE_A,Buyer country risk score above 8,,,,,0,1,Stage A reject
+TX-003729,2025-10-01,defaulted,1,REJECT_STAGE_A,Missing mandatory documentation,,,,,0,1,Stage A reject
+TX-003949,2025-10-01,paid,0,PASS_STAGE_A,,66.63645798237188,Medium,3.0,0.8320609,1,1,Stage C high-risk review
+TX-004630,2025-10-01,defaulted,1,PASS_STAGE_A,,67.12312456584769,Medium,9.0,0.9447048,1,1,Stage C high-risk review
+TX-000600,2025-10-03,paid,0,PASS_STAGE_A,,68.45183872618145,Medium,10.0,0.89256376,1,1,Stage C high-risk review
+TX-002674,2025-10-03,paid,0,REJECT_STAGE_A,Exporter historical dispute rate at or above 8%,,,,,0,1,Stage A reject
+TX-002726,2025-10-03,paid,0,REJECT_STAGE_A,Missing mandatory documentation,,,,,0,1,Stage A reject
+TX-003551,2025-10-03,paid,0,REJECT_STAGE_A,Missing mandatory documentation,,,,,0,1,Stage A reject
+TX-004618,2025-10-04,defaulted,1,PASS_STAGE_A,,70.99040809280775,High,7.0,0.9806487,1,1,Stage C high-risk review
+TX-000276,2025-10-05,paid,0,PASS_STAGE_A,,64.588298788325,Medium,0.0,0.40009043,1,1,Stage C high-risk review
+TX-000435,2025-10-05,paid,0,REJECT_STAGE_A,Exporter historical dispute rate at or above 8%,,,,,0,1,Stage A reject
+TX-000764,2025-10-05,defaulted,1,PASS_STAGE_A,,69.51714979763821,Medium,8.0,0.96348983,1,1,Stage C high-risk review
+TX-001073,2025-10-05,paid,0,PASS_STAGE_A,,73.20385714463983,High,3.0,0.5084179,1,1,Stage C high-risk review
+TX-003103,2025-10-05,paid,0,PASS_STAGE_A,,65.58508138146757,Medium,8.0,0.6966177,1,1,Stage C high-risk review
+TX-003614,2025-10-05,paid,0,REJECT_STAGE_A,Missing mandatory documentation,,,,,0,1,Stage A reject
+TX-002239,2025-10-06,defaulted,1,REJECT_STAGE_A,Missing mandatory documentation,,,,,0,1,Stage A reject
+TX-002462,2025-10-06,paid,0,REJECT_STAGE_A,Missing mandatory documentation; Buyer country risk score above 8,,,,,0,1,Stage A reject
+TX-001320,2025-10-07,paid,0,REJECT_STAGE_A,Buyer country risk score above 8,,,,,0,1,Stage A reject
+TX-001860,2025-10-07,defaulted,1,PASS_STAGE_A,,58.71070791269952,Medium,8.0,0.9209983,1,1,Stage C high-risk review
+TX-001978,2025-10-07,paid,0,REJECT_STAGE_A,Exporter historical dispute rate at or above 8%,,,,,0,1,Stage A reject
+TX-002279,2025-10-07,paid,0,PASS_STAGE_A,,62.02347230367996,Medium,2.0,0.48131257,1,1,Stage C high-risk review
+TX-004018,2025-10-07,paid,0,REJECT_STAGE_A,Exporter historical dispute rate at or above 8%,,,,,0,1,Stage A reject
+TX-004536,2025-10-07,paid,0,PASS_STAGE_A,,59.97520912104689,Medium,3.0,0.5606493,1,1,Stage C high-risk review
+TX-001729,2025-10-08,defaulted,1,PASS_STAGE_A,,63.24331041424897,Medium,7.0,0.4057564,1,1,Stage C high-risk review
+TX-002115,2025-10-08,paid,0,REJECT_STAGE_A,Exporter historical dispute rate at or above 8%,,,,,0,1,Stage A reject
+TX-002728,2025-10-08,paid,0,REJECT_STAGE_A,Buyer country risk score above 8,,,,,0,1,Stage A reject
+TX-004940,2025-10-08,paid,0,PASS_STAGE_A,,77.02658156240774,High,10.0,0.85773945,1,1,Stage C high-risk review
+TX-004970,2025-10-08,defaulted,1,REJECT_STAGE_A,Buyer country risk score above 8,,,,,0,1,Stage A reject
+TX-001881,2025-10-09,paid,0,PASS_STAGE_A,,66.58992309004165,Medium,4.0,0.82117105,1,1,Stage C high-risk review
+TX-002237,2025-10-09,defaulted,1,PASS_STAGE_A,,68.98478023052189,Medium,10.0,0.9081773,1,1,Stage C high-risk review
+TX-002637,2025-10-09,defaulted,1,REJECT_STAGE_A,Exporter historical dispute rate at or above 8%,,,,,0,1,Stage A reject
+TX-004129,2025-10-09,paid,0,PASS_STAGE_A,,69.13514772618561,Medium,6.0,0.9046028,1,1,Stage C high-risk review
+TX-004524,2025-10-09,paid,0,REJECT_STAGE_A,Buyer country risk score above 8,,,,,0,1,Stage A reject
+TX-004888,2025-10-09,paid,0,PASS_STAGE_A,,69.27454442600381,Medium,10.0,0.5429975,1,1,Stage C high-risk review
+TX-002764,2025-10-10,paid,0,REJECT_STAGE_A,Buyer country risk score above 8,,,,,0,1,Stage A reject
+TX-002879,2025-10-10,defaulted,1,PASS_STAGE_A,,67.22524135750862,Medium,10.0,0.9520382,1,1,Stage C high-risk review
+TX-000345,2025-10-11,paid,0,PASS_STAGE_A,,65.77210485377127,Medium,6.0,0.8121752,1,1,Stage C high-risk review
+TX-003775,2025-10-11,paid,0,PASS_STAGE_A,,56.483844333246,Medium,4.0,0.4357703,1,1,Stage C high-risk review
+TX-002308,2025-10-12,paid,0,PASS_STAGE_A,,63.257972804904945,Medium,4.0,0.7375437,1,1,Stage C high-risk review
+TX-000423,2025-10-13,paid,0,REJECT_STAGE_A,Buyer country risk score above 8,,,,,0,1,Stage A reject
+TX-001141,2025-10-14,paid,0,PASS_STAGE_A,,55.93228887197343,Medium,3.0,0.5739037,1,1,Stage C high-risk review
+TX-003755,2025-10-14,paid,0,PASS_STAGE_A,,61.73261622804282,Medium,8.0,0.7036492,1,1,Stage C high-risk review
+TX-004638,2025-10-14,defaulted,1,PASS_STAGE_A,,70.71951782572347,High,9.0,0.84947526,1,1,Stage C high-risk review
+TX-001104,2025-10-15,paid,0,REJECT_STAGE_A,Buyer country risk score above 8,,,,,0,1,Stage A reject
+TX-003808,2025-10-15,paid,0,REJECT_STAGE_A,Buyer country risk score above 8,,,,,0,1,Stage A reject
+TX-001580,2025-10-16,paid,0,REJECT_STAGE_A,Buyer country risk score above 8,,,,,0,1,Stage A reject
+TX-002928,2025-10-16,paid,0,PASS_STAGE_A,,52.53966124678158,Medium,5.0,0.47942546,1,1,Stage C high-risk review
+TX-003738,2025-10-16,paid,0,PASS_STAGE_A,,56.898966769407394,Medium,4.0,0.6456079,1,1,Stage C high-risk review
+TX-000463,2025-10-18,defaulted,1,PASS_STAGE_A,,60.23876819280317,Medium,7.0,0.72772473,1,1,Stage C high-risk review
+TX-001915,2025-10-18,paid,0,REJECT_STAGE_A,Missing mandatory documentation,,,,,0,1,Stage A reject
+TX-003427,2025-10-19,paid,0,REJECT_STAGE_A,Missing mandatory documentation,,,,,0,1,Stage A reject
+TX-003921,2025-10-19,defaulted,1,PASS_STAGE_A,,62.85080549558882,Medium,7.0,0.64487654,1,1,Stage C high-risk review
+TX-004439,2025-10-19,paid,0,REJECT_STAGE_A,Missing mandatory documentation,,,,,0,1,Stage A reject
+TX-004624,2025-10-19,defaulted,1,REJECT_STAGE_A,Buyer country risk score above 8; Exporter historical dispute rate at or above 8%,,,,,0,1,Stage A reject
+TX-001161,2025-10-20,paid,0,REJECT_STAGE_A,Missing mandatory documentation,,,,,0,1,Stage A reject
+TX-002099,2025-10-20,paid,0,REJECT_STAGE_A,Buyer country risk score above 8,,,,,0,1,Stage A reject
+TX-001358,2025-10-22,paid,0,REJECT_STAGE_A,Buyer country risk score above 8,,,,,0,1,Stage A reject
+TX-004714,2025-10-22,paid,0,PASS_STAGE_A,,59.93564146399292,Medium,3.0,0.5957764,1,1,Stage C high-risk review
+TX-000686,2025-10-23,paid,0,PASS_STAGE_A,,65.90874585605484,Medium,7.0,0.7060714,1,1,Stage C high-risk review
+TX-000671,2025-10-25,paid,0,PASS_STAGE_A,,63.55371634409407,Medium,8.0,0.5086882,1,1,Stage C high-risk review
+TX-004478,2025-10-25,paid,0,REJECT_STAGE_A,Buyer country risk score above 8,,,,,0,1,Stage A reject
+TX-000034,2025-10-26,defaulted,1,PASS_STAGE_A,,70.24106634055848,High,9.0,0.9653288,1,1,Stage C high-risk review
+TX-000525,2025-10-26,paid,0,PASS_STAGE_A,,61.70760697305863,Medium,6.0,0.6613175,1,1,Stage C high-risk review
+TX-001498,2025-10-26,paid,0,REJECT_STAGE_A,Buyer country risk score above 8,,,,,0,1,Stage A reject
+TX-002042,2025-10-26,paid,0,REJECT_STAGE_A,Buyer country risk score above 8,,,,,0,1,Stage A reject
+TX-003689,2025-10-26,paid,0,REJECT_STAGE_A,Missing mandatory documentation,,,,,0,1,Stage A reject
+TX-000431,2025-10-28,paid,0,REJECT_STAGE_A,Buyer country risk score above 8,,,,,0,1,Stage A reject
+TX-001804,2025-10-28,defaulted,1,PASS_STAGE_A,,75.04169942307135,High,14.0,0.9766178,1,1,Stage C high-risk review
+TX-002054,2025-10-28,paid,0,REJECT_STAGE_A,Buyer country risk score above 8,,,,,0,1,Stage A reject
+TX-002441,2025-10-28,paid,0,REJECT_STAGE_A,Buyer country risk score above 8,,,,,0,1,Stage A reject
+TX-003788,2025-10-28,paid,0,REJECT_STAGE_A,Buyer country risk score above 8,,,,,0,1,Stage A reject
+TX-004739,2025-10-28,paid,0,PASS_STAGE_A,,69.12901239959903,Medium,14.0,0.6704378,1,1,Stage C high-risk review
+TX-001103,2025-10-29,paid,0,REJECT_STAGE_A,Buyer country risk score above 8,,,,,0,1,Stage A reject
+TX-003812,2025-10-29,paid,0,REJECT_STAGE_A,Missing mandatory documentation; Buyer country risk score above 8,,,,,0,1,Stage A reject
+TX-004850,2025-10-29,paid,0,REJECT_STAGE_A,Buyer country risk score above 8,,,,,0,1,Stage A reject
+TX-004549,2025-10-30,paid,0,REJECT_STAGE_A,Missing mandatory documentation,,,,,0,1,Stage A reject
+TX-000846,2025-10-31,paid,0,PASS_STAGE_A,,73.876923268902,High,15.0,0.49569178,1,1,Stage C high-risk review
+TX-003516,2025-10-31,paid,0,REJECT_STAGE_A,Exporter historical dispute rate at or above 8%,,,,,0,1,Stage A reject
+TX-001763,2025-11-01,paid,0,PASS_STAGE_A,,58.50891806115362,Medium,2.0,0.65180045,1,1,Stage C high-risk review
+TX-002464,2025-11-01,paid,0,REJECT_STAGE_A,Buyer country risk score above 8,,,,,0,1,Stage A reject
+TX-000241,2025-11-02,paid,0,REJECT_STAGE_A,Exporter historical dispute rate at or above 8%,,,,,0,1,Stage A reject
+TX-002232,2025-11-02,paid,0,REJECT_STAGE_A,Missing mandatory documentation,,,,,0,1,Stage A reject
+TX-002962,2025-11-02,paid,0,PASS_STAGE_A,,62.24450004367521,Medium,3.0,0.6445822,1,1,Stage C high-risk review
+TX-000206,2025-11-03,paid,0,PASS_STAGE_A,,69.31749171210973,Medium,6.0,0.78148437,1,1,Stage C high-risk review
+TX-000371,2025-11-03,paid,0,REJECT_STAGE_A,Exporter historical dispute rate at or above 8%,,,,,0,1,Stage A reject
+TX-000833,2025-11-03,paid,0,REJECT_STAGE_A,Missing mandatory documentation,,,,,0,1,Stage A reject
+TX-000924,2025-11-03,paid,0,REJECT_STAGE_A,Missing mandatory documentation; Buyer country risk score above 8,,,,,0,1,Stage A reject
+TX-001745,2025-11-03,paid,0,REJECT_STAGE_A,Missing mandatory documentation; Buyer country risk score above 8,,,,,0,1,Stage A reject
+TX-002743,2025-11-03,paid,0,REJECT_STAGE_A,Exporter historical dispute rate at or above 8%,,,,,0,1,Stage A reject
+TX-004558,2025-11-03,defaulted,1,REJECT_STAGE_A,Buyer country risk score above 8,,,,,0,1,Stage A reject
+TX-001211,2025-11-04,paid,0,REJECT_STAGE_A,Buyer country risk score above 8,,,,,0,1,Stage A reject
+TX-002480,2025-11-04,paid,0,PASS_STAGE_A,,59.90272907645658,Medium,3.0,0.6468976,1,1,Stage C high-risk review
+TX-003356,2025-11-04,paid,0,PASS_STAGE_A,,63.77256032377888,Medium,7.0,0.6801878,1,1,Stage C high-risk review
+TX-003396,2025-11-04,paid,0,REJECT_STAGE_A,Buyer country risk score above 8,,,,,0,1,Stage A reject
+TX-003672,2025-11-05,paid,0,REJECT_STAGE_A,Exporter historical dispute rate at or above 8%,,,,,0,1,Stage A reject
+TX-004546,2025-11-05,paid,0,REJECT_STAGE_A,Exporter historical dispute rate at or above 8%,,,,,0,1,Stage A reject
+TX-003943,2025-11-06,paid,0,REJECT_STAGE_A,Buyer country risk score above 8,,,,,0,1,Stage A reject
+TX-001389,2025-11-07,paid,0,PASS_STAGE_A,,62.29587040526433,Medium,4.0,0.5459212,1,1,Stage C high-risk review
+TX-004353,2025-11-07,paid,0,PASS_STAGE_A,,69.3206633639892,Medium,10.0,0.75132054,1,1,Stage C high-risk review
+TX-000617,2025-11-08,paid,0,PASS_STAGE_A,,70.58537254950899,High,7.0,0.9126058,1,1,Stage C high-risk review
+TX-001739,2025-11-08,paid,0,REJECT_STAGE_A,Buyer country risk score above 8,,,,,0,1,Stage A reject
+TX-003147,2025-11-08,paid,0,REJECT_STAGE_A,Buyer country risk score above 8,,,,,0,1,Stage A reject
+TX-003580,2025-11-08,paid,0,PASS_STAGE_A,,64.93406083748249,Medium,7.0,0.67720777,1,1,Stage C high-risk review
+TX-000112,2025-11-09,paid,0,REJECT_STAGE_A,Missing mandatory documentation,,,,,0,1,Stage A reject
+TX-000205,2025-11-09,paid,0,PASS_STAGE_A,,64.6802766928302,Medium,2.0,0.41856083,1,1,Stage C high-risk review
+TX-003847,2025-11-09,paid,0,REJECT_STAGE_A,Buyer country risk score above 8,,,,,0,1,Stage A reject
+TX-001336,2025-11-10,paid,0,REJECT_STAGE_A,Buyer country risk score above 8,,,,,0,1,Stage A reject
+TX-001345,2025-11-10,paid,0,REJECT_STAGE_A,Missing mandatory documentation,,,,,0,1,Stage A reject
+TX-001646,2025-11-10,paid,0,REJECT_STAGE_A,Buyer country risk score above 8,,,,,0,1,Stage A reject
+TX-002870,2025-11-11,paid,0,PASS_STAGE_A,,56.28491416782096,Medium,6.0,0.5553039,1,1,Stage C high-risk review
+TX-003130,2025-11-11,paid,0,PASS_STAGE_A,,62.77281405592924,Medium,8.0,0.48428145,1,1,Stage C high-risk review
+TX-003722,2025-11-11,paid,0,PASS_STAGE_A,,64.53157301454594,Medium,7.0,0.6394336,1,1,Stage C high-risk review
+TX-000613,2025-11-12,paid,0,PASS_STAGE_A,,63.41068004375842,Medium,2.0,0.6601516,1,1,Stage C high-risk review
+TX-003637,2025-11-12,paid,0,REJECT_STAGE_A,Buyer country risk score above 8,,,,,0,1,Stage A reject
+TX-001934,2025-11-13,paid,0,REJECT_STAGE_A,Missing mandatory documentation,,,,,0,1,Stage A reject
+TX-003137,2025-11-13,paid,0,REJECT_STAGE_A,Missing mandatory documentation,,,,,0,1,Stage A reject
+TX-003594,2025-11-13,paid,0,PASS_STAGE_A,,54.4280939724056,Medium,2.0,0.5304392,1,1,Stage C high-risk review
+TX-004512,2025-11-13,paid,0,REJECT_STAGE_A,Buyer country risk score above 8,,,,,0,1,Stage A reject
+TX-001021,2025-11-14,paid,0,REJECT_STAGE_A,Buyer country risk score above 8,,,,,0,1,Stage A reject
+TX-001328,2025-11-14,paid,0,PASS_STAGE_A,,67.61545852727207,Medium,7.0,0.86401147,1,1,Stage C high-risk review
+TX-001522,2025-11-14,paid,0,PASS_STAGE_A,,69.12074530699515,Medium,8.0,0.85068095,1,1,Stage C high-risk review
+TX-002974,2025-11-14,paid,0,PASS_STAGE_A,,63.94018992475388,Medium,2.0,0.69658595,1,1,Stage C high-risk review
+TX-004491,2025-11-14,paid,0,PASS_STAGE_A,,53.073954602742816,Medium,3.0,0.67226976,1,1,Stage C high-risk review
+TX-004648,2025-11-14,paid,0,REJECT_STAGE_A,Buyer country risk score above 8,,,,,0,1,Stage A reject
+TX-001083,2025-11-15,paid,0,REJECT_STAGE_A,Missing mandatory documentation; Buyer CreditSafe rating is E,,,,,0,1,Stage A reject
+TX-002717,2025-11-15,defaulted,1,PASS_STAGE_A,,60.46270761321237,Medium,8.0,0.42327005,1,1,Stage C high-risk review
+TX-000510,2025-11-16,paid,0,REJECT_STAGE_A,Buyer country risk score above 8,,,,,0,1,Stage A reject
+TX-003721,2025-11-18,paid,0,REJECT_STAGE_A,Missing mandatory documentation; Exporter historical dispute rate at or above 8%,,,,,0,1,Stage A reject
+TX-000738,2025-11-19,paid,0,PASS_STAGE_A,,63.09549063894747,Medium,4.0,0.43287364,1,1,Stage C high-risk review
+TX-000020,2025-11-20,paid,0,REJECT_STAGE_A,Exporter historical dispute rate at or above 8%,,,,,0,1,Stage A reject
+TX-001518,2025-11-20,paid,0,REJECT_STAGE_A,Missing mandatory documentation,,,,,0,1,Stage A reject
+TX-003641,2025-11-21,paid,0,REJECT_STAGE_A,Exporter historical dispute rate at or above 8%,,,,,0,1,Stage A reject
+TX-001203,2025-11-22,paid,0,REJECT_STAGE_A,Buyer country risk score above 8; Buyer CreditSafe rating is E,,,,,0,1,Stage A reject
+TX-002033,2025-11-23,paid,0,REJECT_STAGE_A,Buyer country risk score above 8,,,,,0,1,Stage A reject
+TX-002465,2025-11-23,paid,0,REJECT_STAGE_A,Buyer country risk score above 8,,,,,0,1,Stage A reject
+TX-002608,2025-11-23,paid,0,REJECT_STAGE_A,Exporter historical dispute rate at or above 8%,,,,,0,1,Stage A reject
+TX-002185,2025-11-24,paid,0,REJECT_STAGE_A,Buyer country risk score above 8,,,,,0,1,Stage A reject
+TX-002628,2025-11-24,paid,0,PASS_STAGE_A,,61.41061557083498,Medium,5.0,0.72477347,1,1,Stage C high-risk review
+TX-000113,2025-11-25,paid,0,REJECT_STAGE_A,Buyer country risk score above 8,,,,,0,1,Stage A reject
+TX-000119,2025-11-25,paid,0,REJECT_STAGE_A,Missing mandatory documentation,,,,,0,1,Stage A reject
+TX-000271,2025-11-25,paid,0,REJECT_STAGE_A,Buyer country risk score above 8,,,,,0,1,Stage A reject
+TX-001349,2025-11-25,paid,0,PASS_STAGE_A,,64.8583571467196,Medium,4.0,0.8101499,1,1,Stage C high-risk review
+TX-001973,2025-11-25,paid,0,REJECT_STAGE_A,Buyer country risk score above 8,,,,,0,1,Stage A reject
+TX-002711,2025-11-25,paid,0,REJECT_STAGE_A,Missing mandatory documentation,,,,,0,1,Stage A reject
+TX-003512,2025-11-26,paid,0,PASS_STAGE_A,,68.7088985112994,Medium,10.0,0.4636544,1,1,Stage C high-risk review
+TX-001085,2025-11-27,paid,0,REJECT_STAGE_A,Buyer country risk score above 8,,,,,0,1,Stage A reject
+TX-004059,2025-11-27,paid,0,REJECT_STAGE_A,Buyer country risk score above 8,,,,,0,1,Stage A reject
+TX-004765,2025-11-27,paid,0,REJECT_STAGE_A,Missing mandatory documentation,,,,,0,1,Stage A reject
+TX-002834,2025-11-28,paid,0,PASS_STAGE_A,,68.03208879793357,Medium,9.0,0.7526061,1,1,Stage C high-risk review
+TX-003809,2025-11-28,paid,0,REJECT_STAGE_A,Buyer country risk score above 8,,,,,0,1,Stage A reject
+TX-001515,2025-11-29,paid,0,REJECT_STAGE_A,Missing mandatory documentation,,,,,0,1,Stage A reject
+TX-002391,2025-11-29,paid,0,PASS_STAGE_A,,59.726208451360385,Medium,8.0,0.704757,1,1,Stage C high-risk review
+TX-001304,2025-11-30,paid,0,REJECT_STAGE_A,Buyer country risk score above 8,,,,,0,1,Stage A reject
+TX-001558,2025-11-30,paid,0,REJECT_STAGE_A,Buyer country risk score above 8,,,,,0,1,Stage A reject
+TX-003307,2025-11-30,paid,0,PASS_STAGE_A,,57.39275657103879,Medium,1.0,0.55286,1,1,Stage C high-risk review
+TX-001741,2025-12-01,paid,0,PASS_STAGE_A,,59.997514672789535,Medium,4.0,0.66943026,1,1,Stage C high-risk review
+TX-004204,2025-12-01,paid,0,REJECT_STAGE_A,Missing mandatory documentation; Buyer country risk score above 8,,,,,0,1,Stage A reject
+TX-004230,2025-12-01,paid,0,PASS_STAGE_A,,64.86641626215109,Medium,9.0,0.6657118,1,1,Stage C high-risk review
+TX-000081,2025-12-03,paid,0,REJECT_STAGE_A,Buyer country risk score above 8,,,,,0,1,Stage A reject
+TX-002352,2025-12-03,paid,0,REJECT_STAGE_A,Missing mandatory documentation,,,,,0,1,Stage A reject
+TX-002378,2025-12-03,paid,0,REJECT_STAGE_A,Buyer country risk score above 8,,,,,0,1,Stage A reject
+TX-000217,2025-12-04,paid,0,REJECT_STAGE_A,Buyer CreditSafe rating is E,,,,,0,1,Stage A reject
+TX-003852,2025-12-05,paid,0,PASS_STAGE_A,,56.34028808997924,Medium,2.0,0.5227973,1,1,Stage C high-risk review
+TX-003539,2025-12-08,paid,0,REJECT_STAGE_A,Exporter historical dispute rate at or above 8%,,,,,0,1,Stage A reject
+TX-001700,2025-12-09,paid,0,PASS_STAGE_A,,67.02948284396307,Medium,2.0,0.6897721,1,1,Stage C high-risk review
+TX-003922,2025-12-09,paid,0,PASS_STAGE_A,,53.99409760784657,Medium,1.0,0.5873215,1,1,Stage C high-risk review
+TX-000965,2025-12-11,paid,0,PASS_STAGE_A,,70.81217165603904,High,16.0,0.7556158,1,1,Stage C high-risk review
+TX-001643,2025-12-11,paid,0,PASS_STAGE_A,,70.3658006497207,High,13.0,0.40595692,1,1,Stage C high-risk review
+TX-003131,2025-12-12,paid,0,REJECT_STAGE_A,Buyer CreditSafe rating is E,,,,,0,1,Stage A reject
+TX-002037,2025-12-13,paid,0,PASS_STAGE_A,,67.50601054028313,Medium,12.0,0.75915086,1,1,Stage C high-risk review
+TX-002969,2025-12-13,paid,0,PASS_STAGE_A,,64.57805591258305,Medium,4.0,0.6148486,1,1,Stage C high-risk review
+TX-003148,2025-12-13,paid,0,REJECT_STAGE_A,Missing mandatory documentation; Buyer country risk score above 8,,,,,0,1,Stage A reject
+TX-003877,2025-12-13,paid,0,REJECT_STAGE_A,Exporter historical dispute rate at or above 8%,,,,,0,1,Stage A reject
+TX-000207,2025-12-14,paid,0,PASS_STAGE_A,,64.3138729093095,Medium,6.0,0.6864874,1,1,Stage C high-risk review
+TX-004917,2025-12-14,paid,0,PASS_STAGE_A,,69.88417751267623,Medium,8.0,0.6342669,1,1,Stage C high-risk review
+TX-000996,2025-12-15,paid,0,REJECT_STAGE_A,Missing mandatory documentation; Exporter historical dispute rate at or above 8%,,,,,0,1,Stage A reject
+TX-003176,2025-12-15,paid,0,REJECT_STAGE_A,Exporter historical dispute rate at or above 8%,,,,,0,1,Stage A reject
+TX-003293,2025-12-17,paid,0,PASS_STAGE_A,,67.6467590917221,Medium,13.0,0.48756054,1,1,Stage C high-risk review
+TX-000151,2025-12-18,paid,0,PASS_STAGE_A,,70.24059839192049,High,5.0,0.46807614,1,1,Stage C high-risk review
+TX-002784,2025-12-18,paid,0,PASS_STAGE_A,,56.38578309644735,Medium,5.0,0.6129368,1,1,Stage C high-risk review
+TX-000559,2025-12-19,paid,0,REJECT_STAGE_A,Buyer country risk score above 8,,,,,0,1,Stage A reject
+TX-003003,2025-12-19,paid,0,PASS_STAGE_A,,56.34215988453107,Medium,1.0,0.78690654,1,1,Stage C high-risk review
+TX-000883,2025-12-20,paid,0,REJECT_STAGE_A,Exporter historical dispute rate at or above 8%,,,,,0,1,Stage A reject
+TX-002497,2025-12-20,paid,0,PASS_STAGE_A,,67.83981390202612,Medium,10.0,0.49110273,1,1,Stage C high-risk review
+TX-004738,2025-12-22,paid,0,PASS_STAGE_A,,68.19691070708082,Medium,7.0,0.5193328,1,1,Stage C high-risk review
+TX-000992,2025-12-23,paid,0,REJECT_STAGE_A,Buyer country risk score above 8,,,,,0,1,Stage A reject
+TX-003418,2025-12-23,paid,0,PASS_STAGE_A,,61.7415592464571,Medium,9.0,0.80689573,1,1,Stage C high-risk review
+TX-003793,2025-12-23,paid,0,REJECT_STAGE_A,Buyer country risk score above 8,,,,,0,1,Stage A reject
+TX-001929,2025-12-24,paid,0,REJECT_STAGE_A,Buyer country risk score above 8,,,,,0,1,Stage A reject
+TX-003635,2025-12-24,paid,0,REJECT_STAGE_A,Exporter historical dispute rate at or above 8%,,,,,0,1,Stage A reject
+TX-000935,2025-12-25,paid,0,REJECT_STAGE_A,Exporter historical dispute rate at or above 8%,,,,,0,1,Stage A reject
+TX-001688,2025-12-25,paid,0,REJECT_STAGE_A,Buyer country risk score above 8,,,,,0,1,Stage A reject
+TX-002125,2025-12-26,paid,0,PASS_STAGE_A,,61.83488900258308,Medium,3.0,0.48897895,1,1,Stage C high-risk review
+TX-002591,2025-12-28,paid,0,PASS_STAGE_A,,57.37065899646854,Medium,0.0,0.4098384,1,1,Stage C high-risk review
+TX-004139,2025-12-28,paid,0,REJECT_STAGE_A,Buyer country risk score above 8,,,,,0,1,Stage A reject
+TX-000723,2025-12-29,paid,0,PASS_STAGE_A,,68.61946832715645,Medium,9.0,0.896659,1,1,Stage C high-risk review
+TX-002899,2025-12-29,paid,0,PASS_STAGE_A,,60.284523170736804,Medium,3.0,0.702196,1,1,Stage C high-risk review
+TX-002117,2025-12-30,paid,0,PASS_STAGE_A,,68.10914434031724,Medium,13.0,0.5554904,1,1,Stage C high-risk review
+TX-002554,2025-12-30,paid,0,REJECT_STAGE_A,Missing mandatory documentation,,,,,0,1,Stage A reject
+TX-004474,2025-12-30,paid,0,REJECT_STAGE_A,Buyer country risk score above 8,,,,,0,1,Stage A reject
+TX-004316,2025-12-31,paid,0,PASS_STAGE_A,,52.50238133862428,Medium,1.0,0.57568085,1,1,Stage C high-risk review
+TX-000426,2026-01-03,paid,0,PASS_STAGE_A,,53.11913764345226,Medium,1.0,0.7021677,1,1,Stage C high-risk review
+TX-001225,2026-01-03,paid,0,PASS_STAGE_A,,74.00046170932279,High,14.0,0.6044129,1,1,Stage C high-risk review
+TX-000111,2026-01-04,paid,0,REJECT_STAGE_A,Buyer country risk score above 8,,,,,0,1,Stage A reject
+TX-002513,2026-01-04,paid,0,PASS_STAGE_A,,65.5517010452933,Medium,7.0,0.4449036,1,1,Stage C high-risk review
+TX-000068,2026-01-05,paid,0,REJECT_STAGE_A,Buyer country risk score above 8,,,,,0,1,Stage A reject
+TX-002313,2026-01-05,paid,0,REJECT_STAGE_A,Exporter historical dispute rate at or above 8%,,,,,0,1,Stage A reject
+TX-001795,2026-01-06,paid,0,REJECT_STAGE_A,Missing mandatory documentation,,,,,0,1,Stage A reject
+TX-004665,2026-01-06,paid,0,REJECT_STAGE_A,Buyer country risk score above 8,,,,,0,1,Stage A reject
+TX-003183,2026-01-07,paid,0,PASS_STAGE_A,,70.25536477116276,High,7.0,0.9004633,1,1,Stage C high-risk review
+TX-000182,2026-01-08,paid,0,PASS_STAGE_A,,60.8999796182371,Medium,5.0,0.68557024,1,1,Stage C high-risk review
+TX-001164,2026-01-09,paid,0,REJECT_STAGE_A,Buyer country risk score above 8,,,,,0,1,Stage A reject
+TX-003419,2026-01-10,paid,0,REJECT_STAGE_A,Exporter historical dispute rate at or above 8%,,,,,0,1,Stage A reject
+TX-000857,2026-01-12,paid,0,REJECT_STAGE_A,Buyer country risk score above 8; Buyer CreditSafe rating is E,,,,,0,1,Stage A reject
+TX-004371,2026-01-12,paid,0,REJECT_STAGE_A,Buyer country risk score above 8,,,,,0,1,Stage A reject
+TX-000603,2026-01-13,paid,0,REJECT_STAGE_A,Buyer CreditSafe rating is E,,,,,0,1,Stage A reject
+TX-002977,2026-01-14,paid,0,PASS_STAGE_A,,67.73405750984776,Medium,8.0,0.6033685,1,1,Stage C high-risk review
+TX-004577,2026-01-15,paid,0,PASS_STAGE_A,,61.21407714289281,Medium,2.0,0.7498454,1,1,Stage C high-risk review
+TX-004916,2026-01-15,paid,0,REJECT_STAGE_A,Missing mandatory documentation; Buyer country risk score above 8,,,,,0,1,Stage A reject
+TX-000145,2026-01-16,paid,0,REJECT_STAGE_A,Buyer country risk score above 8,,,,,0,1,Stage A reject
+TX-001204,2026-01-16,paid,0,REJECT_STAGE_A,Buyer country risk score above 8,,,,,0,1,Stage A reject
+TX-004403,2026-01-19,paid,0,REJECT_STAGE_A,Buyer country risk score above 8,,,,,0,1,Stage A reject
+TX-001642,2026-01-20,paid,0,PASS_STAGE_A,,65.84874444181008,Medium,8.0,0.8632433,1,1,Stage C high-risk review
+TX-003227,2026-01-22,paid,0,REJECT_STAGE_A,Exporter historical dispute rate at or above 8%,,,,,0,1,Stage A reject
+TX-000669,2026-01-23,paid,0,PASS_STAGE_A,,63.82278681091964,Medium,3.0,0.42919317,1,1,Stage C high-risk review
+TX-003269,2026-01-24,paid,0,PASS_STAGE_A,,60.360902787310074,Medium,2.0,0.4834543,1,1,Stage C high-risk review
+TX-001282,2026-01-26,paid,0,REJECT_STAGE_A,Buyer country risk score above 8,,,,,0,1,Stage A reject
+TX-002740,2026-01-27,paid,0,REJECT_STAGE_A,Buyer country risk score above 8,,,,,0,1,Stage A reject
+TX-002988,2026-01-27,paid,0,PASS_STAGE_A,,65.05463560319619,Medium,7.0,0.90102136,1,1,Stage C high-risk review
+TX-004653,2026-01-27,paid,0,PASS_STAGE_A,,72.02109096505569,High,17.0,0.79414195,1,1,Stage C high-risk review
+TX-002885,2026-01-29,paid,0,REJECT_STAGE_A,Exporter historical dispute rate at or above 8%,,,,,0,1,Stage A reject
+TX-001174,2026-01-30,paid,0,PASS_STAGE_A,,61.23222315118694,Medium,6.0,0.8836331,1,1,Stage C high-risk review
+TX-002886,2026-01-30,paid,0,PASS_STAGE_A,,51.422719842270126,Medium,1.0,0.40390635,1,1,Stage C high-risk review
+TX-001972,2026-02-02,paid,0,REJECT_STAGE_A,Exporter historical dispute rate at or above 8%,,,,,0,1,Stage A reject
+TX-002396,2026-02-05,paid,0,PASS_STAGE_A,,65.01491196326292,Medium,6.0,0.8424441,1,1,Stage C high-risk review
+TX-000862,2026-02-07,paid,0,REJECT_STAGE_A,Missing mandatory documentation,,,,,0,1,Stage A reject
+TX-002828,2026-02-09,paid,0,REJECT_STAGE_A,Buyer country risk score above 8,,,,,0,1,Stage A reject
+TX-003474,2026-02-09,paid,0,REJECT_STAGE_A,Exporter historical dispute rate at or above 8%,,,,,0,1,Stage A reject
+TX-004617,2026-02-09,paid,0,PASS_STAGE_A,,66.94826775813088,Medium,6.0,0.5402421,1,1,Stage C high-risk review
+TX-001159,2026-02-10,paid,0,REJECT_STAGE_A,Buyer country risk score above 8,,,,,0,1,Stage A reject
+TX-001160,2026-02-10,paid,0,PASS_STAGE_A,,49.956480776669956,Medium,1.0,0.51163065,1,1,Stage C high-risk review
+TX-004527,2026-02-12,paid,0,PASS_STAGE_A,,70.6035705520962,High,4.0,0.40734804,1,1,Stage C high-risk review
+TX-002617,2026-02-13,paid,0,PASS_STAGE_A,,65.22933642803369,Medium,8.0,0.84465206,1,1,Stage C high-risk review
+TX-004839,2026-02-15,paid,0,PASS_STAGE_A,,63.3031558456144,Medium,5.0,0.44475135,1,1,Stage C high-risk review
+TX-002692,2026-02-16,paid,0,REJECT_STAGE_A,Buyer country risk score above 8,,,,,0,1,Stage A reject
+TX-004397,2026-02-18,paid,0,REJECT_STAGE_A,Exporter historical dispute rate at or above 8%,,,,,0,1,Stage A reject
+TX-001291,2026-02-27,paid,0,REJECT_STAGE_A,Exporter historical dispute rate at or above 8%,,,,,0,1,Stage A reject
+TX-001046,2026-02-28,paid,0,PASS_STAGE_A,,64.6891157226583,Medium,6.0,0.45304796,1,1,Stage C high-risk review
+TX-002182,2026-03-09,paid,0,REJECT_STAGE_A,Buyer country risk score above 8,,,,,0,1,Stage A reject
+TX-001341,2025-10-01,paid,0,PASS_STAGE_A,,64.30513786806763,Medium,6.0,0.23446353,0,0,Pass Layer 1
+TX-001367,2025-10-01,paid,0,PASS_STAGE_A,,59.73296770946422,Medium,6.0,0.15835582,0,0,Pass Layer 1
+TX-004615,2025-10-01,paid,0,PASS_STAGE_A,,53.89790816559973,Medium,2.0,0.21309796,0,0,Pass Layer 1
+TX-003038,2025-10-02,paid,0,PASS_STAGE_A,,57.9828917977963,Medium,7.0,0.3913875,0,0,Pass Layer 1
+TX-003464,2025-10-02,paid,0,PASS_STAGE_A,,50.23641805075474,Medium,0.0,0.061086,0,0,Pass Layer 1
+TX-000698,2025-10-03,paid,0,PASS_STAGE_A,,53.7208675975725,Medium,3.0,0.038445897,0,0,Pass Layer 1
+TX-001519,2025-10-03,paid,0,PASS_STAGE_A,,56.36368552187713,Medium,2.0,0.15648223,0,0,Pass Layer 1
+TX-001623,2025-10-03,paid,0,PASS_STAGE_A,,58.773569013065135,Medium,4.0,0.02013342,0,0,Pass Layer 1
+TX-004223,2025-10-03,paid,0,PASS_STAGE_A,,73.1743243861554,High,14.0,0.18089423,0,0,Pass Layer 1
+TX-004277,2025-10-03,paid,0,PASS_STAGE_A,,64.64159293875906,Medium,7.0,0.28628892,0,0,Pass Layer 1
+TX-000403,2025-10-04,paid,0,PASS_STAGE_A,,48.97878008909743,Medium,1.0,0.021247065,0,0,Pass Layer 1
+TX-001109,2025-10-04,paid,0,PASS_STAGE_A,,50.10196080878164,Medium,2.0,0.19987677,0,0,Pass Layer 1
+TX-001754,2025-10-04,paid,0,PASS_STAGE_A,,66.37898224290903,Medium,5.0,0.31640196,0,0,Pass Layer 1
+TX-002326,2025-10-04,paid,0,PASS_STAGE_A,,60.37904879560423,Medium,3.0,0.09685581,0,0,Pass Layer 1
+TX-003243,2025-10-04,paid,0,PASS_STAGE_A,,55.054469221458255,Medium,5.0,0.088179424,0,0,Pass Layer 1
+TX-003662,2025-10-04,paid,0,PASS_STAGE_A,,53.11898166057295,Medium,2.0,0.33692944,0,0,Pass Layer 1
+TX-000024,2025-10-05,paid,0,PASS_STAGE_A,,52.92259921551012,Medium,2.0,0.042909652,0,0,Pass Layer 1
+TX-001222,2025-10-05,paid,0,PASS_STAGE_A,,51.2940859611249,Medium,3.0,0.06515821,0,0,Pass Layer 1
+TX-004774,2025-10-05,paid,0,PASS_STAGE_A,,61.31920960355394,Medium,2.0,0.0166296,0,0,Pass Layer 1
+TX-003104,2025-10-06,paid,0,PASS_STAGE_A,,55.63919704173273,Medium,6.0,0.049602814,0,0,Pass Layer 1
+TX-003717,2025-10-06,paid,0,PASS_STAGE_A,,66.3396745573206,Medium,6.0,0.1486937,0,0,Pass Layer 1
+TX-003975,2025-10-06,paid,0,PASS_STAGE_A,,56.127683425467225,Medium,4.0,0.060884982,0,0,Pass Layer 1
+TX-000473,2025-10-07,paid,0,PASS_STAGE_A,,64.15331453219699,Medium,2.0,0.19722022,0,0,Pass Layer 1
+TX-001507,2025-10-07,paid,0,PASS_STAGE_A,,52.12594265653403,Medium,4.0,0.18702829,0,0,Pass Layer 1
+TX-002032,2025-10-07,paid,0,PASS_STAGE_A,,55.861628627641856,Medium,0.0,0.0917829,0,0,Pass Layer 1
+TX-004225,2025-10-07,paid,0,PASS_STAGE_A,,53.638456642998875,Medium,2.0,0.19756582,0,0,Pass Layer 1
+TX-000298,2025-10-08,paid,0,PASS_STAGE_A,,68.39838859286807,Medium,10.0,0.29169688,0,0,Pass Layer 1
+TX-001534,2025-10-08,paid,0,PASS_STAGE_A,,59.093229927083215,Medium,2.0,0.041941788,0,0,Pass Layer 1
+TX-003579,2025-10-08,paid,0,PASS_STAGE_A,,65.10834570797509,Medium,8.0,0.07981788,0,0,Pass Layer 1
+TX-003987,2025-10-08,paid,0,PASS_STAGE_A,,56.10485793079352,Medium,4.0,0.14612274,0,0,Pass Layer 1
+TX-004619,2025-10-08,paid,0,PASS_STAGE_A,,71.70153403962385,High,13.0,0.10212908,0,0,Pass Layer 1
+TX-003615,2025-10-09,paid,0,PASS_STAGE_A,,46.720563950900775,Medium,0.0,0.067759864,0,0,Pass Layer 1
+TX-000170,2025-10-10,paid,0,PASS_STAGE_A,,44.74852440196165,Medium,3.0,0.030713318,0,0,Pass Layer 1
+TX-001601,2025-10-10,paid,0,PASS_STAGE_A,,57.655795699863994,Medium,1.0,0.080719136,0,0,Pass Layer 1
+TX-001844,2025-10-10,paid,0,PASS_STAGE_A,,51.777528898428116,Medium,0.0,0.010721747,0,0,Pass Layer 1
+TX-001995,2025-10-10,paid,0,PASS_STAGE_A,,60.95426166024021,Medium,3.0,0.12134044,0,0,Pass Layer 1
+TX-002666,2025-10-10,paid,0,PASS_STAGE_A,,46.44083465398839,Medium,1.0,0.08524486,0,0,Pass Layer 1
+TX-004387,2025-10-10,paid,0,PASS_STAGE_A,,63.4170753418105,Medium,4.0,0.10384335,0,0,Pass Layer 1
+TX-000670,2025-10-11,paid,0,PASS_STAGE_A,,65.7705450249781,Medium,4.0,0.289595,0,0,Pass Layer 1
+TX-003654,2025-10-11,paid,0,PASS_STAGE_A,,63.92667140854618,Medium,5.0,0.22554372,0,0,Pass Layer 1
+TX-002304,2025-10-12,paid,0,PASS_STAGE_A,,65.6974930431636,Medium,10.0,0.3577674,0,0,Pass Layer 1
+TX-003110,2025-10-12,paid,0,PASS_STAGE_A,,51.981138550232735,Medium,2.0,0.040303126,0,0,Pass Layer 1
+TX-001334,2025-10-13,paid,0,PASS_STAGE_A,,72.04474836841912,High,4.0,0.24736476,0,0,Pass Layer 1
+TX-001940,2025-10-13,paid,0,PASS_STAGE_A,,63.129962855277014,Medium,2.0,0.19097358,0,0,Pass Layer 1
+TX-003866,2025-10-13,paid,0,PASS_STAGE_A,,65.62334918119389,Medium,4.0,0.056773517,0,0,Pass Layer 1
+TX-001680,2025-10-14,paid,0,PASS_STAGE_A,,63.3058075545628,Medium,7.0,0.30717984,0,0,Pass Layer 1
+TX-002008,2025-10-14,paid,0,PASS_STAGE_A,,68.12791428012862,Medium,8.0,0.08655431,0,0,Pass Layer 1
+TX-003361,2025-10-14,paid,0,PASS_STAGE_A,,56.97019895096315,Medium,1.0,0.063571915,0,0,Pass Layer 1
+TX-004954,2025-10-14,paid,0,PASS_STAGE_A,,62.64818373535322,Medium,9.0,0.025327804,0,0,Pass Layer 1
+TX-000470,2025-10-15,paid,0,PASS_STAGE_A,,68.92181514157008,Medium,4.0,0.16165647,0,0,Pass Layer 1
+TX-001398,2025-10-15,paid,0,PASS_STAGE_A,,57.71257346793618,Medium,1.0,0.031373024,0,0,Pass Layer 1
+TX-004477,2025-10-15,paid,0,PASS_STAGE_A,,53.94225929761951,Medium,3.0,0.022469351,0,0,Pass Layer 1
+TX-001463,2025-10-16,paid,0,PASS_STAGE_A,,56.74776736505402,Medium,1.0,0.06120409,0,0,Pass Layer 1
+TX-001219,2025-10-17,paid,0,PASS_STAGE_A,,66.44693878399909,Medium,3.0,0.16278046,0,0,Pass Layer 1
+TX-001759,2025-10-17,paid,0,PASS_STAGE_A,,51.25789793312286,Medium,3.0,0.024949273,0,0,Pass Layer 1
+TX-003960,2025-10-17,paid,0,PASS_STAGE_A,,52.8184026521249,Medium,3.0,0.35478485,0,0,Pass Layer 1
+TX-004369,2025-10-17,paid,0,PASS_STAGE_A,,47.670759657419985,Medium,1.0,0.06373289,0,0,Pass Layer 1
+TX-004748,2025-10-17,paid,0,PASS_STAGE_A,,59.02329760285514,Medium,1.0,0.08428915,0,0,Pass Layer 1
+TX-000878,2025-10-18,paid,0,PASS_STAGE_A,,58.93979476812626,Medium,1.0,0.06762045,0,0,Pass Layer 1
+TX-003018,2025-10-18,paid,0,PASS_STAGE_A,,47.229276114653665,Medium,0.0,0.067706205,0,0,Pass Layer 1
+TX-000879,2025-10-19,paid,0,PASS_STAGE_A,,59.71679748430812,Medium,2.0,0.060174264,0,0,Pass Layer 1
+TX-002040,2025-10-19,paid,0,PASS_STAGE_A,,50.611972829862225,Medium,1.0,0.06160813,0,0,Pass Layer 1
+TX-000991,2025-10-20,paid,0,PASS_STAGE_A,,65.44870035064955,Medium,3.0,0.030370627,0,0,Pass Layer 1
+TX-001251,2025-10-20,paid,0,PASS_STAGE_A,,42.84256959956076,Medium,1.0,0.34597635,0,0,Pass Layer 1
+TX-002386,2025-10-20,paid,0,PASS_STAGE_A,,66.4999729629676,Medium,3.0,0.3059728,0,0,Pass Layer 1
+TX-002473,2025-10-20,paid,0,PASS_STAGE_A,,61.60018676350088,Medium,3.0,0.1713047,0,0,Pass Layer 1
+TX-004599,2025-10-20,paid,0,PASS_STAGE_A,,67.86159951083772,Medium,11.0,0.20701575,0,0,Pass Layer 1
+TX-004606,2025-10-20,paid,0,PASS_STAGE_A,,68.32518062817428,Medium,5.0,0.37556198,0,0,Pass Layer 1
+TX-000136,2025-10-21,paid,0,PASS_STAGE_A,,69.4369745976682,Medium,6.0,0.2796528,0,0,Pass Layer 1
+TX-003207,2025-10-21,paid,0,PASS_STAGE_A,,47.58897263436365,Medium,1.0,0.120197214,0,0,Pass Layer 1
+TX-000193,2025-10-22,paid,0,PASS_STAGE_A,,50.14548003211171,Medium,2.0,0.022078391,0,0,Pass Layer 1
+TX-000402,2025-10-22,paid,0,PASS_STAGE_A,,56.310443365736184,Medium,2.0,0.022668287,0,0,Pass Layer 1
+TX-000755,2025-10-22,paid,0,PASS_STAGE_A,,58.30312464903855,Medium,1.0,0.019842153,0,0,Pass Layer 1
+TX-002359,2025-10-22,paid,0,PASS_STAGE_A,,50.00093589727593,Medium,2.0,0.13434759,0,0,Pass Layer 1
+TX-003112,2025-10-22,paid,0,PASS_STAGE_A,,54.745883091871846,Medium,3.0,0.0746533,0,0,Pass Layer 1
+TX-003470,2025-10-23,paid,0,PASS_STAGE_A,,51.57464716672698,Medium,2.0,0.030366728,0,0,Pass Layer 1
+TX-000807,2025-10-24,paid,0,PASS_STAGE_A,,52.37052381130647,Medium,1.0,0.0690428,0,0,Pass Layer 1
+TX-000902,2025-10-24,paid,0,PASS_STAGE_A,,72.6387311728665,High,7.0,0.2644159,0,0,Pass Layer 1
+TX-001065,2025-10-24,paid,0,PASS_STAGE_A,,51.81153316611969,Medium,0.0,0.08290927,0,0,Pass Layer 1
+TX-001177,2025-10-24,paid,0,PASS_STAGE_A,,58.8109009155155,Medium,3.0,0.36202535,0,0,Pass Layer 1
+TX-001376,2025-10-24,paid,0,PASS_STAGE_A,,71.74489728007455,High,5.0,0.12919824,0,0,Pass Layer 1
+TX-002095,2025-10-24,paid,0,PASS_STAGE_A,,54.78212311416699,Medium,2.0,0.028995119,0,0,Pass Layer 1
+TX-000191,2025-10-25,paid,0,PASS_STAGE_A,,61.965914621211205,Medium,3.0,0.05916113,0,0,Pass Layer 1
+TX-001210,2025-10-25,paid,0,PASS_STAGE_A,,73.3337388888196,High,10.0,0.054837383,0,0,Pass Layer 1
+TX-001214,2025-10-25,paid,0,PASS_STAGE_A,,55.44692214582528,Medium,1.0,0.21430156,0,0,Pass Layer 1
+TX-001936,2025-10-25,paid,0,PASS_STAGE_A,,51.892020331848386,Medium,1.0,0.2272583,0,0,Pass Layer 1
+TX-002917,2025-10-25,paid,0,PASS_STAGE_A,,52.35315771740895,Medium,2.0,0.21178685,0,0,Pass Layer 1
+TX-003630,2025-10-25,paid,0,PASS_STAGE_A,,60.75954303255675,Medium,3.0,0.19067138,0,0,Pass Layer 1
+TX-000699,2025-10-26,paid,0,PASS_STAGE_A,,62.944655194645854,Medium,6.0,0.030855477,0,0,Pass Layer 1
+TX-002777,2025-10-26,paid,0,PASS_STAGE_A,,48.79331644558693,Medium,1.0,0.06884692,0,0,Pass Layer 1
+TX-001064,2025-10-27,paid,0,PASS_STAGE_A,,57.26266684968659,Medium,8.0,0.010164009,0,0,Pass Layer 1
+TX-002420,2025-10-27,paid,0,PASS_STAGE_A,,61.81518316549577,Medium,6.0,0.19046779,0,0,Pass Layer 1
+TX-001250,2025-10-28,paid,0,PASS_STAGE_A,,49.68559050958566,Medium,2.0,0.057977464,0,0,Pass Layer 1
+TX-000055,2025-10-29,paid,0,PASS_STAGE_A,,51.06021563073238,Medium,2.0,0.07613745,0,0,Pass Layer 1
+TX-002771,2025-10-29,paid,0,PASS_STAGE_A,,64.96073390984608,Medium,2.0,0.21968614,0,0,Pass Layer 1
+TX-000547,2025-10-31,paid,0,PASS_STAGE_A,,57.40622309295334,Medium,2.0,0.20866913,0,0,Pass Layer 1
+TX-001614,2025-10-31,paid,0,PASS_STAGE_A,,51.79749470698096,Medium,4.0,0.026220659,0,0,Pass Layer 1
+TX-002014,2025-10-31,paid,0,PASS_STAGE_A,,60.22213001900913,Medium,2.0,0.3020929,0,0,Pass Layer 1
+TX-002407,2025-10-31,paid,0,PASS_STAGE_A,,60.77217764578162,Medium,3.0,0.051274482,0,0,Pass Layer 1
+TX-003691,2025-10-31,paid,0,PASS_STAGE_A,,54.6126737129333,Medium,3.0,0.021944078,0,0,Pass Layer 1
+TX-002536,2025-11-01,paid,0,PASS_STAGE_A,,52.371823668634136,Medium,2.0,0.010545233,0,0,Pass Layer 1
+TX-000489,2025-11-02,paid,0,PASS_STAGE_A,,47.73273685480282,Medium,2.0,0.0591682,0,0,Pass Layer 1
+TX-004855,2025-11-02,paid,0,PASS_STAGE_A,,55.44572627708383,Medium,2.0,0.30392867,0,0,Pass Layer 1
+TX-002209,2025-11-03,paid,0,PASS_STAGE_A,,64.342469770518,Medium,2.0,0.118700445,0,0,Pass Layer 1
+TX-004431,2025-11-03,paid,0,PASS_STAGE_A,,63.62385664549463,Medium,2.0,0.029196348,0,0,Pass Layer 1
+TX-000631,2025-11-04,paid,0,PASS_STAGE_A,,60.9249888732213,Medium,2.0,0.22467218,0,0,Pass Layer 1
+TX-002301,2025-11-04,paid,0,PASS_STAGE_A,,55.76985870030908,Medium,4.0,0.17449638,0,0,Pass Layer 1
+TX-002568,2025-11-04,paid,0,PASS_STAGE_A,,57.719592697505526,Medium,2.0,0.071587145,0,0,Pass Layer 1
+TX-004775,2025-11-04,paid,0,PASS_STAGE_A,,48.640817183905895,Medium,0.0,0.20649138,0,0,Pass Layer 1
+TX-001764,2025-11-05,paid,0,PASS_STAGE_A,,46.83630324735556,Medium,2.0,0.047638003,0,0,Pass Layer 1
+TX-003531,2025-11-05,paid,0,PASS_STAGE_A,,46.0463019578971,Medium,2.0,0.090383805,0,0,Pass Layer 1
+TX-003690,2025-11-05,paid,0,PASS_STAGE_A,,55.33955393056058,Medium,3.0,0.37627923,0,0,Pass Layer 1
+TX-004090,2025-11-05,paid,0,PASS_STAGE_A,,67.66948059780961,Medium,13.0,0.02570783,0,0,Pass Layer 1
+TX-000150,2025-11-06,paid,0,PASS_STAGE_A,,54.60019508258776,Medium,3.0,0.09850173,0,0,Pass Layer 1
+TX-001030,2025-11-07,paid,0,PASS_STAGE_A,,62.0571646056129,Medium,1.0,0.09331997,0,0,Pass Layer 1
+TX-003019,2025-11-07,defaulted,1,PASS_STAGE_A,,50.05001850996835,Medium,7.0,0.25134632,0,0,Pass Layer 1
+TX-003619,2025-11-07,paid,0,PASS_STAGE_A,,46.68941936933003,Medium,2.0,0.06827345,0,0,Pass Layer 1
+TX-003735,2025-11-07,paid,0,PASS_STAGE_A,,59.53310164676327,Medium,0.0,0.092215575,0,0,Pass Layer 1
+TX-004113,2025-11-07,paid,0,PASS_STAGE_A,,54.122575506112454,Medium,1.0,0.070814684,0,0,Pass Layer 1
+TX-004385,2025-11-07,paid,0,PASS_STAGE_A,,65.36498953874825,Medium,4.0,0.29033962,0,0,Pass Layer 1
+TX-001607,2025-11-08,paid,0,PASS_STAGE_A,,62.04473796956047,Medium,2.0,0.1336379,0,0,Pass Layer 1
+TX-002290,2025-11-08,paid,0,PASS_STAGE_A,,59.98716780846135,Medium,3.0,0.05501409,0,0,Pass Layer 1
+TX-002428,2025-11-08,paid,0,PASS_STAGE_A,,48.257463260832495,Medium,3.0,0.06544282,0,0,Pass Layer 1
+TX-004430,2025-11-08,paid,0,PASS_STAGE_A,,57.38573734146942,Medium,3.0,0.026071096,0,0,Pass Layer 1
+TX-002323,2025-11-09,paid,0,PASS_STAGE_A,,61.28504935298302,Medium,1.0,0.2381802,0,0,Pass Layer 1
+TX-003333,2025-11-09,paid,0,PASS_STAGE_A,,69.16083290698016,Medium,8.0,0.059187304,0,0,Pass Layer 1
+TX-000229,2025-11-10,paid,0,PASS_STAGE_A,,58.3477357525238,Medium,1.0,0.04952167,0,0,Pass Layer 1
+TX-002677,2025-11-10,paid,0,PASS_STAGE_A,,58.843917291638085,Medium,6.0,0.18308032,0,0,Pass Layer 1
+TX-003143,2025-11-10,paid,0,PASS_STAGE_A,,61.89847802305221,Medium,0.0,0.15471344,0,0,Pass Layer 1
+TX-004288,2025-11-10,paid,0,PASS_STAGE_A,,62.736210073582356,Medium,4.0,0.13896991,0,0,Pass Layer 1
+TX-004663,2025-11-10,paid,0,PASS_STAGE_A,,50.43410035314526,Medium,1.0,0.06735485,0,0,Pass Layer 1
+TX-000746,2025-11-11,paid,0,PASS_STAGE_A,,63.83048196629941,Medium,4.0,0.019927187,0,0,Pass Layer 1
+TX-001652,2025-11-11,paid,0,PASS_STAGE_A,,47.88575605941492,Medium,2.0,0.03606076,0,0,Pass Layer 1
+TX-002026,2025-11-11,paid,0,PASS_STAGE_A,,64.92501383048197,Medium,4.0,0.19148034,0,0,Pass Layer 1
+TX-002769,2025-11-11,paid,0,PASS_STAGE_A,,70.47514464812345,High,7.0,0.026745789,0,0,Pass Layer 1
+TX-002887,2025-11-11,paid,0,PASS_STAGE_A,,49.15400085686596,Medium,0.0,0.0273781,0,0,Pass Layer 1
+TX-000611,2025-11-12,paid,0,PASS_STAGE_A,,51.923632862057104,Medium,0.0,0.041617163,0,0,Pass Layer 1
+TX-003026,2025-11-12,paid,0,PASS_STAGE_A,,71.08441377474412,High,12.0,0.046297435,0,0,Pass Layer 1
+TX-003355,2025-11-12,paid,0,PASS_STAGE_A,,54.86479404020617,Medium,2.0,0.026451735,0,0,Pass Layer 1
+TX-003673,2025-11-12,paid,0,PASS_STAGE_A,,65.97446664254133,Medium,6.0,0.32689768,0,0,Pass Layer 1
+TX-004994,2025-11-12,paid,0,PASS_STAGE_A,,59.69272412659989,Medium,1.0,0.14387047,0,0,Pass Layer 1
+TX-000488,2025-11-13,paid,0,PASS_STAGE_A,,53.57138400489165,Medium,3.0,0.054331552,0,0,Pass Layer 1
+TX-004591,2025-11-13,paid,0,PASS_STAGE_A,,70.42341032648258,High,7.0,0.20788622,0,0,Pass Layer 1
+TX-004592,2025-11-13,paid,0,PASS_STAGE_A,,52.78018684669172,Medium,0.0,0.09645666,0,0,Pass Layer 1
+TX-004798,2025-11-13,paid,0,PASS_STAGE_A,,58.22924075853437,Medium,2.0,0.12823139,0,0,Pass Layer 1
+TX-003101,2025-11-14,paid,0,PASS_STAGE_A,,56.167355071107394,Medium,1.0,0.106900916,0,0,Pass Layer 1
+TX-000382,2025-11-15,paid,0,PASS_STAGE_A,,51.970479720145924,Medium,2.0,0.01434412,0,0,Pass Layer 1
+TX-001474,2025-11-15,paid,0,PASS_STAGE_A,,61.14544467599237,Medium,1.0,0.09409426,0,0,Pass Layer 1
+TX-001952,2025-11-15,paid,0,PASS_STAGE_A,,51.76312647923764,Medium,2.0,0.03501396,0,0,Pass Layer 1
+TX-002406,2025-11-15,paid,0,PASS_STAGE_A,,57.95081131894964,Medium,1.0,0.050524987,0,0,Pass Layer 1
+TX-004880,2025-11-15,paid,0,PASS_STAGE_A,,51.87023472303681,Medium,2.0,0.24256037,0,0,Pass Layer 1
+TX-004913,2025-11-15,paid,0,PASS_STAGE_A,,56.92220821842598,Medium,1.0,0.103463694,0,0,Pass Layer 1
+TX-000087,2025-11-16,paid,0,PASS_STAGE_A,,49.036441760152414,Medium,6.0,0.031570986,0,0,Pass Layer 1
+TX-000114,2025-11-16,paid,0,PASS_STAGE_A,,60.02429173373933,Medium,6.0,0.08921678,0,0,Pass Layer 1
+TX-001067,2025-11-16,paid,0,PASS_STAGE_A,,55.04583816880261,Medium,3.0,0.024863575,0,0,Pass Layer 1
+TX-002647,2025-11-16,paid,0,PASS_STAGE_A,,67.86185948230326,Medium,11.0,0.10671089,0,0,Pass Layer 1
+TX-003680,2025-11-16,paid,0,PASS_STAGE_A,,72.28173835639802,High,13.0,0.1424284,0,0,Pass Layer 1
+TX-000450,2025-11-17,paid,0,PASS_STAGE_A,,55.476662881482135,Medium,5.0,0.10333427,0,0,Pass Layer 1
+TX-000155,2025-11-18,paid,0,PASS_STAGE_A,,53.700329851795466,Medium,1.0,0.0621323,0,0,Pass Layer 1
+TX-004302,2025-11-18,paid,0,PASS_STAGE_A,,50.481883108510026,Medium,2.0,0.046833973,0,0,Pass Layer 1
+TX-004428,2025-11-18,paid,0,PASS_STAGE_A,,56.67955085249843,Medium,3.0,0.042163864,0,0,Pass Layer 1
+TX-000624,2025-11-19,paid,0,PASS_STAGE_A,,50.75454118155992,Medium,3.0,0.04202269,0,0,Pass Layer 1
+TX-002682,2025-11-19,paid,0,PASS_STAGE_A,,68.48963857726977,Medium,6.0,0.08641908,0,0,Pass Layer 1
+TX-003359,2025-11-19,paid,0,PASS_STAGE_A,,64.84645045359824,Medium,1.0,0.13674846,0,0,Pass Layer 1
+TX-001008,2025-11-20,paid,0,PASS_STAGE_A,,60.788711830989435,Medium,2.0,0.110176645,0,0,Pass Layer 1
+TX-001663,2025-11-20,paid,0,PASS_STAGE_A,,59.48438299412257,Medium,6.0,0.22178717,0,0,Pass Layer 1
+TX-003084,2025-11-20,paid,0,PASS_STAGE_A,,54.471509207149445,Medium,5.0,0.10168099,0,0,Pass Layer 1
+TX-004095,2025-11-20,paid,0,PASS_STAGE_A,,50.89528973299891,Medium,2.0,0.115557,0,0,Pass Layer 1
+TX-004099,2025-11-20,paid,0,PASS_STAGE_A,,62.06969523025152,Medium,2.0,0.12759925,0,0,Pass Layer 1
+TX-000912,2025-11-21,paid,0,PASS_STAGE_A,,67.73197773812348,Medium,3.0,0.19785705,0,0,Pass Layer 1
+TX-003772,2025-11-21,paid,0,PASS_STAGE_A,,68.25556026970482,Medium,11.0,0.17762512,0,0,Pass Layer 1
+TX-004200,2025-11-21,paid,0,PASS_STAGE_A,,64.55897400701302,Medium,4.0,0.26211235,0,0,Pass Layer 1
+TX-004289,2025-11-21,paid,0,PASS_STAGE_A,,58.49690737944606,Medium,3.0,0.019775718,0,0,Pass Layer 1
+TX-000688,2025-11-22,paid,0,PASS_STAGE_A,,65.12508787035534,Medium,3.0,0.046237815,0,0,Pass Layer 1
+TX-001156,2025-11-22,paid,0,PASS_STAGE_A,,76.41611656704562,High,16.0,0.14608438,0,0,Pass Layer 1
+TX-000630,2025-11-23,paid,0,PASS_STAGE_A,,48.97306071685572,Medium,2.0,0.008914302,0,0,Pass Layer 1
+TX-002929,2025-11-23,paid,0,PASS_STAGE_A,,52.61198530849255,Medium,2.0,0.23735991,0,0,Pass Layer 1
+TX-003120,2025-11-23,paid,0,PASS_STAGE_A,,50.89482178436097,Medium,4.0,0.11856355,0,0,Pass Layer 1
+TX-004120,2025-11-23,paid,0,PASS_STAGE_A,,65.67367965692085,Medium,6.0,0.07851622,0,0,Pass Layer 1
+TX-000310,2025-11-24,paid,0,PASS_STAGE_A,,55.563649333849135,Medium,1.0,0.0671029,0,0,Pass Layer 1
+TX-000312,2025-11-25,paid,0,PASS_STAGE_A,,57.70576221553924,Medium,2.0,0.022676168,0,0,Pass Layer 1
+TX-001505,2025-11-25,paid,0,PASS_STAGE_A,,70.39533340820513,High,12.0,0.14675805,0,0,Pass Layer 1
+TX-003836,2025-11-25,paid,0,PASS_STAGE_A,,56.95964410946256,Medium,2.0,0.06494841,0,0,Pass Layer 1
+TX-004515,2025-11-25,paid,0,PASS_STAGE_A,,63.05748281068672,Medium,12.0,0.016541056,0,0,Pass Layer 1
+TX-001533,2025-11-26,paid,0,PASS_STAGE_A,,63.229687909455066,Medium,8.0,0.024896454,0,0,Pass Layer 1
+TX-002088,2025-11-26,paid,0,PASS_STAGE_A,,60.39558298081203,Medium,3.0,0.046436828,0,0,Pass Layer 1
+TX-004728,2025-11-26,paid,0,PASS_STAGE_A,,52.15323966041487,Medium,0.0,0.20352596,0,0,Pass Layer 1
+TX-001678,2025-11-27,paid,0,PASS_STAGE_A,,59.22732320900461,Medium,0.0,0.017372213,0,0,Pass Layer 1
+TX-004066,2025-11-28,paid,0,PASS_STAGE_A,,62.38706839537293,Medium,10.0,0.080539644,0,0,Pass Layer 1
+TX-004285,2025-11-28,paid,0,PASS_STAGE_A,,60.434266734883195,Medium,1.0,0.15144283,0,0,Pass Layer 1
+TX-001509,2025-11-29,paid,0,PASS_STAGE_A,,49.127171801623064,Medium,0.0,0.025505379,0,0,Pass Layer 1
+TX-001644,2025-11-29,paid,0,PASS_STAGE_A,,71.49724846200883,High,7.0,0.13054551,0,0,Pass Layer 1
+TX-004717,2025-11-29,paid,0,PASS_STAGE_A,,52.71295822570515,Medium,2.0,0.042182483,0,0,Pass Layer 1
+TX-000092,2025-11-30,paid,0,PASS_STAGE_A,,66.06613258128792,Medium,7.0,0.10808024,0,0,Pass Layer 1
+TX-000213,2025-11-30,paid,0,PASS_STAGE_A,,52.75008215098312,Medium,2.0,0.02106735,0,0,Pass Layer 1
+TX-001695,2025-11-30,paid,0,PASS_STAGE_A,,48.49752091210469,Medium,2.0,0.05181306,0,0,Pass Layer 1
+TX-003492,2025-11-30,paid,0,PASS_STAGE_A,,58.80793724080845,Medium,4.0,0.38502362,0,0,Pass Layer 1
+TX-002380,2025-12-01,paid,0,PASS_STAGE_A,,66.29537541959397,Medium,8.0,0.34541222,0,0,Pass Layer 1
+TX-002204,2025-12-02,paid,0,PASS_STAGE_A,,59.031772672631455,Medium,2.0,0.15572006,0,0,Pass Layer 1
+TX-003286,2025-12-02,paid,0,PASS_STAGE_A,,65.30233641555506,Medium,1.0,0.17688675,0,0,Pass Layer 1
+TX-000569,2025-12-03,paid,0,PASS_STAGE_A,,57.38698520450396,Medium,2.0,0.05828449,0,0,Pass Layer 1
+TX-003499,2025-12-03,paid,0,PASS_STAGE_A,,69.71108851092507,Medium,11.0,0.3217114,0,0,Pass Layer 1
+TX-000349,2025-12-04,paid,0,PASS_STAGE_A,,65.94956137614338,Medium,4.0,0.18956153,0,0,Pass Layer 1
+TX-002401,2025-12-04,paid,0,PASS_STAGE_A,,62.592497847436285,Medium,0.0,0.16392873,0,0,Pass Layer 1
+TX-003447,2025-12-04,paid,0,PASS_STAGE_A,,45.58480061228478,Medium,0.0,0.15262279,0,0,Pass Layer 1
+TX-004042,2025-12-04,paid,0,PASS_STAGE_A,,59.15427122719011,Medium,3.0,0.04487328,0,0,Pass Layer 1
+TX-004899,2025-12-04,paid,0,PASS_STAGE_A,,56.093107220551495,Medium,1.0,0.3256533,0,0,Pass Layer 1
+TX-001122,2025-12-05,paid,0,PASS_STAGE_A,,64.34283373056977,Medium,7.0,0.30629846,0,0,Pass Layer 1
+TX-001256,2025-12-05,paid,0,PASS_STAGE_A,,51.52899617737958,Medium,2.0,0.022602908,0,0,Pass Layer 1
+TX-004086,2025-12-05,paid,0,PASS_STAGE_A,,59.59377898681843,Medium,1.0,0.009055294,0,0,Pass Layer 1
+TX-004878,2025-12-06,paid,0,PASS_STAGE_A,,60.033390735032945,Medium,3.0,0.164572,0,0,Pass Layer 1
+TX-000679,2025-12-07,paid,0,PASS_STAGE_A,,48.66821817637296,Medium,0.0,0.33702135,0,0,Pass Layer 1
+TX-001092,2025-12-07,paid,0,PASS_STAGE_A,,69.37062987966443,Medium,12.0,0.053499278,0,0,Pass Layer 1
+TX-001566,2025-12-08,paid,0,PASS_STAGE_A,,57.97779635707185,Medium,2.0,0.27796233,0,0,Pass Layer 1
+TX-002382,2025-12-09,paid,0,PASS_STAGE_A,,51.602724085004446,Medium,2.0,0.04984744,0,0,Pass Layer 1
+TX-002881,2025-12-09,paid,0,PASS_STAGE_A,,58.127591915511346,Medium,3.0,0.09423583,0,0,Pass Layer 1
+TX-004110,2025-12-09,paid,0,PASS_STAGE_A,,74.38371164381002,High,14.0,0.32050735,0,0,Pass Layer 1
+TX-000286,2025-12-10,paid,0,PASS_STAGE_A,,60.87205868283898,Medium,2.0,0.060722336,0,0,Pass Layer 1
+TX-001410,2025-12-10,paid,0,PASS_STAGE_A,,55.87379529222875,Medium,2.0,0.027456453,0,0,Pass Layer 1
+TX-002228,2025-12-10,paid,0,PASS_STAGE_A,,46.97013655781143,Medium,1.0,0.022846596,0,0,Pass Layer 1
+TX-002238,2025-12-10,paid,0,PASS_STAGE_A,,58.5844137747441,Medium,6.0,0.37793005,0,0,Pass Layer 1
+TX-003077,2025-12-10,paid,0,PASS_STAGE_A,,72.86927386850022,High,14.0,0.08875621,0,0,Pass Layer 1
+TX-000334,2025-12-11,paid,0,PASS_STAGE_A,,59.11652337039487,Medium,1.0,0.026678855,0,0,Pass Layer 1
+TX-001565,2025-12-11,paid,0,PASS_STAGE_A,,56.91321320571854,Medium,2.0,0.1141966,0,0,Pass Layer 1
+TX-003887,2025-12-11,paid,0,PASS_STAGE_A,,56.944149810116855,Medium,2.0,0.014472098,0,0,Pass Layer 1
+TX-002472,2025-12-12,paid,0,PASS_STAGE_A,,68.20153819916727,Medium,9.0,0.34401605,0,0,Pass Layer 1
+TX-001800,2025-12-13,paid,0,PASS_STAGE_A,,67.68741862893133,Medium,7.0,0.29063487,0,0,Pass Layer 1
+TX-004435,2025-12-13,paid,0,PASS_STAGE_A,,50.4222976486101,Medium,0.0,0.040103804,0,0,Pass Layer 1
+TX-001132,2025-12-14,paid,0,PASS_STAGE_A,,52.66018401820219,Medium,6.0,0.081349015,0,0,Pass Layer 1
+TX-002068,2025-12-14,paid,0,PASS_STAGE_A,,58.37056124719754,Medium,2.0,0.06282944,0,0,Pass Layer 1
+TX-002668,2025-12-14,paid,0,PASS_STAGE_A,,63.271803286871254,Medium,2.0,0.07768073,0,0,Pass Layer 1
+TX-003010,2025-12-14,paid,0,PASS_STAGE_A,,62.65317518749144,Medium,10.0,0.071383454,0,0,Pass Layer 1
+TX-004045,2025-12-14,paid,0,PASS_STAGE_A,,72.22906813748124,High,12.0,0.39270627,0,0,Pass Layer 1
+TX-004222,2025-12-14,paid,0,PASS_STAGE_A,,62.84134253424345,Medium,4.0,0.21993439,0,0,Pass Layer 1
+TX-000451,2025-12-15,paid,0,PASS_STAGE_A,,55.428464171772504,Medium,1.0,0.04139929,0,0,Pass Layer 1
+TX-002558,2025-12-15,paid,0,PASS_STAGE_A,,67.00062601128901,Medium,6.0,0.21437722,0,0,Pass Layer 1
+TX-002757,2025-12-15,paid,0,PASS_STAGE_A,,60.1086264771579,Medium,2.0,0.048756897,0,0,Pass Layer 1
+TX-003701,2025-12-15,paid,0,PASS_STAGE_A,,68.23309873508286,Medium,11.0,0.29050913,0,0,Pass Layer 1
+TX-000496,2025-12-16,paid,0,PASS_STAGE_A,,63.24055471671429,Medium,3.0,0.21512514,0,0,Pass Layer 1
+TX-002142,2025-12-17,paid,0,PASS_STAGE_A,,57.81006276751067,Medium,2.0,0.32584882,0,0,Pass Layer 1
+TX-003412,2025-12-17,paid,0,PASS_STAGE_A,,58.12036470876959,Medium,2.0,0.033758223,0,0,Pass Layer 1
+TX-002332,2025-12-18,paid,0,PASS_STAGE_A,,63.63935094484033,Medium,1.0,0.076888666,0,0,Pass Layer 1
+TX-004436,2025-12-19,paid,0,PASS_STAGE_A,,55.39716360732246,Medium,2.0,0.04924294,0,0,Pass Layer 1
+TX-001887,2025-12-20,paid,0,PASS_STAGE_A,,52.764224598708054,Medium,4.0,0.01326456,0,0,Pass Layer 1
+TX-004933,2025-12-21,paid,0,PASS_STAGE_A,,50.00551139506928,Medium,4.0,0.01979868,0,0,Pass Layer 1
+TX-001891,2025-12-23,paid,0,PASS_STAGE_A,,56.140162055812745,Medium,3.0,0.07325709,0,0,Pass Layer 1
+TX-004820,2025-12-23,paid,0,PASS_STAGE_A,,59.076019816064985,Medium,6.0,0.1729063,0,0,Pass Layer 1
+TX-001261,2025-12-24,paid,0,PASS_STAGE_A,,73.42457291887645,High,14.0,0.31644425,0,0,Pass Layer 1
+TX-001862,2025-12-24,paid,0,PASS_STAGE_A,,59.12265869698142,Medium,4.0,0.18304144,0,0,Pass Layer 1
+TX-004006,2025-12-24,paid,0,PASS_STAGE_A,,49.44886049307228,Medium,3.0,0.031715147,0,0,Pass Layer 1
+TX-004755,2025-12-24,paid,0,PASS_STAGE_A,,51.95940493571426,Medium,4.0,0.098886386,0,0,Pass Layer 1
+TX-004736,2025-12-26,paid,0,PASS_STAGE_A,,53.23201725378625,Medium,4.0,0.112726375,0,0,Pass Layer 1
+TX-000654,2025-12-27,paid,0,PASS_STAGE_A,,57.99942598300412,Medium,0.0,0.27065518,0,0,Pass Layer 1
+TX-001079,2025-12-27,paid,0,PASS_STAGE_A,,57.72354426378165,Medium,2.0,0.03254516,0,0,Pass Layer 1
+TX-000597,2025-12-28,paid,0,PASS_STAGE_A,,68.18869560877002,Medium,7.0,0.32005972,0,0,Pass Layer 1
+TX-001895,2025-12-28,paid,0,PASS_STAGE_A,,47.80064140159977,Medium,3.0,0.031592276,0,0,Pass Layer 1
+TX-004514,2025-12-28,paid,0,PASS_STAGE_A,,55.28236020814357,Medium,5.0,0.20244947,0,0,Pass Layer 1
+TX-000916,2025-12-29,paid,0,PASS_STAGE_A,,54.08363178057577,Medium,4.0,0.041551083,0,0,Pass Layer 1
+TX-001441,2025-12-30,paid,0,PASS_STAGE_A,,75.22456335192649,High,11.0,0.08990831,0,0,Pass Layer 1
+TX-000881,2025-12-31,paid,0,PASS_STAGE_A,,58.113969410717495,Medium,2.0,0.061165452,0,0,Pass Layer 1
+TX-001245,2025-12-31,paid,0,PASS_STAGE_A,,65.65158208235063,Medium,3.0,0.12920018,0,0,Pass Layer 1
+TX-003138,2025-12-31,paid,0,PASS_STAGE_A,,60.89675597206454,Medium,2.0,0.085533336,0,0,Pass Layer 1
+TX-000433,2026-01-02,paid,0,PASS_STAGE_A,,56.358070138221656,Medium,8.0,0.13912112,0,0,Pass Layer 1
+TX-001305,2026-01-02,paid,0,PASS_STAGE_A,,60.45386858338431,Medium,8.0,0.10705487,0,0,Pass Layer 1
+TX-004205,2026-01-03,paid,0,PASS_STAGE_A,,62.49100498729263,Medium,4.0,0.0970037,0,0,Pass Layer 1
+TX-001140,2026-01-04,paid,0,PASS_STAGE_A,,65.14812134220149,Medium,3.0,0.031118043,0,0,Pass Layer 1
+TX-001638,2026-01-04,paid,0,PASS_STAGE_A,,56.152172737520345,Medium,3.0,0.030971872,0,0,Pass Layer 1
+TX-003780,2026-01-05,paid,0,PASS_STAGE_A,,57.11926658929917,Medium,5.0,0.31329727,0,0,Pass Layer 1
+TX-001705,2026-01-06,paid,0,PASS_STAGE_A,,65.4405372466318,Medium,11.0,0.06824389,0,0,Pass Layer 1
+TX-001757,2026-01-06,paid,0,PASS_STAGE_A,,56.45337567748567,Medium,3.0,0.14255509,0,0,Pass Layer 1
+TX-002791,2026-01-06,paid,0,PASS_STAGE_A,,65.52528794439523,Medium,5.0,0.32633474,0,0,Pass Layer 1
+TX-002862,2026-01-06,paid,0,PASS_STAGE_A,,53.3847764869328,Medium,1.0,0.38543493,0,0,Pass Layer 1
+TX-000422,2026-01-07,paid,0,PASS_STAGE_A,,43.007235525828676,Medium,0.0,0.12526864,0,0,Pass Layer 1
+TX-001555,2026-01-07,paid,0,PASS_STAGE_A,,64.57888782127274,Medium,9.0,0.069550045,0,0,Pass Layer 1
+TX-001681,2026-01-07,paid,0,PASS_STAGE_A,,51.02319569404062,Medium,2.0,0.046732448,0,0,Pass Layer 1
+TX-003766,2026-01-07,paid,0,PASS_STAGE_A,,56.01225609477104,Medium,6.0,0.018993087,0,0,Pass Layer 1
+TX-004207,2026-01-07,paid,0,PASS_STAGE_A,,56.51743264659274,Medium,0.0,0.06825576,0,0,Pass Layer 1
+TX-001050,2026-01-08,paid,0,PASS_STAGE_A,,57.983463735020436,Medium,8.0,0.06318829,0,0,Pass Layer 1
+TX-004832,2026-01-08,paid,0,PASS_STAGE_A,,60.302149236099865,Medium,2.0,0.28093386,0,0,Pass Layer 1
+TX-000890,2026-01-09,paid,0,PASS_STAGE_A,,63.75399836113989,Medium,6.0,0.19033195,0,0,Pass Layer 1
+TX-004797,2026-01-09,paid,0,PASS_STAGE_A,,59.72730033151563,Medium,6.0,0.08525796,0,0,Pass Layer 1
+TX-000835,2026-01-10,paid,0,PASS_STAGE_A,,55.915494715300056,Medium,6.0,0.018882606,0,0,Pass Layer 1
+TX-003838,2026-01-10,paid,0,PASS_STAGE_A,,50.44600704626662,Medium,1.0,0.08083118,0,0,Pass Layer 1
+TX-001853,2026-01-11,paid,0,PASS_STAGE_A,,48.66421461580377,Medium,1.0,0.04315252,0,0,Pass Layer 1
+TX-003140,2026-01-12,paid,0,PASS_STAGE_A,,48.295731060558815,Medium,3.0,0.092220284,0,0,Pass Layer 1
+TX-001815,2026-01-13,paid,0,PASS_STAGE_A,,54.10812109262886,Medium,1.0,0.0815637,0,0,Pass Layer 1
+TX-002654,2026-01-13,paid,0,PASS_STAGE_A,,57.34279005536351,Medium,2.0,0.034211434,0,0,Pass Layer 1
+TX-003315,2026-01-14,paid,0,PASS_STAGE_A,,48.46694826775813,Medium,0.0,0.06476591,0,0,Pass Layer 1
+TX-002797,2026-01-17,paid,0,PASS_STAGE_A,,44.75954719210019,Medium,2.0,0.04899678,0,0,Pass Layer 1
+TX-000468,2026-01-18,paid,0,PASS_STAGE_A,,68.76177670738863,Medium,8.0,0.2236725,0,0,Pass Layer 1
+TX-002333,2026-01-18,paid,0,PASS_STAGE_A,,50.98019641364164,Medium,6.0,0.29692772,0,0,Pass Layer 1
+TX-000953,2026-01-19,paid,0,PASS_STAGE_A,,64.05254959215677,Medium,6.0,0.056619614,0,0,Pass Layer 1
+TX-004008,2026-01-19,paid,0,PASS_STAGE_A,,52.20403808477981,Medium,2.0,0.2177113,0,0,Pass Layer 1
+TX-004569,2026-01-19,paid,0,PASS_STAGE_A,,53.732826284986956,Medium,1.0,0.015714437,0,0,Pass Layer 1
+TX-002934,2026-01-21,paid,0,PASS_STAGE_A,,61.70641110431722,Medium,3.0,0.2723252,0,0,Pass Layer 1
+TX-001574,2026-01-22,paid,0,PASS_STAGE_A,,70.13291821089717,High,11.0,0.06559607,0,0,Pass Layer 1
+TX-002199,2026-01-22,paid,0,PASS_STAGE_A,,62.153873990790785,Medium,0.0,0.23797302,0,0,Pass Layer 1
+TX-003288,2026-01-22,paid,0,PASS_STAGE_A,,61.898530017345315,Medium,3.0,0.12687573,0,0,Pass Layer 1
+TX-002627,2026-01-25,paid,0,PASS_STAGE_A,,57.24868038484096,Medium,4.0,0.07694339,0,0,Pass Layer 1
+TX-002920,2026-01-25,paid,0,PASS_STAGE_A,,53.36299087812123,Medium,5.0,0.10274816,0,0,Pass Layer 1
+TX-004866,2026-01-26,paid,0,PASS_STAGE_A,,63.316258407477214,Medium,3.0,0.24301678,0,0,Pass Layer 1
+TX-001760,2026-01-29,paid,0,PASS_STAGE_A,,60.776857132161176,Medium,5.0,0.30016857,0,0,Pass Layer 1
+TX-004544,2026-01-29,paid,0,PASS_STAGE_A,,51.02158387095432,Medium,4.0,0.04244042,0,0,Pass Layer 1
+TX-000038,2026-01-30,paid,0,PASS_STAGE_A,,58.33676495667838,Medium,1.0,0.112478055,0,0,Pass Layer 1
+TX-000946,2026-01-30,paid,0,PASS_STAGE_A,,57.494561396941094,Medium,4.0,0.07370636,0,0,Pass Layer 1
+TX-002050,2026-01-31,paid,0,PASS_STAGE_A,,50.84449130863396,Medium,2.0,0.04292706,0,0,Pass Layer 1
+TX-000161,2026-02-01,paid,0,PASS_STAGE_A,,58.53949070550017,Medium,2.0,0.012281949,0,0,Pass Layer 1
+TX-004356,2026-02-02,paid,0,PASS_STAGE_A,,58.88020930822633,Medium,2.0,0.11822531,0,0,Pass Layer 1
+TX-004621,2026-02-04,paid,0,PASS_STAGE_A,,64.47328741197367,Medium,12.0,0.01921774,0,0,Pass Layer 1
+TX-002980,2026-02-05,paid,0,PASS_STAGE_A,,47.684278173627646,Medium,0.0,0.08037941,0,0,Pass Layer 1
+TX-004350,2026-02-05,paid,0,PASS_STAGE_A,,63.13609818186357,Medium,4.0,0.17073485,0,0,Pass Layer 1
+TX-000901,2026-02-06,paid,0,PASS_STAGE_A,,69.46369966432485,Medium,14.0,0.07288813,0,0,Pass Layer 1
+TX-000256,2026-02-12,paid,0,PASS_STAGE_A,,56.888255945027495,Medium,2.0,0.031509835,0,0,Pass Layer 1
+TX-004344,2026-02-12,paid,0,PASS_STAGE_A,,52.1899996256411,Medium,4.0,0.032228798,0,0,Pass Layer 1
+TX-002329,2026-02-16,paid,0,PASS_STAGE_A,,67.0523603329299,Medium,14.0,0.019223675,0,0,Pass Layer 1
+TX-000149,2026-02-17,paid,0,PASS_STAGE_A,,56.19470406928139,Medium,1.0,0.009293245,0,0,Pass Layer 1
+TX-003984,2026-02-22,paid,0,PASS_STAGE_A,,52.221664150142885,Medium,0.0,0.04305772,0,0,Pass Layer 1
+TX-004111,2026-02-23,paid,0,PASS_STAGE_A,,45.12751080441411,Medium,0.0,0.028141456,0,0,Pass Layer 1
+TX-001457,2026-02-24,paid,0,PASS_STAGE_A,,52.883187541335474,Medium,3.0,0.09055339,0,0,Pass Layer 1
+TX-004274,2026-02-27,paid,0,PASS_STAGE_A,,57.49866894609649,Medium,1.0,0.047726464,0,0,Pass Layer 1
+TX-001470,2026-03-02,paid,0,PASS_STAGE_A,,58.69666945356078,Medium,3.0,0.31876385,0,0,Pass Layer 1
+TX-004952,2026-03-08,paid,0,PASS_STAGE_A,,61.1341619143883,Medium,3.0,0.0411266,0,0,Pass Layer 1
+TX-003957,2026-03-13,paid,0,PASS_STAGE_A,,60.83706652357837,Medium,4.0,0.16859736,0,0,Pass Layer 1

@@ -17,7 +17,7 @@
     },
     {
       "name": "minimum_iscore",
-      "enabled": true,
+      "enabled": false,
       "description": "Reject exporters below the minimum acceptable Egyptian credit bureau score.",
       "column": "exp_iscore",
       "operator": "less_than",
@@ -27,7 +27,7 @@
     },
     {
       "name": "acceptable_auditor_tier",
-      "enabled": true,
+      "enabled": false,
       "description": "Reject exporters whose auditor tier is below the accepted quality bar.",
       "column": "exp_auditor_tier",
       "operator": "not_in",

@@ -13,16 +13,16 @@ The implementation is intentionally configurable:
 - credit committee changes do not require Python code edits
 - the Python layer only interprets the configured rules and appends decision fields
 
-## Default Automatic-Reject Rules
+## Active Automatic-Reject Rules
 
 | Rule | Default policy | Reason |
 | --- | --- | --- |
 | Missing mandatory documentation | `docs_complete == false` | Missing docs are a fraud, enforceability, and operational-risk issue. |
-| Minimum i-score | `exp_iscore < 550` | Severe bureau weakness should not pass automatically into model scoring. |
-| Acceptable auditor tier | auditor tier not in `Big4`, `International`, `CBE-approved` | Audit quality is a trust and financial-statement reliability control. |
 | Buyer country risk ceiling | `buy_buyer_country_risk_score > 8` | Very high sovereign/currency/enforcement risk can overwhelm deal-level mitigants. |
 | CreditSafe floor | `buy_creditsafe_rating == E` | The data dictionary describes E as essentially default-imminent. |
 | Historical dispute ceiling | `exp_historical_dispute_rate >= 0.08` | Extreme dispute history directly undermines invoice collectability. |
+
+`minimum_iscore` and `acceptable_auditor_tier` remain configurable in `config/hard_filters.json`, but they are disabled by default. In this dataset they are more useful as model features than as automatic rejection rules, so their signal is passed into Stage B/C instead of removing those rows before model training.
 
 ## Output Columns
 

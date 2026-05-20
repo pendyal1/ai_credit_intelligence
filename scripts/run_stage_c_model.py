@@ -31,6 +31,7 @@ from rawasi_credit.modeling import (  # noqa: E402
     feature_importance_frame,
     load_model_config,
     stage_c_feature_frame,
+    threshold_analysis_table,
     threshold_from_config,
 )
 
@@ -141,20 +142,36 @@ def main() -> None:
     validation_predictions["stage_c_predicted_default"] = (
         validation_predictions["stage_c_default_probability"] >= threshold
     ).astype(int)
+    layer1_validation_predictions = _build_layer1_validation_predictions(
+        dataset_path,
+        hard_filter_config,
+        validation_predictions,
+    )
+    layer1_metrics = _binary_flag_metrics(
+        layer1_validation_predictions,
+        flag_col="layer1_flagged_for_review",
+    )
 
     open_predictions = _score_open_holdout(best_model, stage_b_open, feature_columns)
     feature_importance = feature_importance_frame(best_model, feature_columns)
     cv_results = pd.DataFrame(grid.cv_results_).sort_values("rank_test_score")
     calibration = calibration_table(y_validation, validation_prob, bins=5)
+    threshold_analysis = threshold_analysis_table(y_validation, validation_prob)
 
     args.output_dir.mkdir(parents=True, exist_ok=True)
     args.model_dir.mkdir(parents=True, exist_ok=True)
 
     validation_predictions.to_csv(args.output_dir / "stage_c_validation_predictions.csv", index=False)
+    layer1_validation_predictions.to_csv(
+        args.output_dir / "layer1_validation_predictions.csv",
+        index=False,
+    )
+    layer1_metrics.to_csv(args.output_dir / "layer1_validation_metrics.csv", index=False)
     open_predictions.to_csv(args.output_dir / "stage_c_open_predictions.csv", index=False)
     feature_importance.to_csv(args.output_dir / "stage_c_feature_importance.csv", index=False)
     cv_results.to_csv(args.output_dir / "stage_c_gridsearch_results.csv", index=False)
     calibration.to_csv(args.output_dir / "stage_c_calibration_table.csv", index=False)
+    threshold_analysis.to_csv(args.output_dir / "stage_c_threshold_analysis.csv", index=False)
 
     _plot_calibration(calibration, args.output_dir / "stage_c_calibration.png")
     _plot_pr_curve(y_validation, validation_prob, args.output_dir / "stage_c_precision_recall.png")
@@ -192,8 +209,11 @@ def main() -> None:
         best_params=grid.best_params_,
         best_cv_score=grid.best_score_,
         threshold=threshold,
+        threshold_rationale=model_config["threshold"].get("rationale", ""),
         metrics=metrics,
+        layer1_metrics=layer1_metrics,
         calibration=calibration,
+        threshold_analysis=threshold_analysis,
         feature_importance=feature_importance,
     )
     (args.output_dir / "stage_c_report.md").write_text(report)
@@ -206,6 +226,8 @@ def main() -> None:
     print(f"Threshold: {threshold:.6f}")
     print("\nMetrics:")
     print(metrics.to_string(index=False))
+    print("\nFull Layer 1 validation metrics:")
+    print(layer1_metrics.to_string(index=False))
     print(f"\nWrote: {args.output_dir / 'stage_c_report.md'}")
     print(f"Wrote: {args.model_dir / 'stage_c_xgboost_model.joblib'}")
 
@@ -232,6 +254,82 @@ def _build_stage_b_frames(
     stage_b_open = transformer.transform(open_pass)
     stage_b_open["stage_b_split"] = "open_holdout"
     return stage_b_train, stage_b_validation, stage_b_open
+
+
+def _build_layer1_validation_predictions(
+    dataset_path: Path,
+    hard_filter_config: dict,
+    validation_predictions: pd.DataFrame,
+) -> pd.DataFrame:
+    stage_a_scored = apply_hard_filters(load_dataset(dataset_path), hard_filter_config)
+    _, validation, _ = split_resolved_open(stage_a_scored)
+    output = validation[
+        [
+            "transaction_id",
+            "invoice_date",
+            "status",
+            "defaulted",
+            DECISION_COLUMN,
+            "stage_a_reject_reasons",
+        ]
+    ].copy()
+    output = output.merge(
+        validation_predictions[
+            [
+                "transaction_id",
+                "stage_b_benchmark_score",
+                "stage_b_benchmark_band",
+                "stage_b_peer_outlier_count",
+                "stage_c_default_probability",
+                "stage_c_predicted_default",
+            ]
+        ],
+        on="transaction_id",
+        how="left",
+    )
+    output["stage_c_predicted_default"] = (
+        output["stage_c_predicted_default"].fillna(0).astype(int)
+    )
+    output["layer1_flagged_for_review"] = (
+        output[DECISION_COLUMN].eq("REJECT_STAGE_A")
+        | output["stage_c_predicted_default"].eq(1)
+    ).astype(int)
+    output["layer1_route"] = np.select(
+        [
+            output[DECISION_COLUMN].eq("REJECT_STAGE_A"),
+            output["stage_c_predicted_default"].eq(1),
+        ],
+        ["Stage A reject", "Stage C high-risk review"],
+        default="Pass Layer 1",
+    )
+    return output.sort_values(["layer1_flagged_for_review", "invoice_date"], ascending=[False, True])
+
+
+def _binary_flag_metrics(frame: pd.DataFrame, flag_col: str) -> pd.DataFrame:
+    y_true = frame["defaulted"].astype(int)
+    y_pred = frame[flag_col].astype(int)
+    tp = int(((y_true == 1) & (y_pred == 1)).sum())
+    tn = int(((y_true == 0) & (y_pred == 0)).sum())
+    fp = int(((y_true == 0) & (y_pred == 1)).sum())
+    fn = int(((y_true == 1) & (y_pred == 0)).sum())
+    flagged = int(y_pred.sum())
+    return pd.DataFrame(
+        [
+            {
+                "scope": "full_layer1_validation",
+                "rows": int(len(frame)),
+                "defaults": int(y_true.sum()),
+                "flagged_rows": flagged,
+                "flagged_rate": float(y_pred.mean()),
+                "precision": tp / flagged if flagged else 0.0,
+                "recall": tp / int(y_true.sum()) if int(y_true.sum()) else 0.0,
+                "true_negatives": tn,
+                "false_positives": fp,
+                "false_negatives": fn,
+                "true_positives": tp,
+            }
+        ]
+    )
 
 
 def _score_open_holdout(
@@ -320,8 +418,11 @@ def _render_report(
     best_params: dict,
     best_cv_score: float,
     threshold: float,
+    threshold_rationale: str,
     metrics: pd.DataFrame,
+    layer1_metrics: pd.DataFrame,
     calibration: pd.DataFrame,
+    threshold_analysis: pd.DataFrame,
     feature_importance: pd.DataFrame,
 ) -> str:
     return "\n".join(
@@ -344,15 +445,26 @@ def _render_report(
             f"- selected threshold: `{threshold:.6f}`",
             f"- best params: `{json.dumps(best_params)}`",
             "",
-            "The threshold is selected from the configured training review rate. This treats high-risk predictions as a human-review queue, which is appropriate because false negatives are more expensive than false positives in invoice discounting.",
+            "The threshold is loaded from `config/xgboost_model.json` and should be treated as the operating point for the high-risk review queue. The threshold analysis below shows the precision-recall tradeoff on the out-of-time validation set so the cutoff can be defended explicitly.",
+            f"Threshold rationale: {threshold_rationale}",
             "",
             "## Metrics",
             "",
             metrics.to_markdown(index=False),
             "",
+            "## Full Layer 1 Validation Metrics",
+            "",
+            "These metrics treat Stage A rejects and Stage C high-risk predictions as deals requiring rejection or manual review.",
+            "",
+            layer1_metrics.to_markdown(index=False),
+            "",
             "## Calibration Table - Validation",
             "",
             calibration.to_markdown(index=False),
+            "",
+            "## Threshold Analysis - Validation",
+            "",
+            threshold_analysis.to_markdown(index=False),
             "",
             "## Feature Importance",
             "",
@@ -362,8 +474,11 @@ def _render_report(
             "",
             "- `reports/stage_c_metrics.csv`",
             "- `reports/stage_c_validation_predictions.csv`",
+            "- `reports/layer1_validation_metrics.csv`",
+            "- `reports/layer1_validation_predictions.csv`",
             "- `reports/stage_c_open_predictions.csv`",
             "- `reports/stage_c_gridsearch_results.csv`",
+            "- `reports/stage_c_threshold_analysis.csv`",
             "- `reports/stage_c_calibration_table.csv`",
             "- `reports/stage_c_calibration.png`",
             "- `reports/stage_c_precision_recall.png`",

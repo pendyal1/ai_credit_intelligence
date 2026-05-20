@@ -1,5 +1,5 @@
 {
-  "version": "2026-05-18",
+  "version": "2026-05-20",
   "egp_per_usd_assumption": 50,
   "features": [
     {
@@ -7,21 +7,592 @@
       "description": "Invoice size relative to exporter annual revenue.",
       "why_cross_sector": "A large invoice is only risky relative to the exporter's scale.",
       "higher_is_riskier": true,
-      "weight": 1.0
+      "weight": 1.1,
+      "include_in_peer_outliers": true
     },
     {
       "name": "outstanding_to_revenue_est",
       "description": "Existing Rawasi exposure relative to exporter annual revenue.",
       "why_cross_sector": "Measures concentration and overextension independent of industry labels.",
       "higher_is_riskier": true,
-      "weight": 1.0
+      "weight": 1.2,
+      "include_in_peer_outliers": true
     },
     {
       "name": "advance_tenor_exposure",
       "description": "Advance percentage multiplied by payment tenor in days.",
       "why_cross_sector": "Combines how much Rawasi advances with how long capital is at risk.",
       "higher_is_riskier": true,
-      "weight": 1.0
+      "weight": 1.0,
+      "include_in_peer_outliers": true
+    },
+    {
+      "name": "insurance_not_covered_flag",
+      "description": "Whether the deal lacks Tier 1 trade credit insurance.",
+      "why_cross_sector": "Insurance is a loss mitigant independent of goods category.",
+      "higher_is_riskier": true,
+      "weight": 1.1,
+      "include_in_peer_outliers": false
+    },
+    {
+      "name": "exp_iscore_risk",
+      "description": "Credit bureau weakness measured as distance below the maximum i-score.",
+      "why_cross_sector": "Bureau score is a general exporter credit signal.",
+      "higher_is_riskier": true,
+      "weight": 0.9,
+      "include_in_peer_outliers": false
+    },
+    {
+      "name": "exp_young_firm_risk",
+      "description": "Inverse exporter operating history.",
+      "why_cross_sector": "Younger firms have less observable operating history regardless of sector.",
+      "higher_is_riskier": true,
+      "weight": 0.6,
+      "include_in_peer_outliers": false
+    },
+    {
+      "name": "exp_current_ratio_shortfall",
+      "description": "Shortfall below a 1.5 current ratio benchmark.",
+      "why_cross_sector": "Liquidity shortfall is a general balance-sheet stress signal.",
+      "higher_is_riskier": true,
+      "weight": 0.9,
+      "include_in_peer_outliers": true
+    },
+    {
+      "name": "exp_quick_ratio_shortfall",
+      "description": "Shortfall below a 1.0 quick ratio benchmark.",
+      "why_cross_sector": "Tighter liquidity stress applies across sectors.",
+      "higher_is_riskier": true,
+      "weight": 0.8,
+      "include_in_peer_outliers": true
+    },
+    {
+      "name": "exp_dscr_shortfall",
+      "description": "Shortfall below a 1.5 DSCR benchmark.",
+      "why_cross_sector": "Debt service pressure is a general repayment-capacity signal.",
+      "higher_is_riskier": true,
+      "weight": 1.0,
+      "include_in_peer_outliers": true
+    },
+    {
+      "name": "exp_debt_to_equity",
+      "description": "Exporter leverage.",
+      "why_cross_sector": "Higher leverage reduces balance-sheet flexibility in every sector.",
+      "higher_is_riskier": true,
+      "weight": 0.9,
+      "include_in_peer_outliers": true
+    },
+    {
+      "name": "exp_negative_operating_margin_flag",
+      "description": "Whether operating margin is negative.",
+      "why_cross_sector": "Negative operating profitability is broadly risky even if normal margins differ by sector.",
+      "higher_is_riskier": true,
+      "weight": 0.7,
+      "include_in_peer_outliers": false
+    },
+    {
+      "name": "exp_sales_decline_flag",
+      "description": "Whether year-over-year sales growth is negative.",
+      "why_cross_sector": "Shrinking revenue is a general stress signal.",
+      "higher_is_riskier": true,
+      "weight": 0.7,
+      "include_in_peer_outliers": false
+    },
+    {
+      "name": "exp_fx_loss_abs_pct",
+      "description": "Absolute FX loss or gain relative to NPAT.",
+      "why_cross_sector": "Large FX swings indicate currency exposure and earnings volatility.",
+      "higher_is_riskier": true,
+      "weight": 0.7,
+      "include_in_peer_outliers": true
+    },
+    {
+      "name": "exp_historical_on_time_gap",
+      "description": "One minus historical on-time payment rate.",
+      "why_cross_sector": "Prior payment slippage is relevant regardless of goods category.",
+      "higher_is_riskier": true,
+      "weight": 1.2,
+      "include_in_peer_outliers": true
+    },
+    {
+      "name": "exp_historical_dispute_rate",
+      "description": "Historical invoice dispute rate.",
+      "why_cross_sector": "Disputes directly reduce collectability across sectors.",
+      "higher_is_riskier": true,
+      "weight": 1.2,
+      "include_in_peer_outliers": true
+    },
+    {
+      "name": "exp_concentration_top1_buyer_pct",
+      "description": "Share of historical revenue from the largest buyer.",
+      "why_cross_sector": "Buyer concentration is a general concentration-risk feature.",
+      "higher_is_riskier": true,
+      "weight": 0.9,
+      "include_in_peer_outliers": true
+    },
+    {
+      "name": "recent_velocity_to_history",
+      "description": "Recent 90-day invoice velocity relative to historical invoice count.",
+      "why_cross_sector": "A sudden usage spike can indicate working-capital stress in any sector.",
+      "higher_is_riskier": true,
+      "weight": 0.8,
+      "include_in_peer_outliers": true
+    },
+    {
+      "name": "buy_buyer_country_risk_score",
+      "description": "Buyer-country sovereign and transfer risk score.",
+      "why_cross_sector": "Buyer-country risk affects enforceability and repayment independent of goods.",
+      "higher_is_riskier": true,
+      "weight": 1.0,
+      "include_in_peer_outliers": false
+    },
+    {
+      "name": "buy_creditsafe_rating_score",
+      "description": "Ordinal CreditSafe buyer rating, A=1 through E=5.",
+      "why_cross_sector": "Third-party buyer credit quality is broadly applicable.",
+      "higher_is_riskier": true,
+      "weight": 1.0,
+      "include_in_peer_outliers": false
+    },
+    {
+      "name": "buy_buyer_payment_history_dso_avg",
+      "description": "Buyer average days sales outstanding across suppliers.",
+      "why_cross_sector": "Slow buyer payment behavior affects all exporters.",
+      "higher_is_riskier": true,
+      "weight": 1.0,
+      "include_in_peer_outliers": true
+    },
+    {
+      "name": "buyer_risk_pressure",
+      "description": "Composite buyer pressure from country risk, CreditSafe rating, and DSO.",
+      "why_cross_sector": "Summarizes buyer-side risk drivers without sector labels.",
+      "higher_is_riskier": true,
+      "weight": 1.1,
+      "include_in_peer_outliers": false
+    },
+    {
+      "name": "trade_history_pressure",
+      "description": "Composite pressure from late payments, disputes, and buyer concentration.",
+      "why_cross_sector": "Summarizes exporter trade-quality risk across sectors.",
+      "higher_is_riskier": true,
+      "weight": 1.1,
+      "include_in_peer_outliers": true
+    },
+    {
+      "name": "liquidity_pressure",
+      "description": "Composite liquidity and leverage stress score.",
+      "why_cross_sector": "Combines balance-sheet pressure signals that apply across sectors.",
+      "higher_is_riskier": true,
+      "weight": 1.0,
+      "include_in_peer_outliers": true
+    },
+    {
+      "name": "buyer_terms_pressure",
+      "description": "Buyer risk pressure scaled by tenor and lack of insurance.",
+      "why_cross_sector": "A risky buyer is more concerning on longer, uninsured exposure.",
+      "higher_is_riskier": true,
+      "weight": 1.0,
+      "include_in_peer_outliers": true
+    },
+    {
+      "name": "country_risk_x_uninsured",
+      "description": "Buyer-country risk multiplied by an uninsured-deal flag.",
+      "why_cross_sector": "High country risk is more dangerous without insurance coverage.",
+      "higher_is_riskier": true,
+      "weight": 0.9,
+      "include_in_peer_outliers": false
+    },
+    {
+      "name": "log_annual_revenue_usd_est",
+      "description": "Log-scaled exporter annual revenue estimate.",
+      "why_cross_sector": "Larger exporters have more repayment capacity; log scaling handles size skew.",
+      "higher_is_riskier": false,
+      "weight": 0.6,
+      "include_in_peer_outliers": false
+    },
+    {
+      "name": "log_invoice_amount_usd",
+      "description": "Log-scaled invoice amount.",
+      "why_cross_sector": "Absolute ticket size still matters for operational and collection exposure.",
+      "higher_is_riskier": true,
+      "weight": 0.5,
+      "include_in_peer_outliers": false
+    },
+    {
+      "name": "log_cumulative_outstanding_usd",
+      "description": "Log-scaled existing Rawasi exposure.",
+      "why_cross_sector": "Absolute current exposure captures concentration even before scaling by revenue.",
+      "higher_is_riskier": true,
+      "weight": 0.6,
+      "include_in_peer_outliers": false
+    },
+    {
+      "name": "log_ticket_to_revenue_est",
+      "description": "Log-scaled invoice-to-revenue ratio.",
+      "why_cross_sector": "Log scaling preserves ordering while reducing skew from extreme tickets.",
+      "higher_is_riskier": true,
+      "weight": 0.8,
+      "include_in_peer_outliers": false
+    },
+    {
+      "name": "log_outstanding_to_revenue_est",
+      "description": "Log-scaled outstanding-to-revenue ratio.",
+      "why_cross_sector": "Log scaling makes exposure concentration less dominated by extreme outliers.",
+      "higher_is_riskier": true,
+      "weight": 0.9,
+      "include_in_peer_outliers": false
+    },
+    {
+      "name": "funded_amount_usd",
+      "description": "Rawasi funded amount equal to invoice amount times advance percentage.",
+      "why_cross_sector": "Funding exposure is closer to money at risk than invoice face value alone.",
+      "higher_is_riskier": true,
+      "weight": 0.8,
+      "include_in_peer_outliers": true
+    },
+    {
+      "name": "log_funded_amount_usd",
+      "description": "Log-scaled funded amount.",
+      "why_cross_sector": "Factoring exposure is right-skewed, so log size is more model-friendly.",
+      "higher_is_riskier": true,
+      "weight": 0.6,
+      "include_in_peer_outliers": false
+    },
+    {
+      "name": "funded_to_revenue_est",
+      "description": "Funded amount relative to exporter revenue.",
+      "why_cross_sector": "A funded ticket is riskier when large relative to exporter scale.",
+      "higher_is_riskier": true,
+      "weight": 1.1,
+      "include_in_peer_outliers": true
+    },
+    {
+      "name": "log_funded_to_revenue_est",
+      "description": "Log-scaled funded-to-revenue ratio.",
+      "why_cross_sector": "Log scaling improves stability of exposure ratios.",
+      "higher_is_riskier": true,
+      "weight": 0.8,
+      "include_in_peer_outliers": false
+    },
+    {
+      "name": "total_exposure_to_revenue_est",
+      "description": "Existing outstanding plus new funded amount relative to exporter revenue.",
+      "why_cross_sector": "Total post-advance exposure measures overextension after this deal is booked.",
+      "higher_is_riskier": true,
+      "weight": 1.3,
+      "include_in_peer_outliers": true
+    },
+    {
+      "name": "log_total_exposure_to_revenue_est",
+      "description": "Log-scaled post-advance exposure-to-revenue ratio.",
+      "why_cross_sector": "Captures exposure pressure while reducing the influence of extreme ratios.",
+      "higher_is_riskier": true,
+      "weight": 0.9,
+      "include_in_peer_outliers": false
+    },
+    {
+      "name": "funded_tenor_usd_days_log",
+      "description": "Log of funded amount multiplied by tenor days.",
+      "why_cross_sector": "Combines money at risk with time at risk for receivables financing.",
+      "higher_is_riskier": true,
+      "weight": 0.8,
+      "include_in_peer_outliers": false
+    },
+    {
+      "name": "funded_tenor_to_revenue_days",
+      "description": "Funded-to-revenue ratio multiplied by payment tenor.",
+      "why_cross_sector": "A small advance can still be risky if capital is tied up for long tenor.",
+      "higher_is_riskier": true,
+      "weight": 1.0,
+      "include_in_peer_outliers": true
+    },
+    {
+      "name": "total_exposure_tenor_to_revenue_days",
+      "description": "Post-advance exposure-to-revenue ratio multiplied by tenor.",
+      "why_cross_sector": "Combines concentration and duration of capital at risk.",
+      "higher_is_riskier": true,
+      "weight": 1.1,
+      "include_in_peer_outliers": true
+    },
+    {
+      "name": "uninsured_funded_amount_usd",
+      "description": "Funded amount without trade credit insurance coverage.",
+      "why_cross_sector": "Uninsured exposure increases loss severity if the buyer does not pay.",
+      "higher_is_riskier": true,
+      "weight": 0.9,
+      "include_in_peer_outliers": true
+    },
+    {
+      "name": "log_uninsured_funded_amount_usd",
+      "description": "Log-scaled uninsured funded exposure.",
+      "why_cross_sector": "Log scaling handles skew in loss-given-default exposure.",
+      "higher_is_riskier": true,
+      "weight": 0.7,
+      "include_in_peer_outliers": false
+    },
+    {
+      "name": "uninsured_funded_to_revenue_est",
+      "description": "Uninsured funded amount relative to exporter revenue.",
+      "why_cross_sector": "Loss exposure is more severe when uninsured and large relative to exporter scale.",
+      "higher_is_riskier": true,
+      "weight": 1.1,
+      "include_in_peer_outliers": true
+    },
+    {
+      "name": "loss_given_default_proxy",
+      "description": "Funded-to-revenue ratio scaled upward when uninsured.",
+      "why_cross_sector": "Approximates exposure severity rather than probability alone.",
+      "higher_is_riskier": true,
+      "weight": 1.0,
+      "include_in_peer_outliers": true
+    },
+    {
+      "name": "buyer_dso_gap_days",
+      "description": "Buyer historical DSO above the offered payment terms.",
+      "why_cross_sector": "Buyers that normally pay later than the offered tenor create collection slippage risk.",
+      "higher_is_riskier": true,
+      "weight": 0.9,
+      "include_in_peer_outliers": true
+    },
+    {
+      "name": "buyer_dso_to_terms",
+      "description": "Buyer historical DSO divided by offered payment terms.",
+      "why_cross_sector": "Normalizes buyer payment behavior against the requested tenor.",
+      "higher_is_riskier": true,
+      "weight": 0.9,
+      "include_in_peer_outliers": true
+    },
+    {
+      "name": "payment_terms_to_buyer_dso",
+      "description": "Offered payment terms divided by buyer historical DSO.",
+      "why_cross_sector": "Longer-than-normal terms can indicate weak bargaining power or stretching.",
+      "higher_is_riskier": true,
+      "weight": 0.6,
+      "include_in_peer_outliers": true
+    },
+    {
+      "name": "country_risk_x_tenor",
+      "description": "Buyer country risk scaled by payment tenor.",
+      "why_cross_sector": "Transfer and enforcement risk grows with longer exposure windows.",
+      "higher_is_riskier": true,
+      "weight": 0.9,
+      "include_in_peer_outliers": true
+    },
+    {
+      "name": "creditsafe_risk_x_tenor",
+      "description": "CreditSafe risk score scaled by payment tenor.",
+      "why_cross_sector": "Weak buyer credit quality is more dangerous over longer terms.",
+      "higher_is_riskier": true,
+      "weight": 0.9,
+      "include_in_peer_outliers": true
+    },
+    {
+      "name": "country_terms_uninsured_pressure",
+      "description": "Country risk, tenor, and lack of insurance combined.",
+      "why_cross_sector": "High country risk is most concerning when exposure is long and uninsured.",
+      "higher_is_riskier": true,
+      "weight": 1.1,
+      "include_in_peer_outliers": false
+    },
+    {
+      "name": "buyer_terms_uninsured_pressure",
+      "description": "Buyer risk, tenor, and lack of insurance combined.",
+      "why_cross_sector": "A risky buyer on long uninsured terms is a high-loss scenario.",
+      "higher_is_riskier": true,
+      "weight": 1.1,
+      "include_in_peer_outliers": false
+    },
+    {
+      "name": "exp_iscore_risk_squared",
+      "description": "Squared exporter i-score weakness.",
+      "why_cross_sector": "Nonlinear bureau weakness lets very weak scores stand out without hard rejection.",
+      "higher_is_riskier": true,
+      "weight": 0.7,
+      "include_in_peer_outliers": false
+    },
+    {
+      "name": "exp_management_tenure_risk",
+      "description": "Inverse management tenure.",
+      "why_cross_sector": "Less seasoned management can increase execution and governance risk.",
+      "higher_is_riskier": true,
+      "weight": 0.5,
+      "include_in_peer_outliers": false
+    },
+    {
+      "name": "exp_mgmt_succession_gap_flag",
+      "description": "No management succession plan flag.",
+      "why_cross_sector": "Governance continuity risk matters across sectors.",
+      "higher_is_riskier": true,
+      "weight": 0.4,
+      "include_in_peer_outliers": false
+    },
+    {
+      "name": "exp_leverage_liquidity_stress",
+      "description": "Debt-to-equity scaled by liquidity and DSCR buffers.",
+      "why_cross_sector": "Leverage is most risky when liquidity and debt-service capacity are weak.",
+      "higher_is_riskier": true,
+      "weight": 1.0,
+      "include_in_peer_outliers": true
+    },
+    {
+      "name": "exp_operating_margin_shortfall",
+      "description": "Operating margin shortfall below a 10 percent reference level.",
+      "why_cross_sector": "Lower operating buffer reduces resilience to payment delays.",
+      "higher_is_riskier": true,
+      "weight": 0.8,
+      "include_in_peer_outliers": true
+    },
+    {
+      "name": "exp_gross_margin_shortfall",
+      "description": "Gross margin shortfall below a 20 percent reference level.",
+      "why_cross_sector": "Low gross margin leaves less room for collection delays and FX shocks.",
+      "higher_is_riskier": true,
+      "weight": 0.6,
+      "include_in_peer_outliers": true
+    },
+    {
+      "name": "profitability_pressure",
+      "description": "Combined margin shortfall and sales decline pressure.",
+      "why_cross_sector": "Profitability and growth stress are general SME default predictors.",
+      "higher_is_riskier": true,
+      "weight": 0.9,
+      "include_in_peer_outliers": true
+    },
+    {
+      "name": "exp_sales_decline_magnitude_pct",
+      "description": "Magnitude of negative sales growth.",
+      "why_cross_sector": "A deeper decline is more informative than a binary decline flag.",
+      "higher_is_riskier": true,
+      "weight": 0.8,
+      "include_in_peer_outliers": true
+    },
+    {
+      "name": "non_usd_invoice_flag",
+      "description": "Invoice currency is not USD.",
+      "why_cross_sector": "Non-USD receivables can add FX and settlement complexity.",
+      "higher_is_riskier": true,
+      "weight": 0.3,
+      "include_in_peer_outliers": false
+    },
+    {
+      "name": "exp_fx_loss_x_non_usd",
+      "description": "Exporter FX volatility scaled by non-USD invoice flag.",
+      "why_cross_sector": "FX-sensitive exporters are riskier when the receivable is not USD.",
+      "higher_is_riskier": true,
+      "weight": 0.8,
+      "include_in_peer_outliers": true
+    },
+    {
+      "name": "exp_fx_loss_x_tenor",
+      "description": "Exporter FX volatility scaled by tenor.",
+      "why_cross_sector": "FX exposure has more time to move against the exporter on longer tenors.",
+      "higher_is_riskier": true,
+      "weight": 0.7,
+      "include_in_peer_outliers": true
+    },
+    {
+      "name": "exp_low_history_flag",
+      "description": "Exporter has fewer than 25 historical invoices.",
+      "why_cross_sector": "Sparse history makes observed payment performance less reliable.",
+      "higher_is_riskier": true,
+      "weight": 0.6,
+      "include_in_peer_outliers": false
+    },
+    {
+      "name": "exp_history_depth_risk",
+      "description": "Inverse historical invoice count.",
+      "why_cross_sector": "Thin trade history increases uncertainty across sectors.",
+      "higher_is_riskier": true,
+      "weight": 0.6,
+      "include_in_peer_outliers": false
+    },
+    {
+      "name": "exp_on_time_gap_x_low_history",
+      "description": "Late-payment gap adjusted upward when history is thin.",
+      "why_cross_sector": "Poor payment history is more concerning when evidence is sparse.",
+      "higher_is_riskier": true,
+      "weight": 0.9,
+      "include_in_peer_outliers": true
+    },
+    {
+      "name": "exp_dispute_to_history_pressure",
+      "description": "Dispute rate scaled by trade history depth.",
+      "why_cross_sector": "Recurring disputes across many invoices indicate collectability risk.",
+      "higher_is_riskier": true,
+      "weight": 0.9,
+      "include_in_peer_outliers": true
+    },
+    {
+      "name": "velocity_exposure_pressure",
+      "description": "Recent invoice velocity multiplied by total exposure-to-revenue.",
+      "why_cross_sector": "Rapid usage growth plus concentration can indicate working-capital stress.",
+      "higher_is_riskier": true,
+      "weight": 1.0,
+      "include_in_peer_outliers": true
+    },
+    {
+      "name": "concentration_adjusted_ticket_to_revenue",
+      "description": "Invoice-to-revenue ratio scaled by top-buyer concentration.",
+      "why_cross_sector": "A large invoice is more risky when customer concentration is already high.",
+      "higher_is_riskier": true,
+      "weight": 0.9,
+      "include_in_peer_outliers": true
+    },
+    {
+      "name": "concentration_adjusted_total_exposure",
+      "description": "Post-advance exposure-to-revenue scaled by top-buyer concentration.",
+      "why_cross_sector": "Combines platform exposure with exporter customer concentration.",
+      "higher_is_riskier": true,
+      "weight": 1.0,
+      "include_in_peer_outliers": true
+    },
+    {
+      "name": "exp_banking_depth_risk",
+      "description": "Inverse number and age of banking relationships.",
+      "why_cross_sector": "Thin banking relationships can indicate weaker external credit support.",
+      "higher_is_riskier": true,
+      "weight": 0.5,
+      "include_in_peer_outliers": false
+    },
+    {
+      "name": "exp_auditor_tier_risk_score",
+      "description": "Ordinal audit-quality risk score.",
+      "why_cross_sector": "Audit quality affects confidence in financial statements without forcing hard rejection.",
+      "higher_is_riskier": true,
+      "weight": 0.7,
+      "include_in_peer_outliers": false
+    },
+    {
+      "name": "exp_audit_qualified_flag",
+      "description": "Qualified audit flag.",
+      "why_cross_sector": "Audit qualifications indicate financial reporting or going-concern concerns.",
+      "higher_is_riskier": true,
+      "weight": 0.7,
+      "include_in_peer_outliers": false
+    },
+    {
+      "name": "exp_uses_offshore_tradeco_flag",
+      "description": "Exporter uses an offshore trade company.",
+      "why_cross_sector": "Complex trade structures can increase transparency and enforceability risk.",
+      "higher_is_riskier": true,
+      "weight": 0.4,
+      "include_in_peer_outliers": false
+    },
+    {
+      "name": "exp_segment_sme_flag",
+      "description": "Exporter segment is SME.",
+      "why_cross_sector": "SMEs generally have less balance-sheet depth than large corporates.",
+      "higher_is_riskier": true,
+      "weight": 0.5,
+      "include_in_peer_outliers": false
+    },
+    {
+      "name": "exposure_quality_pressure",
+      "description": "Total exposure pressure scaled by buyer and trade-history risk.",
+      "why_cross_sector": "Combines exposure size with probability-of-nonpayment drivers.",
+      "higher_is_riskier": true,
+      "weight": 1.2,
+      "include_in_peer_outliers": true
     }
   ],
   "benchmark_score": {

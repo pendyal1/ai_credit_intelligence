@@ -4,7 +4,17 @@ Stage B runs after Stage A hard filters. It does not train a default model. Its 
 
 ## Features
 
-This implementation intentionally uses only three cross-sector features:
+The first prototype used only three exposure features. The current implementation keeps those features and adds decision-time benchmark signals from the data dictionary:
+
+- exposure pressure: ticket size, outstanding exposure, advance percentage, and tenor
+- buyer quality: country risk, CreditSafe ordinal rating, DSO, and insurance interaction
+- exporter financial pressure: liquidity shortfalls, DSCR shortfall, leverage, operating loss, sales decline, FX volatility
+- trade history: on-time payment gap, dispute rate, buyer concentration, and recent velocity relative to history
+- factoring exposure engineering: funded amount, post-advance exposure, uninsured exposure, and funded-tenor exposure
+- log-scaled exposure variables: log invoice size, log funded amount, and log exposure-to-revenue ratios to reduce heavy-tail effects
+- governance and relationship depth: auditor tier score, qualified audit flag, management tenure, banking relationship depth, and sparse-history risk
+
+The original exposure features remain central:
 
 | Feature | Meaning | Why cross-sector |
 | --- | --- | --- |
@@ -25,19 +35,16 @@ For each feature, Stage B fits a training-only percentile distribution on deals 
 1. are resolved training rows, and
 2. pass Stage A.
 
-Each transformed deal receives:
+Each transformed deal receives risk percentiles for every configured benchmark feature, plus:
 
-- `stage_b_ticket_to_revenue_est_risk_percentile`
-- `stage_b_outstanding_to_revenue_est_risk_percentile`
-- `stage_b_advance_tenor_exposure_risk_percentile`
 - `stage_b_benchmark_score`
 - `stage_b_benchmark_band`
 
-The benchmark score is an equal-weight average of the three risk percentiles.
+The benchmark score is a configured weighted average of feature risk percentiles.
 
 ## Peer Outliers
 
-Peer outlier detection uses the same three features and compares each deal to training peers in the same `goods_category`.
+Peer outlier detection compares each deal to training peers in the same `goods_category`. It is enabled only for continuous features where a sector-relative robust z-score is meaningful.
 
 For each feature:
 

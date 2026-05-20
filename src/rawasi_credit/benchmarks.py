@@ -34,6 +34,11 @@ class StageBBenchmarkTransformer:
     def __post_init__(self) -> None:
         _validate_config(self.config)
         self.feature_names = [feature["name"] for feature in self.config["features"]]
+        self.peer_feature_names = [
+            feature["name"]
+            for feature in self.config["features"]
+            if feature.get("include_in_peer_outliers", True)
+        ]
         self.weights = np.array([feature.get("weight", 1.0) for feature in self.config["features"]])
         self.weights = self.weights / self.weights.sum()
         self.global_feature_values_: dict[str, np.ndarray] = {}
@@ -61,7 +66,7 @@ class StageBBenchmarkTransformer:
             group_key = _group_key(group_value)
             self.group_peer_stats_[group_key] = {
                 feature_name: _robust_stats(group_df[feature_name].dropna().to_numpy())
-                for feature_name in self.feature_names
+                for feature_name in self.peer_feature_names
             }
 
         self.fitted_ = True
@@ -72,20 +77,22 @@ class StageBBenchmarkTransformer:
             raise RuntimeError("StageBBenchmarkTransformer must be fitted before transform().")
 
         result = self.add_cross_sector_features(df)
-        percentile_cols = []
+        percentile_data = {}
 
         for feature in self.config["features"]:
             feature_name = feature["name"]
             percentile_col = f"stage_b_{feature_name}_risk_percentile"
-            result[percentile_col] = _percentile_rank(
+            percentile = _percentile_rank(
                 result[feature_name],
                 self.global_feature_values_[feature_name],
             )
             if not feature.get("higher_is_riskier", True):
-                result[percentile_col] = 1 - result[percentile_col]
-            result[percentile_col] = result[percentile_col] * 100
-            percentile_cols.append(percentile_col)
+                percentile = 1 - percentile
+            percentile_data[percentile_col] = percentile * 100
 
+        percentile_frame = pd.DataFrame(percentile_data, index=result.index)
+        percentile_cols = list(percentile_frame.columns)
+        result = pd.concat([result, percentile_frame], axis=1).copy()
         result[BENCHMARK_SCORE_COLUMN] = np.average(
             result[percentile_cols].to_numpy(),
             axis=1,
@@ -109,11 +116,202 @@ class StageBBenchmarkTransformer:
             result["exp_annual_revenue_egp_millions"] * 1_000_000 / egp_per_usd
         ).replace(0, np.nan)
 
+        result["annual_revenue_usd_est"] = annual_revenue_usd_est
+        result["log_annual_revenue_usd_est"] = _log1p_nonnegative(annual_revenue_usd_est)
+        result["log_invoice_amount_usd"] = _log1p_nonnegative(result["invoice_amount_usd"])
+        result["log_cumulative_outstanding_usd"] = _log1p_nonnegative(
+            result["cumulative_outstanding_usd"]
+        )
         result["ticket_to_revenue_est"] = result["invoice_amount_usd"] / annual_revenue_usd_est
         result["outstanding_to_revenue_est"] = (
             result["cumulative_outstanding_usd"] / annual_revenue_usd_est
         )
+        result["log_ticket_to_revenue_est"] = _log1p_nonnegative(
+            result["ticket_to_revenue_est"]
+        )
+        result["log_outstanding_to_revenue_est"] = _log1p_nonnegative(
+            result["outstanding_to_revenue_est"]
+        )
+
+        result["funded_amount_usd"] = result["invoice_amount_usd"] * result["advance_pct"]
+        result["log_funded_amount_usd"] = _log1p_nonnegative(result["funded_amount_usd"])
+        result["funded_to_revenue_est"] = result["funded_amount_usd"] / annual_revenue_usd_est
+        result["log_funded_to_revenue_est"] = _log1p_nonnegative(
+            result["funded_to_revenue_est"]
+        )
+        result["total_exposure_after_advance_usd"] = (
+            result["cumulative_outstanding_usd"] + result["funded_amount_usd"]
+        )
+        result["log_total_exposure_after_advance_usd"] = _log1p_nonnegative(
+            result["total_exposure_after_advance_usd"]
+        )
+        result["total_exposure_to_revenue_est"] = (
+            result["total_exposure_after_advance_usd"] / annual_revenue_usd_est
+        )
+        result["log_total_exposure_to_revenue_est"] = _log1p_nonnegative(
+            result["total_exposure_to_revenue_est"]
+        )
         result["advance_tenor_exposure"] = result["advance_pct"] * result["payment_terms_days"]
+        result["log_advance_tenor_exposure"] = _log1p_nonnegative(
+            result["advance_tenor_exposure"]
+        )
+        result["insurance_not_covered_flag"] = (~result["insurance_covered"]).astype(int)
+        result["uninsured_funded_amount_usd"] = (
+            result["funded_amount_usd"] * result["insurance_not_covered_flag"]
+        )
+        result["log_uninsured_funded_amount_usd"] = _log1p_nonnegative(
+            result["uninsured_funded_amount_usd"]
+        )
+        result["uninsured_funded_to_revenue_est"] = (
+            result["uninsured_funded_amount_usd"] / annual_revenue_usd_est
+        )
+        result["funded_tenor_usd_days_log"] = _log1p_nonnegative(
+            result["funded_amount_usd"] * result["payment_terms_days"]
+        )
+        result["funded_tenor_to_revenue_days"] = (
+            result["funded_to_revenue_est"] * result["payment_terms_days"]
+        )
+        result["total_exposure_tenor_to_revenue_days"] = (
+            result["total_exposure_to_revenue_est"] * result["payment_terms_days"]
+        )
+
+        result["exp_iscore_risk"] = 850 - result["exp_iscore"]
+        result["exp_iscore_risk_squared"] = result["exp_iscore_risk"] ** 2
+        result["exp_young_firm_risk"] = 1 / (result["exp_years_in_business"] + 1)
+        result["exp_management_tenure_risk"] = 1 / (result["exp_mgmt_tenure_years"] + 1)
+        result["exp_mgmt_succession_gap_flag"] = (
+            ~result["exp_mgmt_succession_in_place"]
+        ).astype(int)
+        result["exp_current_ratio_shortfall"] = (1.5 - result["exp_current_ratio"]).clip(lower=0)
+        result["exp_quick_ratio_shortfall"] = (1.0 - result["exp_quick_ratio"]).clip(lower=0)
+        result["exp_dscr_shortfall"] = (1.5 - result["exp_dscr"]).clip(lower=0)
+        result["exp_leverage_liquidity_stress"] = result["exp_debt_to_equity"] / (
+            result["exp_current_ratio"] + result["exp_quick_ratio"] + result["exp_dscr"] + 0.1
+        )
+        result["exp_operating_margin_shortfall"] = (
+            10 - result["exp_operating_margin_pct"]
+        ).clip(lower=0) / 100
+        result["exp_gross_margin_shortfall"] = (
+            20 - result["exp_gross_profit_margin_pct"]
+        ).clip(lower=0) / 100
+        result["exp_negative_operating_margin_flag"] = (
+            result["exp_operating_margin_pct"] < 0
+        ).astype(int)
+        result["exp_sales_decline_flag"] = (result["exp_sales_growth_pct"] < 0).astype(int)
+        result["exp_sales_decline_magnitude_pct"] = (
+            -result["exp_sales_growth_pct"]
+        ).clip(lower=0)
+        result["exp_fx_loss_abs_pct"] = result["exp_fx_loss_to_npat_pct"].abs()
+        result["non_usd_invoice_flag"] = result["invoice_currency"].ne("USD").astype(int)
+        result["exp_fx_loss_x_non_usd"] = (
+            result["exp_fx_loss_abs_pct"] * result["non_usd_invoice_flag"]
+        )
+        result["exp_fx_loss_x_tenor"] = (
+            result["exp_fx_loss_abs_pct"] * result["payment_terms_days"] / 180
+        )
+        result["exp_historical_on_time_gap"] = 1 - result["exp_historical_on_time_payment_rate"]
+        result["exp_low_history_flag"] = (result["exp_historical_invoices_count"] < 25).astype(int)
+        result["exp_history_depth_risk"] = 1 / (result["exp_historical_invoices_count"] + 1)
+        result["exp_on_time_gap_x_low_history"] = (
+            result["exp_historical_on_time_gap"] * (1 + result["exp_history_depth_risk"])
+        )
+        result["exp_dispute_to_history_pressure"] = (
+            result["exp_historical_dispute_rate"]
+            * np.log1p(result["exp_historical_invoices_count"])
+        )
+        result["recent_velocity_to_history"] = (
+            result["recent_velocity_count"] / (result["exp_historical_invoices_count"] + 1)
+        )
+        result["velocity_exposure_pressure"] = (
+            result["recent_velocity_to_history"] * result["total_exposure_to_revenue_est"]
+        )
+        result["concentration_adjusted_ticket_to_revenue"] = (
+            result["ticket_to_revenue_est"] * result["exp_concentration_top1_buyer_pct"]
+        )
+        result["concentration_adjusted_total_exposure"] = (
+            result["total_exposure_to_revenue_est"] * result["exp_concentration_top1_buyer_pct"]
+        )
+        result["exp_banking_depth_risk"] = (
+            1 / (result["exp_n_banking_relationships"] + 1)
+            + 1 / (result["exp_banking_relationship_years"] + 1)
+        )
+        result["exp_auditor_tier_risk_score"] = result["exp_auditor_tier"].map(
+            {"Big4": 0.0, "International": 0.25, "CBE-approved": 0.5, "Non-CBE": 1.0}
+        )
+        result["exp_audit_qualified_flag"] = result["exp_audit_qualified"].astype(int)
+        result["exp_uses_offshore_tradeco_flag"] = (
+            result["exp_uses_offshore_tradeco"].astype(int)
+        )
+        result["exp_free_zone_flag"] = result["exp_free_zone"].astype(int)
+        result["exp_segment_sme_flag"] = result["exp_segment"].eq("SME").astype(int)
+        result["exp_segment_lc_flag"] = result["exp_segment"].eq("LC").astype(int)
+
+        result["buy_creditsafe_rating_score"] = (
+            result["buy_creditsafe_rating"].map({"A": 1, "B": 2, "C": 3, "D": 4, "E": 5})
+        )
+        result["buyer_dso_gap_days"] = (
+            result["buy_buyer_payment_history_dso_avg"] - result["payment_terms_days"]
+        ).clip(lower=0)
+        result["buyer_dso_to_terms"] = (
+            result["buy_buyer_payment_history_dso_avg"] / (result["payment_terms_days"] + 1)
+        )
+        result["payment_terms_to_buyer_dso"] = (
+            result["payment_terms_days"] / (result["buy_buyer_payment_history_dso_avg"] + 1)
+        )
+        result["country_risk_x_tenor"] = (
+            result["buy_buyer_country_risk_score"] * result["payment_terms_days"] / 180
+        )
+        result["creditsafe_risk_x_tenor"] = (
+            result["buy_creditsafe_rating_score"] * result["payment_terms_days"] / 180
+        )
+
+        dso_scaled = result["buy_buyer_payment_history_dso_avg"].clip(lower=0, upper=180) / 180
+        result["buyer_risk_pressure"] = (
+            (result["buy_buyer_country_risk_score"] / 10)
+            + (result["buy_creditsafe_rating_score"] / 5)
+            + dso_scaled
+        ) / 3
+        result["trade_history_pressure"] = (
+            result["exp_historical_on_time_gap"]
+            + result["exp_historical_dispute_rate"]
+            + result["exp_concentration_top1_buyer_pct"]
+        )
+        result["profitability_pressure"] = (
+            result["exp_operating_margin_shortfall"]
+            + result["exp_gross_margin_shortfall"]
+            + result["exp_sales_decline_magnitude_pct"] / 100
+        )
+        result["liquidity_pressure"] = (
+            result["exp_current_ratio_shortfall"]
+            + result["exp_quick_ratio_shortfall"]
+            + result["exp_dscr_shortfall"]
+            + (result["exp_debt_to_equity"] / 5)
+        )
+        result["buyer_terms_pressure"] = (
+            result["buyer_risk_pressure"]
+            * (result["payment_terms_days"] / 180)
+            * (1 + result["insurance_not_covered_flag"])
+        )
+        result["country_risk_x_uninsured"] = (
+            result["buy_buyer_country_risk_score"] * result["insurance_not_covered_flag"]
+        )
+        result["country_terms_uninsured_pressure"] = (
+            result["country_risk_x_uninsured"] * result["payment_terms_days"] / 180
+        )
+        result["buyer_terms_uninsured_pressure"] = (
+            result["buyer_risk_pressure"]
+            * result["insurance_not_covered_flag"]
+            * result["payment_terms_days"]
+            / 180
+        )
+        result["exposure_quality_pressure"] = (
+            result["total_exposure_to_revenue_est"]
+            * (1 + result["buyer_risk_pressure"])
+            * (1 + result["trade_history_pressure"])
+        )
+        result["loss_given_default_proxy"] = (
+            result["funded_to_revenue_est"] * (1 + result["insurance_not_covered_flag"])
+        )
 
         return result
 
@@ -180,7 +378,7 @@ class StageBBenchmarkTransformer:
             row_abs_z_scores = []
             row_high_risk_count = 0
 
-            for feature_name in self.feature_names:
+            for feature_name in self.peer_feature_names:
                 stats = group_stats[feature_name]
                 value = row[feature_name]
                 z_score = _robust_z_score(value, stats["median"], stats["mad"])
@@ -287,6 +485,11 @@ def _robust_z_score(value: float, median: float, mad: float) -> float:
     if pd.isna(value):
         return np.nan
     return 0.6745 * (float(value) - median) / mad
+
+
+def _log1p_nonnegative(series: pd.Series) -> pd.Series:
+    clean = series.replace([np.inf, -np.inf], np.nan)
+    return np.log1p(clean.clip(lower=0))
 
 
 def _score_band(score: float, config: dict[str, Any]) -> str:

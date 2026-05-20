@@ -23,10 +23,14 @@ Using `TimeSeriesSplit` keeps tuning time-aware. The final validation set remain
 
 The feature set is defined in `config/xgboost_model.json`. It uses Stage B outputs only:
 
-- the three raw cross-sector benchmark features
-- their global risk percentiles
-- their within-sector peer z-scores
+- raw cross-sector benchmark features
+- global risk percentiles
+- within-sector peer z-scores for continuous peer-comparable features
 - aggregate Stage B benchmark and outlier scores
+
+## Threshold
+
+The probability cutoff is configured in `config/xgboost_model.json`. The current cutoff is deliberately recall-first: Stage C is meant to catch likely defaults for review, so false negatives are treated as more expensive than false positives. `reports/stage_c_threshold_analysis.csv` shows how false positives, false negatives, precision, and recall move across candidate thresholds, including stricter high-precision alternatives.
 
 ## Run
 
@@ -39,8 +43,11 @@ Generated files:
 - `reports/stage_c_report.md`
 - `reports/stage_c_metrics.csv`
 - `reports/stage_c_validation_predictions.csv`
+- `reports/layer1_validation_metrics.csv`
+- `reports/layer1_validation_predictions.csv`
 - `reports/stage_c_open_predictions.csv`
 - `reports/stage_c_gridsearch_results.csv`
+- `reports/stage_c_threshold_analysis.csv`
 - `reports/stage_c_calibration_table.csv`
 - `reports/stage_c_calibration.png`
 - `reports/stage_c_precision_recall.png`
