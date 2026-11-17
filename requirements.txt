@@ -1,0 +1,8 @@
+joblib
+matplotlib
+numpy
+pandas>=2.2,<4
+requests
+scikit-learn
+tabulate
+xgboost
